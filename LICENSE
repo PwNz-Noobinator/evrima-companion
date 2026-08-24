@@ -1,41 +1,48 @@
 EVRIMA COMPANION FREEWARE LICENSE
-Version 1.0 - 2026
+Version 1.1 - 2026
 
-Copyright (c) 2026 PwNz_Noobinator. All rights reserved.
+Copyright (c) 2026 PwNz-Noobinator. All rights reserved.
 
-This license applies only to the Evrima Companion application, its original code, and project-owned assets. Third-party software and content included with or used by Evrima Companion remain subject to their own licenses and terms.
+This licence applies only to the Evrima Companion application's project-owned code, documentation and original project-owned assets. Third-party software, libraries, content, trademarks and services included with or used by Evrima Companion remain subject to their own licences and terms.
 
 1. Permission to use
-You are granted a limited, non-exclusive, non-transferable, revocable license to download, install, and use an unmodified official copy of Evrima Companion for personal, non-commercial use.
+You are granted a limited, non-exclusive, non-transferable licence to download, install and use an unmodified official copy of Evrima Companion for personal, non-commercial use.
 
 2. No sale or commercial use
 You may not sell, rent, lease, sublicense, charge for access to, commercially exploit, or otherwise use Evrima Companion or any project-owned part of it for commercial purposes without prior written permission from the copyright holder.
 
-3. No modification or derivative distribution
-You may not modify, adapt, translate, create derivative works from, republish, or distribute modified copies of Evrima Companion or its project-owned code/assets without prior written permission from the copyright holder.
+3. No project-owned modifications or derivative distribution
+Except for the third-party rights expressly preserved in section 6, you may not modify, adapt, translate, republish, distribute modified copies of, or create derivative works from project-owned Evrima Companion code/assets without prior written permission from the copyright holder.
 
 4. No re-hosting or redistribution
 You may share links to the official Evrima Companion download page. You may not re-host, mirror, bundle, or redistribute the Evrima Companion executable or project-owned assets through another service, package, installer, or product without prior written permission.
 
-5. Reverse engineering
-You may not reverse engineer, decompile, or disassemble project-owned portions of Evrima Companion except to the extent that applicable law expressly permits such activity and that right cannot lawfully be restricted. This clause does not reduce any rights granted by a separate third-party license covering a third-party component.
+5. Reverse engineering of project-owned portions
+You may not reverse engineer, decompile, or disassemble project-owned portions of Evrima Companion except to the extent that applicable law expressly permits such activity and that right cannot lawfully be restricted.
 
-6. Third-party components
-Evrima Companion uses and/or redistributes third-party software under separate licenses. Nothing in this license restricts rights that those third-party licenses grant to you. See THIRD_PARTY_NOTICES.md supplied with the application/repository.
+6. Third-party and LGPL rights are not restricted
+Evrima Companion uses and/or redistributes third-party software under separate licences. Nothing in this licence limits any right granted by a third-party licence.
+
+In particular, where an Evrima Companion build contains Qt/PySide6 under the GNU Lesser General Public License version 3 (LGPLv3), recipients retain all rights required by that licence, including the right to study, replace and modify the LGPL-covered library and to reverse engineer the Combined Work when necessary for debugging modifications to the LGPL-covered library. Any prohibition elsewhere in this licence must be read subject to those LGPL rights.
+
+See THIRD_PARTY_NOTICES.md, QT_LGPL_COMPLIANCE.md and the supplied licences directory.
 
 7. Ownership
-Evrima Companion is licensed, not sold. All rights not expressly granted by this license are reserved by the copyright holder.
+Evrima Companion is licensed, not sold. All rights in project-owned material that are not expressly granted by this licence are reserved by the copyright holder.
 
 8. Future versions
-The copyright holder may release future versions of Evrima Companion under different terms. The license supplied with the version you received continues to govern that version.
+The copyright holder may release future versions of Evrima Companion under different terms. The licence supplied with the version you received continues to govern that version.
 
-9. No affiliation
-Evrima Companion is an unofficial fan-made utility and is not affiliated with, sponsored by, or endorsed by Afterthought LLC or the developers/publishers of The Isle. All third-party names and trademarks remain the property of their respective owners.
+9. Unofficial project and trademarks
+Evrima Companion is an unofficial fan-made utility and is not affiliated with, sponsored by, or endorsed by Afterthought LLC or the developers/publishers of The Isle. Third-party names and trademarks remain the property of their respective owners. No trademark licence is granted by this document.
 
 10. No warranty
-EVRIMA COMPANION IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY LAW. USE IS AT YOUR OWN RISK.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVRIMA COMPANION IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. USE IS AT YOUR OWN RISK. NOTHING IN THIS CLAUSE EXCLUDES A RIGHT THAT APPLICABLE LAW DOES NOT ALLOW TO BE EXCLUDED.
 
 11. Limitation of liability
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR SIMILAR LOSS ARISING FROM USE OF OR INABILITY TO USE EVRIMA COMPANION.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR SIMILAR LOSS ARISING FROM USE OF OR INABILITY TO USE EVRIMA COMPANION. NOTHING IN THIS CLAUSE LIMITS LIABILITY THAT APPLICABLE LAW DOES NOT ALLOW TO BE LIMITED.
 
-By downloading, installing, or using Evrima Companion, you agree to these terms.
+12. Severability
+If a provision of this licence is found unenforceable, the remaining provisions continue to apply to the maximum extent permitted by law.
+
+By downloading, installing or using Evrima Companion, you accept the terms applicable to the project-owned portions of the software and acknowledge that separately licensed third-party components remain governed by their own licences.
