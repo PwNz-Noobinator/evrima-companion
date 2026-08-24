@@ -32,7 +32,7 @@ Evrima Companion uses live VulnonaMAP website/resources for supported map featur
 
 Evrima Companion uses the LGPL option for the Qt/PySide runtime used by the application. The proprietary Companion licence expressly preserves all rights that the LGPL grants to recipients.
 
-Copies of LGPLv3/GPLv3 are included under `licenses/`. The build records the exact PySide6, PySide6_Essentials, PySide6_Addons and Shiboken6 versions that were installed. Public GitHub release preparation also obtains and uploads the corresponding Qt Base and Qt for Python/PySide source archives for the exact PySide6 version used.
+Copies of LGPLv3/GPLv3 are included under `licenses/`. Public Windows builds install `PySide6-Essentials` and `shiboken6` only; the PySide6 Addons wheel is intentionally not installed because Companion does not use those modules. The build records the exact versions actually installed. Public GitHub release preparation also obtains and uploads the corresponding Qt Base, Qt SVG, and Qt for Python/PySide source archives for the exact PySide6 Essentials version used. Qt SVG is distributed under LGPLv3 (or GPLv2/commercial alternatives upstream); this project uses the LGPLv3 option for that runtime.
 
 See `QT_LGPL_COMPLIANCE.md` for the project compliance process.
 
