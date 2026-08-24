@@ -6,7 +6,7 @@ Third-party components keep their own licences. This directory is a public index
 
 Principal licences include:
 
-- Qt / PySide6 / Shiboken6 — LGPLv3/GPLv3 community licensing as applicable. See `../QT_LGPL_COMPLIANCE.md` and the corresponding Qt/PySide source archives attached to each public release.
+- Qt / PySide6 / Shiboken6 — LGPLv3/GPLv3 community licensing as applicable. Matching Qt Base, Qt SVG and Qt for Python/PySide source archives are attached to each applicable public release.
 - Vulnona Map Overlay — CC BY-NC-SA 4.0.
 - Python — Python Software Foundation License Version 2 plus incorporated-software notices.
 - Requests — Apache-2.0.
