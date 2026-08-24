@@ -12,7 +12,7 @@ Each public Windows build generates an exact dependency inventory and a runtime 
 - Bundled installer: `Vulnona Map Overlay_1.1.3_x64-setup.exe`
 - Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 
-The installer is redistributed unchanged as a separate Windows application. Its upstream licence, README and checksum information are preserved under `third_party/vulnona-map-overlay/`.
+The installer is redistributed unchanged as a separate Windows application. Its upstream licence, README and checksum information are preserved under `third_party/vulnona-map-overlay/` in the release/development materials.
 
 Evrima Companion may install, launch, configure and close this separate helper for supported map/OCR functionality. The helper remains third-party software.
 
@@ -32,7 +32,7 @@ Evrima Companion uses live VulnonaMAP website/resources for supported map featur
 
 Evrima Companion uses the LGPL option for the Qt/PySide runtime used by the application. The proprietary Companion licence expressly preserves all rights that the LGPL grants to recipients.
 
-Copies of LGPLv3/GPLv3 are included under `licenses/`. Public Windows builds use `PySide6-Essentials` and `shiboken6`; the PySide6 Addons wheel is intentionally not used. The public package keeps the Qt/PySide shared libraries as separate files in the installed application rather than hiding them inside the Companion executable.
+Public release packages include the applicable LGPLv3/GPLv3 licence texts in their bundled third-party licence materials. This repository's `licenses/README.md` is the public licence index. Public Windows builds use `PySide6-Essentials` and `shiboken6`; the PySide6 Addons wheel is intentionally not used. The public package keeps the Qt/PySide shared libraries as separate files in the installed application rather than hiding them inside the Companion executable.
 
 The build records the exact Qt/PySide versions used. Public release assets also provide the corresponding Qt Base, Qt SVG and Qt for Python/PySide source archives for that exact version. Qt SVG is included because `Qt6Svg.dll` is part of the reviewed Windows runtime used by the Companion.
 
