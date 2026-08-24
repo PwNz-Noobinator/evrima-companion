@@ -1,0 +1,87 @@
+name: Startup / release problem
+description: Use this only when Evrima Companion cannot open far enough to use the in-app Report Bug page.
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem.
+
+        **Use the in-app Report Bug page whenever the Companion can open far enough to do so.** This public GitHub form is only a fallback for startup, installer, updater, or release problems that prevent the in-app reporter from being used.
+
+        Do not post passwords, tokens, private access keys, complete Windows user paths, or other sensitive information here.
+
+  - type: input
+    id: version
+    attributes:
+      label: Evrima Companion version
+      description: Example: 0.9.20.36
+      placeholder: 0.9.20.36
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Example: Windows 11 24H2
+      placeholder: Windows 11
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Problem area
+      options:
+        - Application will not start
+        - Installer / setup
+        - Update / rollback
+        - SmartScreen / Smart App Control
+        - Other release problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the shortest sequence that reliably reproduces the problem.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: input
+    id: bugref
+    attributes:
+      label: In-app bug reference, if available
+      description: If you already have a BUG-XXXXXXXX reference, enter it here. Otherwise leave blank.
+      placeholder: BUG-XXXXXXXX
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional information
+      description: Add non-sensitive error text or other useful context. Do not paste secrets or full private paths.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I could not use the in-app Report Bug page for this problem.
+          required: true
+        - label: I have removed passwords, tokens, private keys, and other sensitive information from this report.
+          required: true
