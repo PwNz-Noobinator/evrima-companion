@@ -32,9 +32,11 @@ Evrima Companion uses live VulnonaMAP website/resources for supported map featur
 
 Evrima Companion uses the LGPL option for the Qt/PySide runtime used by the application. The proprietary Companion licence expressly preserves all rights that the LGPL grants to recipients.
 
-Copies of LGPLv3/GPLv3 are included under `licenses/`. Public Windows builds install `PySide6-Essentials` and `shiboken6` only; the PySide6 Addons wheel is intentionally not installed because Companion does not use those modules. The build records the exact versions actually installed. Public GitHub release preparation also obtains and uploads the corresponding Qt Base, Qt SVG, and Qt for Python/PySide source archives for the exact PySide6 Essentials version used. Qt SVG is distributed under LGPLv3 (or GPLv2/commercial alternatives upstream); this project uses the LGPLv3 option for that runtime.
+Copies of LGPLv3/GPLv3 are included under `licenses/`. Public Windows builds use `PySide6-Essentials` and `shiboken6`; the PySide6 Addons wheel is intentionally not used. The public package keeps the Qt/PySide shared libraries as separate files in the installed application rather than hiding them inside the Companion executable.
 
-See `QT_LGPL_COMPLIANCE.md` for the project compliance process.
+The build records the exact Qt/PySide versions used. Public release assets also provide the corresponding Qt Base, Qt SVG and Qt for Python/PySide source archives for that exact version. Qt SVG is included because `Qt6Svg.dll` is part of the reviewed Windows runtime used by the Companion.
+
+The Companion does not intentionally ship modified Qt/PySide library source. Rights granted under LGPLv3, including rights necessary to replace or debug modified LGPL-covered libraries, are not restricted by the Companion's proprietary licence.
 
 ## Python
 
@@ -115,7 +117,7 @@ GitHub and Supabase are external services used by optional/network functionality
 
 Before a Windows release is built, the release tooling creates `licenses/runtime/` from the actual Python/build environment. It copies discoverable `LICENSE`, `COPYING`, `NOTICE` and related licence files for the runtime/build packages used by Companion and generates an index containing exact package versions and declared licence metadata.
 
-The public-release legal gate fails if required licence documents, the runtime licence index, build dependency inventory or Qt LGPL compliance material are missing.
+The public-release preparation process fails if required licence documents, runtime licence information, build dependency information or matching Qt/PySide source material are missing.
 
 ## Trademarks and third-party names
 
