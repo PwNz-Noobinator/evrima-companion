@@ -1,18 +1,24 @@
 # Third-party licence files
 
-Evrima Companion's own terms are in the repository root `LICENSE` file.
+Evrima Companion's project-owned terms are in the repository root `LICENSE` file.
 
-Third-party components keep their own licences. This directory is the public licence index for the components used by the Companion and its release tooling.
+Third-party components keep their own licences. This directory is a public index for the principal licences relevant to the Companion. Each Windows GitHub Release also includes `THIRD_PARTY_LICENSES.zip`, containing the curated licence texts plus licence/notice files collected from the exact dependency environment used to build that release.
 
-- `LGPL-3.0.txt` — Qt / PySide6 LGPL terms used by the Companion runtime.
-- `Vulnona-Map-Overlay-CC-BY-NC-SA-4.0.txt` — upstream Vulnona Map Overlay licence notice supplied with the bundled helper.
-- `GameDig-MIT.txt` — GameDig reference/implementation licence.
-- `PresentMon-MIT.txt` — PresentMon licence.
+Principal licences include:
+
+- Qt / PySide6 / Shiboken6 — LGPLv3/GPLv3 community licensing as applicable. See `../QT_LGPL_COMPLIANCE.md` and the corresponding Qt/PySide source archives attached to each public release.
+- Vulnona Map Overlay — CC BY-NC-SA 4.0.
+- Python — Python Software Foundation License Version 2 plus incorporated-software notices.
 - Requests — Apache-2.0.
 - websocket-client — Apache-2.0.
+- urllib3 — MIT.
+- idna — BSD-3-Clause.
+- charset-normalizer — MIT.
+- certifi — MPL-2.0.
 - qrcode — BSD-3-Clause.
-- Pillow — MIT-CMU plus additional notices in Pillow's distributed licence file.
-- Python — Python Software Foundation License and incorporated-software notices.
+- Pillow — MIT-CMU plus applicable bundled third-party notices.
 - PyInstaller — GPL-2.0-or-later with the PyInstaller bootloader exception and other upstream-noted licensing.
+- PresentMon — MIT.
+- GameDig — MIT.
 
-The compiled Windows release also carries the licence/notices pack with the executable resources. Exact package versions used for each Windows build are recorded during the build process.
+The complete relationship between these projects and Evrima Companion is documented in `../THIRD_PARTY_NOTICES.md`. Exact package versions are recorded in `BUILD_DEPENDENCIES.txt` attached to each public Windows release.
