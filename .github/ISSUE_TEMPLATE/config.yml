@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: In-app bug reporter
+    url: https://github.com/PwNz-Noobinator/evrima-companion/blob/main/SUPPORT.md
+    about: Use the in-app Report Bug page whenever Evrima Companion can open far enough to do so.
+  - name: Support guidance
+    url: https://github.com/PwNz-Noobinator/evrima-companion/blob/main/SUPPORT.md
+    about: Read the support and privacy guidance before posting a public issue.
