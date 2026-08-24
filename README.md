@@ -15,7 +15,9 @@ For v0.9.20.36 and later public builds, the normal Windows download is:
 - `IsleCompanionSetup.exe` — installs the application for the current Windows user.
 - `EvrimaCompanion-<version>-windows-x64.zip` — the same application in portable/onedir form, primarily provided for transparency and Qt/PySide LGPL library replacement/relinking rights.
 
-Each release also carries SHA-256 checksums and a release manifest. Current pre-release builds are not code-signed, so Windows may display a SmartScreen/reputation warning.
+Each release also carries SHA-256 checksums and a release manifest.
+
+Current pre-release builds may be unsigned. Windows SmartScreen can display a reputation warning, and Windows 11 Smart App Control may block an unsigned build entirely. Do not disable Smart App Control solely to run Evrima Companion; trusted code signing is being evaluated for future releases.
 
 Do not download Evrima Companion from third-party mirrors or re-hosted installers.
 
@@ -71,15 +73,15 @@ Third-party software keeps the rights granted by its own licence. See [THIRD_PAR
 
 Starting with v0.9.20.36, the public Windows application is packaged as **onedir**, so the Qt/PySide shared libraries remain visible and replaceable. The single-file setup program is a Qt-free installer/bootstrapper around that onedir application.
 
-Public release assets include the exact build inventory, third-party licence pack, and corresponding Qt Base + Qt for Python/PySide source archives for the exact version used by that release.
+Public release assets include the exact build inventory, third-party licence pack, and corresponding Qt Base + Qt SVG + Qt for Python/PySide source archives for the exact version used by that release.
 
-See [QT_LGPL_COMPLIANCE.md](QT_LGPL_COMPLIANCE.md).
+The Companion does not intentionally ship modified Qt/PySide library source, and the proprietary application licence does not restrict rights granted by LGPLv3 for the LGPL-covered libraries.
 
 ## Testing status
 
-The project currently has a small tester group. Untested combinations are not presented as certified. The release-candidate checklist is public so testers can report exactly what they did and did not test:
+The project currently has a small tester group and public prereleases are intended to widen testing. Untested combinations are not presented as certified.
 
-[QA_CHECKLIST.md](QA_CHECKLIST.md)
+Please report reproducible problems through the in-app bug reporter whenever possible. Internal release/QA checklists are kept with the private development materials rather than published in this documentation repository.
 
 ## Third-party projects
 
