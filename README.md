@@ -95,13 +95,13 @@ They should not be treated as finished/certified optimisation features yet.
 
 ## Temporary tester download method
 
-We are preparing a temporary GitHub tester package while trusted code signing is being arranged.
+The temporary public tester package is now available from the repository's **Releases** page as **v0.9.20.40 — Public Tester**.
 
-Instead of downloading a finished unsigned Companion installer, testers will download a ZIP containing everything required to build the normal installer **locally on their own Windows PC**.
+Instead of downloading a finished unsigned Companion installer, testers download a ZIP containing everything required to build the normal installer **locally on their own Windows PC**.
 
-The intended process is:
+The process is:
 
-1. Download the official tester ZIP from this repository's **Releases** page.
+1. Download **`Evrima-Companion-v0.9.20.40-Public-Tester.zip`** from the **v0.9.20.40** release.
 2. **Before extracting it, right-click the downloaded ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.** This prevents Windows' downloaded-file mark from unnecessarily blocking the included build launcher after extraction.
 3. Extract the entire ZIP to a normal folder.
 4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
