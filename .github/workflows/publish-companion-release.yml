@@ -1,0 +1,74 @@
+name: Publish Companion Draft Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.release/publish.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: companion-release-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Read publish request
+        id: request
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ACTION="$(jq -r '.action // "idle"' .release/publish.json)"
+          TAG="$(jq -r '.tag // empty' .release/publish.json)"
+          TITLE="$(jq -r '.title // empty' .release/publish.json)"
+
+          if [[ "$ACTION" != "publish" ]]; then
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "Publish control is idle. Nothing to do."
+            exit 0
+          fi
+
+          if [[ -z "$TAG" || -z "$TITLE" ]]; then
+            echo "Publish request is missing tag or title." >&2
+            exit 1
+          fi
+
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+
+      - name: Publish existing draft release
+        if: steps.request.outputs.publish == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.request.outputs.tag }}
+          TITLE: ${{ steps.request.outputs.title }}
+        run: |
+          set -euo pipefail
+
+          IS_DRAFT="$(gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft')"
+
+          if [[ "$IS_DRAFT" != "true" ]]; then
+            echo "Release $TAG is not an existing draft. Refusing to publish." >&2
+            exit 1
+          fi
+
+          gh release edit "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$TITLE" \
+            --notes-file .release/RELEASE_NOTES.md \
+            --prerelease \
+            --draft=false
+
+          echo "Published $TAG as a pre-release."
