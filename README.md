@@ -42,21 +42,90 @@ A User Account Control (UAC) elevation prompt is separate from SmartScreen and S
 
 More detail: [TESTER_BUILD.md](TESTER_BUILD.md).
 
-## Main features
+## Main features in v0.9.20.40
 
-- Official and unofficial Evrima server browser.
-- Per-server dinosaur profiles.
-- Read-only detection of current matching Evrima Prelobby character data where available.
-- Survival Vitals for health, growth, food and water snapshots.
+### Server and dinosaur tools
+
+- Browse both official and unofficial Evrima servers.
+- View per-server dinosaur profiles and save useful dinosaur information.
+- Read-only detection of matching Evrima Prelobby/current-character data where available.
+- Automatic active character/server detection from live TempData activity for Survival Vitals.
+- Corrected profile health data based on probe-verified TempData interpretation.
+
+### Survival Vitals
+
+- Automatic TempData-based **Health, Growth, Food and Water** monitoring without needing the in-game Tab/Status Report OCR path.
+- Compact frameless Survival Vitals HUD.
+- Persistent **Lock / Unlock** control:
+  - locked = fixed in place and mouse click-through;
+  - unlocked = interactive and draggable, including while Evrima is running.
+- Remembers window position, size and lock state between sessions.
+- Resizable while unlocked.
+- Manual **Refresh** control.
+- **Close** control with the ability to reopen Survival Vitals from Companion controls.
+- Failed or partial TempData reads are retried instead of permanently stalling the vitals feed.
+- Existing vitals cards update in place rather than rebuilding the whole HUD every refresh.
+- Solo vitals use with optional Party/Friends sharing support where enabled.
+
+### Map and overlay
+
 - Vulnona Map Overlay integration.
-- Automatic map-location OCR from the in-game Status Report.
-- Manual location entry as a permanent fallback.
+- Desktop map can be closed independently without closing Evrima Companion.
+- Same-session automatic overlay relaunch is suppressed after a deliberate close until the user explicitly reopens it or The Isle restarts.
 - Saved waypoints.
 - Separate local-player and Party/Friend marker trails.
-- Second Screen map for a phone/tablet on the same local network.
-- Party/Friend realtime markers.
+- Overlay controls and persistent user positioning/settings.
+- Improved overlay process relaunch handling and launch diagnostics.
+
+### Automatic location OCR
+
+- Automatic map-location OCR from the in-game Status Report.
+- OCR capture is calculated from the actual Evrima game-client resolution.
+- Normally captures only the Asset Location region instead of an entire high-resolution monitor frame.
+- Native capture resources and temporary OCR images are released/cleaned after use.
+- Manual location entry remains available as a permanent fallback.
+
+### Second Screen and Party/Friends
+
+- Second Screen map for a phone or tablet on the same local network.
+- Can be used alongside the desktop overlay or as the separate map display while Companion is running.
+- Party/Friend realtime markers and separate marker trails.
+- PC-to-phone Second Screen synchronisation remains local-network based.
+
+### Updates and recovery
+
 - Automatic update checking.
-- Built-in bug reporting.
+- Installed tester updates currently come through the **Supabase Stable** release channel.
+- Update packages are checked against expected SHA-256 and byte-size metadata before installation.
+- Existing dual-source update-discovery capability is retained for the future signed GitHub-distribution path, but Supabase is the active tester update source during the temporary build-kit phase.
+- Existing rollback/recovery behaviour is retained.
+
+### Bug reporting and diagnostics
+
+- Built-in bug reporter returning `BUG-XXXXXXXX` references.
+- Optional sanitized diagnostic attachment that can be previewed before submission.
+- Low-frequency Companion resource diagnostics for investigating game/performance/VRAM-related reports without continuous heavy telemetry.
+- Overlay diagnostics are reset per launch session to reduce stale-error confusion.
+
+### UI and project quality-of-life
+
+- Persistent Companion settings used by map/overlay and Survival Vitals controls.
+- Numeric update-download progress retained without the old global dinosaur progress animation.
+- Eevee29 Runner and Kassia easter eggs operate independently.
+- Public freeware licence, privacy information, Credits and third-party licence documentation are included with the project.
+
+## Changes added since this GitHub repository opened
+
+This repository was created on **24 August 2026**. User-facing development continued immediately afterward:
+
+- **v0.9.20.35** — added verified dual-source update discovery, checksum/size verification for GitHub-compatible updates, and expanded public licence/privacy/Credits documentation.
+- **v0.9.20.36** — allowed the desktop map to be deliberately closed without closing Companion and prevented unwanted immediate relaunch.
+- **v0.9.20.37** — restored the Eevee29 Runner easter egg and separated it from the Kassia easter egg logic.
+- **v0.9.20.38** — introduced Survival Vitals with TempData-based Health, Growth, Food and Water monitoring plus active character/server detection.
+- **v0.9.20.39** — redesigned Survival Vitals as a compact HUD, improved OCR capture efficiency, reduced duplicate background polling, added resource diagnostics and hardened overlay relaunch diagnostics.
+- **v0.9.20.40** — added persistent vitals Lock/Unlock, resizing, saved geometry, Refresh and Close controls, plus automatic retry/recovery when a TempData read fails part-way through a game write.
+
+See [CHANGELOG.md](CHANGELOG.md) for the concise public testing history.
 
 ## Basic use
 
