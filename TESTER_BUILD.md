@@ -1,75 +1,75 @@
 # Temporary tester build distribution
 
-Evrima Companion is currently using a temporary distribution method while trusted code signing for the normal Windows installer is being prepared.
+Evrima Companion is currently using a temporary tester-distribution method while trusted code signing for the normal Windows installer is being prepared.
 
-This is a **pre-release tester workflow**, not the intended long-term installation method.
+This is **not** the intended long-term installation method.
 
 ## What testers download
 
-For the temporary public-testing phase, the GitHub Release download is a ZIP build kit rather than a prebuilt unsigned `IsleCompanionSetup.exe`.
+The temporary GitHub Release is a **self-contained ZIP build kit**, not a finished unsigned Companion EXE.
 
-The tester ZIP is intended to contain everything needed to produce the normal Companion installer on the tester's own Windows PC, including the required Companion build files, the required build dependencies, applicable licence notices, and an official Python runtime/installer where required by the build process.
+The ZIP contains:
 
-The public tester package must not contain maintainer-only release publishing tools, Supabase upload scripts, internal QA/release tooling, private configuration, credentials or secrets.
+- the exact Companion files required to build that tester version;
+- a private Python/build runtime used only for the local build;
+- the required build dependencies;
+- Companion assets and third-party components required by the app;
+- the applicable licence/privacy/notices files;
+- one `BUILD AND INSTALL EVRIMA COMPANION.cmd` launcher.
 
-Runtime code required for normal Companion features remains included. This includes the application's normal update and bug-report functionality.
+The tester does **not** need Python installed and the bundled build runtime is not added to the user's Windows PATH.
 
-## Intended tester experience
+Maintainer-only publishing material is deliberately excluded. The public kit does not contain the Supabase release uploader, release splitter, internal QA tests or other development-only release tools.
 
-The target workflow is:
+Runtime code required by the installed Companion remains included, including normal Supabase updates, Party/Friends, bug reporting and other application features.
 
-1. Download the official tester ZIP from this repository's GitHub Releases page.
-2. Extract the complete ZIP to a normal folder.
-3. Double-click the supplied **Build/Start Companion** launcher.
-4. The launcher prepares the bundled build environment and builds the normal Companion installer locally.
-5. The locally built installer starts automatically.
-6. The normal Companion installer installs the application, creates the normal desktop shortcut and launches Evrima Companion.
-7. After installation, testers use the installed Companion normally. They do not need to rebuild it for routine updates.
+## Tester experience
 
-Once installed, application updates continue to be delivered through the Companion's existing **Supabase update channel** during this temporary phase. GitHub is the initial tester-package entry point, not the active application-update source for this phase.
+1. Download the official tester ZIP from this repository's **Releases** page.
+2. Extract the whole ZIP.
+3. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+4. The included private build runtime creates `IsleCompanion.exe` locally on that PC.
+5. The newly built EXE starts automatically.
+6. Companion's existing install flow copies itself into the user's local Programs folder, registers the app, creates the desktop/Start Menu shortcuts and launches the installed Companion.
+7. Once Companion has opened successfully, the extracted tester-build folder can be deleted.
+
+The private build environment is only there to create the first local EXE. It is not Companion's runtime after installation.
+
+## Updates after installation
+
+The ZIP is only the initial installation route during this temporary testing phase.
+
+After installation, normal Companion updates come through the existing **Supabase Stable update channel**. Testers do not rebuild every update manually.
 
 ## Windows security warning
 
 Current tester builds are not yet signed with the project's future trusted code-signing certificate.
 
-The temporary local-build workflow is being used because the project has observed that locally produced development/test executables can behave differently from an identical unsigned executable downloaded directly from the internet. It is **not a guarantee that Windows security will allow the result to run**, and it must not be treated as a method for bypassing Windows security controls.
+The temporary local-build workflow is being used because locally produced test executables have behaved differently from the same type of unsigned executable downloaded directly from the internet during project testing. This **does not guarantee** that Windows will allow the resulting EXE to run and should not be treated as a security bypass.
 
 Depending on the PC and Windows configuration:
 
-- Microsoft Defender SmartScreen may show an unrecognized-app/reputation warning for unsigned software.
-- Windows 11 Smart App Control may block unknown unsigned code when Microsoft cannot establish that it is safe.
-- Organization-managed Windows PCs may apply additional application-control policies.
-- A normal User Account Control (UAC) prompt is separate from SmartScreen and Smart App Control and may appear when an operation legitimately requires elevation.
+- Microsoft Defender SmartScreen may still show an unrecognized-app/reputation warning;
+- Windows 11 Smart App Control may still block unknown unsigned code;
+- organization-managed PCs may apply additional application-control policies;
+- User Account Control (UAC) is separate from SmartScreen and Smart App Control.
 
-**Do not disable Smart App Control, Microsoft Defender, SmartScreen, or other security protections solely to run Evrima Companion.**
+**Do not disable Smart App Control, Microsoft Defender, SmartScreen or other Windows security protections solely to run Evrima Companion.**
 
-If Windows blocks the tester build without offering a normal permitted continuation path, stop and report the Windows version, the exact message shown and the Companion tester-package version. The long-term solution is trusted code signing, not asking testers to weaken Windows security.
+If Windows blocks the tester build without a normal permitted continuation path, stop and report the Windows version and exact message shown.
 
-## Long-term distribution plan
+## Long-term plan
 
-This local-build ZIP is temporary.
+This ZIP/local-build method is temporary. The intended public release remains a normal **prebuilt, digitally signed Windows installer** downloaded from the official Evrima Companion release page.
 
-The intended public-release model remains:
+When trusted signing is ready, these temporary build-kit instructions will be retired.
 
-- a normal prebuilt Windows installer;
-- signed with an appropriate trusted code-signing certificate;
-- downloaded directly from the official Evrima Companion release page;
-- normal automatic updates without requiring testers to rebuild the application.
+## Bugs and build failures
 
-When that signed distribution path is ready, the temporary local-build instructions will be retired.
+- If Companion opens: use its built-in **Report Bug** page whenever possible.
+- If the build itself fails: keep `_build_output\build.log` and see [SUPPORT.md](SUPPORT.md).
+- Do not post passwords, tokens, private keys or other secrets in a public issue.
 
-## Updates and bug reports
+Only use tester packages published by this repository. Do not use third-party mirrors or modified/repacked build kits.
 
-After the initial local build/install, testers should use Companion normally.
-
-- **Updates:** delivered through the existing Supabase release channel during this temporary testing phase.
-- **Bug reports:** use **Report Bug** inside Evrima Companion whenever possible.
-- **Build/startup failures:** see [SUPPORT.md](SUPPORT.md).
-
-Do not post passwords, tokens, private keys or other secrets in public issues or bug descriptions.
-
-## Official downloads only
-
-Only use tester packages published by this repository. Do not use third-party mirrors, repackaged copies or modified build kits.
-
-Evrima Companion remains an unofficial fan-made project and is not affiliated with, sponsored by or endorsed by Afterthought LLC or the developers/publishers of The Isle.
+Evrima Companion is an unofficial fan-made project and is not affiliated with, sponsored by or endorsed by Afterthought LLC or the developers/publishers of The Isle.
