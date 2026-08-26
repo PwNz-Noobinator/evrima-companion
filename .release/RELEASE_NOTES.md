@@ -7,10 +7,13 @@ Evrima Companion is still **pre-release software**. This build is being shared t
 ## Install
 
 1. Download **`Evrima-Companion-v0.9.20.40-Public-Tester.zip`** from the Assets section below.
-2. Extract the **entire ZIP** to a normal folder.
-3. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
-4. Wait while the Companion EXE is built locally on your PC.
-5. The normal Companion install process will start automatically, create the desktop/Start Menu shortcuts and launch Companion.
+2. **Before extracting it, right-click the ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.**
+3. Extract the **entire ZIP** to a normal folder.
+4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+5. Wait while the Companion EXE is built locally on your PC.
+6. The normal Companion install process will start automatically, create the desktop/Start Menu shortcuts and launch Companion.
+
+If you already extracted the ZIP and Windows refuses to run the launcher, check **Properties** on the downloaded ZIP or the blocked launcher for **Unblock**, use it if shown, then extract/run again.
 
 **You do not need Python installed.** The tester ZIP contains its own private build runtime and does not add Python to your Windows PATH.
 
@@ -34,6 +37,8 @@ Once Companion is installed, normal updates are delivered through Companion's **
 ## Windows security notice
 
 This tester build is currently unsigned. Microsoft Defender SmartScreen may display an unrecognized-app warning and Windows 11 Smart App Control may still block unknown unsigned code.
+
+Using Windows' **Unblock** option only removes the downloaded-file mark from the ZIP/file you intentionally downloaded. It does not disable Defender, SmartScreen or Smart App Control.
 
 The local-build tester package is **not guaranteed to bypass Windows security controls**. Do not disable Smart App Control, Microsoft Defender or SmartScreen solely to run Evrima Companion. If Windows blocks it without offering a normal continuation option, please report the exact Windows message.
 
