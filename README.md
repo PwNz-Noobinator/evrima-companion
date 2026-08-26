@@ -1,24 +1,65 @@
+<div align="center">
+
 # Evrima Companion
 
 **The Isle: Evrima companion app for Windows — server browser, map overlay, dinosaur tracking, Party/Friends, Survival Vitals and Second Screen.**
 
-[![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue)](https://github.com/PwNz-Noobinator/evrima-companion)
-[![GitHub Release Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?label=Release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
+[![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
+
+**[Download the public tester](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)** · **[Changelog](CHANGELOG.md)** · **[Tester guide](TESTER_BUILD.md)** · **[Support](SUPPORT.md)**
+
+</div>
+
+---
 
 Evrima Companion is an unofficial Windows companion utility for **The Isle: Evrima**. It combines an Evrima server browser, dinosaur profiles, a desktop map overlay, automatic location OCR, live Party/Friends tracking, Survival Vitals and a phone/tablet Second Screen map in one app.
 
 **Current public tester: v0.9.20.40** — pre-release software while a normal digitally signed installer is being prepared.
 
-## Download the public tester
+## Quick feature overview
+
+| Feature | What it does |
+|---|---|
+| **Server Browser** | Browse Official and Unofficial Evrima servers with search, filters, favourites, ping and player counts. |
+| **Dinosaur Profiles** | Save dinosaur, growth, location, sex, mutations and notes per server. |
+| **Map Overlay** | Desktop Vulnona map overlay with OCR location updates, manual coordinates, waypoints, opacity and resize controls. |
+| **Party / Friends** | Share live positions, individual trails, markers and selected Survival Vitals with your group. |
+| **Survival Vitals** | Compact HUD for Health, Growth, Food and Water with automatic active-character detection. |
+| **Second Screen** | Use a phone or tablet as a live Companion map over your local Wi-Fi/LAN. |
+| **Languages & Appearance** | Multiple interface languages plus configurable UI accent colour. |
+| **Updates & Bug Reports** | Built-in update checking, integrity verification and `BUG-XXXXXXXX` report references. |
+| **Graphics / Optimiser** | Experimental performance and configuration tools currently marked **Work In Progress**. |
+
+---
+
+## Download & install
 
 **[Download Evrima Companion v0.9.20.40 — Public Tester](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)**
 
-The GitHub tester package is the initial installation route. Once Companion is installed, normal app updates are delivered automatically through the **Supabase Stable update channel**, so testers do not need to rebuild the app for every update.
+The GitHub tester package is the **initial installation route**. Once Companion is installed, normal app updates are delivered automatically through the **Supabase Stable update channel**, so testers do not need to rebuild the app for every update.
 
-> **Windows:** before extracting the downloaded ZIP, right-click it → **Properties** → if Windows shows **Unblock**, tick it and click **Apply**. Then extract the ZIP and run `BUILD AND INSTALL EVRIMA COMPANION.cmd`.
+1. Download **`Evrima-Companion-v0.9.20.40-Public-Tester.zip`** from the release Assets.
+2. **Before extracting it**, right-click the downloaded ZIP → **Properties**. If Windows shows **Unblock**, tick it and click **Apply**.
+3. Extract the entire ZIP to a normal folder.
+4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+5. Wait while the normal Companion executable is built locally and the install process starts automatically.
 
-## What can it do?
+**Python is not required.** The tester package includes its own private build runtime.
+
+If you already extracted the ZIP and Windows refuses to run the launcher, check **Properties** on the original ZIP or the blocked launcher for **Unblock**, use it if shown, then extract/run again.
+
+### Requirements
+
+- **64-bit Windows**.
+- **The Isle: Evrima** for game-linked features.
+- A local network connection if you want to use **Second Screen** on a phone or tablet.
+- No separate Python installation is required.
+
+---
+
+## Features in detail
 
 ### Servers & dinosaur profiles
 
@@ -104,25 +145,7 @@ They should not be treated as finished/certified optimisation features yet.
 - Built-in **Report Bug** page with `BUG-XXXXXXXX` report numbers.
 - Optional sanitized diagnostics help diagnose problems without requiring testers to hunt through log folders manually.
 
-## Temporary tester download method
-
-The temporary public tester package is available from the repository's **Releases** page as **v0.9.20.40 — Public Tester**.
-
-Instead of downloading a finished unsigned Companion installer, testers download a ZIP containing everything required to build the normal installer **locally on their own Windows PC**.
-
-The process is:
-
-1. Download **`Evrima-Companion-v0.9.20.40-Public-Tester.zip`** from the **v0.9.20.40** release.
-2. **Before extracting it, right-click the downloaded ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.** This prevents Windows' downloaded-file mark from unnecessarily blocking the included build launcher after extraction.
-3. Extract the entire ZIP to a normal folder.
-4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
-5. It builds the normal Companion executable locally, then Companion's normal install flow creates the desktop/Start Menu shortcuts and launches it.
-
-If you already extracted the ZIP before unblocking it and Windows refuses to run the launcher, check **Properties** on the downloaded ZIP or the blocked launcher and use **Unblock** if Windows offers it, then extract/run again.
-
-After that initial installation, normal Companion updates come through **Supabase** — testers will not need to rebuild every update manually.
-
-The long-term plan is still to replace this temporary method with a normal **prebuilt, digitally signed Windows installer**.
+---
 
 ## Windows security notice
 
@@ -134,18 +157,23 @@ The local-build tester package is **not guaranteed to bypass Windows security co
 
 See [TESTER_BUILD.md](TESTER_BUILD.md) for more detail.
 
+---
+
 ## Reporting problems
 
 Whenever Companion opens normally, please use its built-in **Report Bug** page. If Companion cannot start or the tester package itself fails, see [SUPPORT.md](SUPPORT.md).
 
-## More information
+## Project links
 
+- [Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 - [Public testing changelog](CHANGELOG.md)
 - [Tester build instructions](TESTER_BUILD.md)
 - [Support](SUPPORT.md)
 - [Privacy](PRIVACY.md)
 - [Licence](LICENSE)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+---
 
 Evrima Companion is proprietary freeware for personal, non-commercial use. Third-party components remain under their own licences.
 
