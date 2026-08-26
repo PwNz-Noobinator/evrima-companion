@@ -1,11 +1,22 @@
 # Evrima Companion
 
-**An unofficial Windows companion app for The Isle: Evrima.**
+**The Isle: Evrima companion app for Windows — server browser, map overlay, dinosaur tracking, Party/Friends, Survival Vitals and Second Screen.**
 
-Evrima Companion brings server browsing, dinosaur tracking, a desktop map overlay, automatic location updates, Party/Friends, Survival Vitals and a phone/tablet map into one app.
+[![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
+[![Platform](https://img.shields.io/badge/Platform-Windows-blue)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![GitHub Release Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?label=Release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
-**Current tester version: v0.9.20.40**  
-This is still pre-release software and is being opened to more testers before a signed public installer is ready.
+Evrima Companion is an unofficial Windows companion utility for **The Isle: Evrima**. It combines an Evrima server browser, dinosaur profiles, a desktop map overlay, automatic location OCR, live Party/Friends tracking, Survival Vitals and a phone/tablet Second Screen map in one app.
+
+**Current public tester: v0.9.20.40** — pre-release software while a normal digitally signed installer is being prepared.
+
+## Download the public tester
+
+**[Download Evrima Companion v0.9.20.40 — Public Tester](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)**
+
+The GitHub tester package is the initial installation route. Once Companion is installed, normal app updates are delivered automatically through the **Supabase Stable update channel**, so testers do not need to rebuild the app for every update.
+
+> **Windows:** before extracting the downloaded ZIP, right-click it → **Properties** → if Windows shows **Unblock**, tick it and click **Apply**. Then extract the ZIP and run `BUILD AND INSTALL EVRIMA COMPANION.cmd`.
 
 ## What can it do?
 
@@ -95,7 +106,7 @@ They should not be treated as finished/certified optimisation features yet.
 
 ## Temporary tester download method
 
-The temporary public tester package is now available from the repository's **Releases** page as **v0.9.20.40 — Public Tester**.
+The temporary public tester package is available from the repository's **Releases** page as **v0.9.20.40 — Public Tester**.
 
 Instead of downloading a finished unsigned Companion installer, testers download a ZIP containing everything required to build the normal installer **locally on their own Windows PC**.
 
