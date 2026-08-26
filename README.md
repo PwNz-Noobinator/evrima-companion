@@ -2,30 +2,52 @@
 
 **Unofficial companion utility for The Isle: Evrima.**
 
-Evrima Companion is a Windows desktop app providing server browsing, per-server dinosaur information, map/overlay tools, automatic location OCR, a phone/tablet Second Screen, Party/Friend markers, automatic updates and built-in bug reporting.
+Evrima Companion is a Windows desktop app providing server browsing, per-server dinosaur information, map/overlay tools, automatic location OCR, Survival Vitals, a phone/tablet Second Screen, Party/Friend markers, automatic updates and built-in bug reporting.
 
-> **Pre-release project:** Evrima Companion is still in wider public testing. A public `1.0` release has not been declared and compatibility has not been certified across every Windows version, PC configuration, phone or mobile browser.
+> **Pre-release project:** Evrima Companion is still in public testing. A public `1.0` release has not been declared and compatibility has not been certified across every Windows version or PC configuration.
+
+## Current public-testing distribution
+
+During the current testing phase, GitHub is being used as the **initial tester entry point**, while normal Companion application updates continue to be delivered through the existing **Supabase update channel**.
+
+The temporary GitHub tester download is planned as a **ZIP build kit**, not a prebuilt unsigned Companion installer. The tester extracts the ZIP and runs the supplied Build/Start launcher. The kit builds the normal Companion installer locally on that Windows PC, then the normal installer installs Companion, creates the desktop shortcut and launches the application.
+
+This is a temporary testing arrangement while trusted code signing for the normal downloadable installer is prepared. The long-term plan remains a normal prebuilt, signed Windows installer.
+
+See [TESTER_BUILD.md](TESTER_BUILD.md) for the complete tester workflow and Windows security notes.
 
 ## Download
 
-Public builds are distributed only through **GitHub Releases** for this repository. If the Releases page is empty, the current release candidate has not been approved for public distribution yet.
+Use only the **GitHub Releases** page belonging to this repository.
 
-For v0.9.20.36 and later public builds, the normal Windows download is:
+For the temporary public-testing phase:
 
-- `IsleCompanionSetup.exe` — installs the application for the current Windows user.
-- `EvrimaCompanion-<version>-windows-x64.zip` — the same application in portable/onedir form, primarily provided for transparency and Qt/PySide LGPL library replacement/relinking rights.
+- download the official Evrima Companion tester ZIP;
+- extract the whole ZIP before running anything;
+- double-click the supplied Build/Start Companion launcher;
+- allow it to build the normal installer locally;
+- continue through the normal Companion install flow.
 
-Each release also carries SHA-256 checksums and a release manifest.
+Do not download Evrima Companion from third-party mirrors or repackaged copies.
 
-Current pre-release builds may be unsigned. Windows SmartScreen can display a reputation warning, and Windows 11 Smart App Control may block an unsigned build entirely. Do not disable Smart App Control solely to run Evrima Companion; trusted code signing is being evaluated for future releases.
+## Windows security notice
 
-Do not download Evrima Companion from third-party mirrors or re-hosted installers.
+Current tester builds are not yet signed with the project's future trusted code-signing certificate.
+
+Microsoft Defender SmartScreen may warn about unknown unsigned software, and Windows 11 Smart App Control may block unknown unsigned code when Windows cannot establish that it is safe. The temporary local-build package is intended to improve tester accessibility based on the project's testing experience, but it **does not guarantee that SmartScreen or Smart App Control will allow the result to run**.
+
+Do **not** disable Smart App Control, Microsoft Defender, SmartScreen or other Windows security protections solely to run Evrima Companion. If Windows blocks the tester build with no normal permitted continuation path, stop and report the exact message instead.
+
+A User Account Control (UAC) elevation prompt is separate from SmartScreen and Smart App Control.
+
+More detail: [TESTER_BUILD.md](TESTER_BUILD.md).
 
 ## Main features
 
 - Official and unofficial Evrima server browser.
 - Per-server dinosaur profiles.
 - Read-only detection of current matching Evrima Prelobby character data where available.
+- Survival Vitals for health, growth, food and water snapshots.
 - Vulnona Map Overlay integration.
 - Automatic map-location OCR from the in-game Status Report.
 - Manual location entry as a permanent fallback.
@@ -38,50 +60,55 @@ Do not download Evrima Companion from third-party mirrors or re-hosted installer
 
 ## Basic use
 
-1. Download `IsleCompanionSetup.exe` from an official GitHub Release.
-2. Run the installer and review/accept the freeware licence prompt.
-3. Use **Servers** to browse Evrima servers and view/save dinosaur information.
-4. Use **Map** for overlay controls, automatic/manual location, waypoints, Party/Friends and Second Screen.
-5. Use **Report Bug** inside the Companion if something fails or behaves incorrectly.
-6. Use **Updates** to check for newer versions.
+1. Download and extract the current official tester ZIP from GitHub Releases.
+2. Run its Build/Start Companion launcher.
+3. The locally built normal installer installs Evrima Companion and creates the desktop shortcut.
+4. Use **Servers** to browse Evrima servers and view/save dinosaur information.
+5. Use **Map** for overlay controls, automatic/manual location, waypoints, Party/Friends and Second Screen.
+6. Use **Survival Vitals** for the current local character's available vitals data.
+7. Use **Report Bug** inside the Companion if something fails or behaves incorrectly.
+
+## Updates
+
+The GitHub tester package is only the initial installation route during this temporary phase.
+
+After Companion is installed, normal tester updates are delivered through the project's existing **Supabase release channel**. Testers should not need to rebuild Companion for routine application updates.
+
+The application's existing updater code may retain support for other release sources for future signed-public-release work, but Supabase is the active tester update path for this phase.
 
 ## Bug reports
 
 Please use the **Report Bug** page inside Evrima Companion whenever possible. A successful submission returns a `BUG-XXXXXXXX` reference.
 
-The diagnostic attachment is **optional and off by default**. You can preview the exact sanitized diagnostic JSON before deciding whether to include it. The sanitizer is designed to redact known passwords/tokens, the Windows username/home path and configured client keys. Do not type passwords, account credentials or other secrets into the report description.
+The diagnostic attachment is optional and can be previewed before submission. Do not type passwords, account credentials, private keys or other secrets into a bug report.
 
-If the application cannot start far enough to use its Report Bug page, see [SUPPORT.md](SUPPORT.md).
+If the application or tester build cannot start far enough to use its Report Bug page, see [SUPPORT.md](SUPPORT.md).
 
 ## Privacy
 
 Second Screen PC-to-phone synchronisation stays on the user's local network. Optional/network features can contact Supabase, GitHub, VulnonaMAP and public/session-discovery infrastructure used by Evrima.
 
-See [PRIVACY.md](PRIVACY.md) for what is processed, what stays local, optional bug-report diagnostics, retention criteria and the privacy-request route.
+See [PRIVACY.md](PRIVACY.md) for the project's data-use and privacy information.
 
-## Licence
+## Licence and temporary build-kit source
 
-Evrima Companion's project-owned application/code/assets are **proprietary freeware**. Official unmodified builds may be used for personal, non-commercial use. The Companion source code is **not published in this repository**.
+Evrima Companion's project-owned application/code/assets are **proprietary freeware**. Official unmodified builds may be used for personal, non-commercial use under the supplied licence.
 
-Selling, commercial exploitation, modified/derivative distribution and re-hosting of project-owned Evrima Companion material are not permitted without prior written permission, subject to applicable law and the independent rights attached to third-party components.
+The documentation repository itself is not intended to become the project's normal public source-code repository. During the temporary local-build testing phase, however, an official tester **release asset may contain the project-owned source/build inputs required to build that specific unmodified tester version locally**. Their inclusion for local building does not grant permission to redistribute modified versions or override the supplied proprietary licence.
 
-See [LICENSE](LICENSE) for the complete project-owned terms.
-
-Third-party software keeps the rights granted by its own licence. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the [licence index](licenses/README.md).
+Third-party software keeps the rights granted by its own licence. See [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the [licence index](licenses/README.md).
 
 ## Qt / PySide6 LGPL compliance
 
-Starting with v0.9.20.36, the public Windows application is packaged as **onedir**, so the Qt/PySide shared libraries remain visible and replaceable. The single-file setup program is a Qt-free installer/bootstrapper around that onedir application.
+Qt/PySide components remain subject to their own LGPL terms regardless of the Companion's proprietary project-owned licence. Public tester packages and installed builds must continue to preserve the replacement/relinking and source-availability rights required by the applicable third-party licences.
 
-Public release assets include the exact build inventory, third-party licence pack, and corresponding Qt Base + Qt SVG + Qt for Python/PySide source archives for the exact version used by that release.
-
-The Companion does not intentionally ship modified Qt/PySide library source, and the proprietary application licence does not restrict rights granted by LGPLv3 for the LGPL-covered libraries.
+The Companion does not intentionally ship modified Qt/PySide library source, and the proprietary application licence does not restrict rights granted by LGPLv3 for LGPL-covered libraries.
 
 ## Testing status
 
-The project currently has a small tester group and public prereleases are intended to widen testing. Untested combinations are not presented as certified.
+The project currently has a small QA/tester group and this temporary GitHub tester package is intended to widen testing before the signed public installer is ready.
 
-Please report reproducible problems through the in-app bug reporter whenever possible. Internal release/QA checklists are kept with the private development materials rather than published in this documentation repository.
+Untested combinations are not presented as certified. Please report reproducible problems through the in-app bug reporter whenever possible.
 
 ## Third-party projects
 
