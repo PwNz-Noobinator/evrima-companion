@@ -26,12 +26,17 @@ Runtime code required by the installed Companion remains included, including nor
 ## Tester experience
 
 1. Download the official tester ZIP from this repository's **Releases** page.
-2. Extract the whole ZIP.
-3. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
-4. The included private build runtime creates `IsleCompanion.exe` locally on that PC.
-5. The newly built EXE starts automatically.
-6. Companion's existing install flow copies itself into the user's local Programs folder, registers the app, creates the desktop/Start Menu shortcuts and launches the installed Companion.
-7. Once Companion has opened successfully, the extracted tester-build folder can be deleted.
+2. **Before extracting, right-click the downloaded ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.**
+3. Extract the whole ZIP to a normal folder.
+4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+5. The included private build runtime creates `IsleCompanion.exe` locally on that PC.
+6. The newly built EXE starts automatically.
+7. Companion's existing install flow copies itself into the user's local Programs folder, registers the app, creates the desktop/Start Menu shortcuts and launches the installed Companion.
+8. Once Companion has opened successfully, the extracted tester-build folder can be deleted.
+
+Windows sometimes carries the downloaded-file mark from a ZIP onto files extracted from it. Using **Unblock** on the ZIP before extraction helps prevent the included `.cmd` launcher from being blocked simply because it came from an internet download.
+
+If the ZIP was already extracted and the launcher is blocked, check **Properties** on the original ZIP or the blocked launcher and use **Unblock** if Windows offers it, then extract/run again.
 
 The private build environment is only there to create the first local EXE. It is not Companion's runtime after installation.
 
@@ -46,6 +51,8 @@ After installation, normal Companion updates come through the existing **Supabas
 Current tester builds are not yet signed with the project's future trusted code-signing certificate.
 
 The temporary local-build workflow is being used because locally produced test executables have behaved differently from the same type of unsigned executable downloaded directly from the internet during project testing. This **does not guarantee** that Windows will allow the resulting EXE to run and should not be treated as a security bypass.
+
+Using **Unblock** only removes the downloaded-file mark from the file the tester deliberately downloaded. It does **not** disable Microsoft Defender, SmartScreen or Smart App Control.
 
 Depending on the PC and Windows configuration:
 
@@ -67,7 +74,7 @@ When trusted signing is ready, these temporary build-kit instructions will be re
 ## Bugs and build failures
 
 - If Companion opens: use its built-in **Report Bug** page whenever possible.
-- If the build itself fails: keep `_build_output\build.log` and see [SUPPORT.md](SUPPORT.md).
+- If the build itself fails: keep `build.log` created next to the launcher and see [SUPPORT.md](SUPPORT.md).
 - Do not post passwords, tokens, private keys or other secrets in a public issue.
 
 Only use tester packages published by this repository. Do not use third-party mirrors or modified/repacked build kits.
