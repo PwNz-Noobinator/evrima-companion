@@ -10,7 +10,11 @@ Diagnostics are optional and can be previewed before submission. A successful re
 
 During the current public-testing phase, the initial GitHub download may be a ZIP build kit that builds the normal Companion installer locally before installation.
 
-If the Build/Start Companion launcher fails before the normal Companion installer is created, report:
+Before extracting the tester ZIP, right-click it → **Properties**. If Windows shows an **Unblock** checkbox, tick it and click **Apply**, then extract the ZIP. Windows can otherwise carry the downloaded-file mark onto the included `.cmd` launcher and block or warn when you try to run it.
+
+If you already extracted the ZIP and Windows refuses to run `BUILD AND INSTALL EVRIMA COMPANION.cmd`, check **Properties** on the original ZIP or the blocked launcher for **Unblock**, use it if shown, then extract/run again.
+
+If the Build/Start Companion launcher fails after it has actually started, report:
 
 - the tester-package version;
 - Windows version;
@@ -27,6 +31,8 @@ See [TESTER_BUILD.md](TESTER_BUILD.md) for the temporary build workflow.
 Current tester software is not yet signed with the project's future trusted code-signing certificate.
 
 Microsoft Defender SmartScreen may display an unrecognized-app warning for unsigned software. Windows 11 Smart App Control may block unknown unsigned code when Windows cannot establish that it is safe.
+
+Windows' **Unblock** option is different: it removes the downloaded-file mark from a file the user intentionally downloaded. It does not turn off Defender, SmartScreen or Smart App Control.
 
 The temporary local-build workflow is **not guaranteed to avoid those protections**. Do not disable Smart App Control, Microsoft Defender, SmartScreen or other Windows security protections solely to run Evrima Companion.
 
