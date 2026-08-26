@@ -102,9 +102,12 @@ Instead of downloading a finished unsigned Companion installer, testers will dow
 The intended process is:
 
 1. Download the official tester ZIP from this repository's **Releases** page.
-2. Extract the ZIP.
-3. Double-click the included **Build / Start Companion** launcher.
-4. It builds the normal Companion installer locally, then the normal installer installs Companion, creates the desktop shortcut and launches it.
+2. **Before extracting it, right-click the downloaded ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.** This prevents Windows' downloaded-file mark from unnecessarily blocking the included build launcher after extraction.
+3. Extract the entire ZIP to a normal folder.
+4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+5. It builds the normal Companion executable locally, then Companion's normal install flow creates the desktop/Start Menu shortcuts and launches it.
+
+If you already extracted the ZIP before unblocking it and Windows refuses to run the launcher, check **Properties** on the downloaded ZIP or the blocked launcher and use **Unblock** if Windows offers it, then extract/run again.
 
 After that initial installation, normal Companion updates come through **Supabase** — testers will not need to rebuild every update manually.
 
@@ -113,6 +116,8 @@ The long-term plan is still to replace this temporary method with a normal **pre
 ## Windows security notice
 
 Current tester builds are not yet signed with the project's future trusted code-signing certificate. Microsoft Defender SmartScreen may still display a reputation warning, and Windows 11 Smart App Control may still block unknown unsigned code.
+
+Using Windows' **Unblock** option only removes the downloaded-file mark from the file you intentionally downloaded; it does not disable Defender, SmartScreen or Smart App Control.
 
 The local-build tester package is **not guaranteed to bypass Windows security controls**. Do not disable Smart App Control, Defender or SmartScreen solely to run Companion. If Windows blocks it without offering a normal continuation option, report the exact message so it can be investigated.
 
