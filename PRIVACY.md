@@ -2,22 +2,59 @@
 
 Evrima Companion is designed to keep normal game, OCR and map processing local wherever practical. The project does not sell user data.
 
-This document describes what the current pre-release build can process and which external services it contacts.
+The public GitHub bootstrap is currently **v0.9.20.40**. Sections below that refer to **v0.9.20.42** describe the current development candidate and apply once that build is published and installed.
 
 ## Data that normally stays on the user's PC
 
 - Companion settings and per-server dinosaur profiles.
 - Local map/OCR screenshots, crops and rolling diagnostic files.
 - The local game/config files read by supported Companion features.
+- Prime Tracker per-life progress and local growth samples in telemetry-capable builds.
+- Bug-report reply ownership keys. The backend stores only a hash of each reply key.
 - Second Screen pairing information and PC-to-phone map state. Second Screen is served directly across the user's local network and is not routed through a Companion cloud relay.
+
+## Optional technical telemetry — v0.9.20.42+
+
+Starting with v0.9.20.42, Evrima Companion can send privacy-minimised technical telemetry to help diagnose compatibility problems, crashes and feature failures across different tester PCs.
+
+Telemetry is **off by default** and requires an explicit user choice. The choice can be changed later in **Settings → Privacy & telemetry**.
+
+The Settings page includes **View exactly what is collected**, which shows the current technical snapshot before it is sent.
+
+When enabled, the technical snapshot can include:
+
+- A randomly generated Companion installation UUID. It is not derived from hardware.
+- Companion version and telemetry schema version.
+- Windows version/build and processor architecture.
+- CPU model, GPU model(s) and installed RAM.
+- Display resolution, DPI/scaling information and, when already known to Companion, The Isle game resolution.
+- Companion language.
+- Short bounded technical/feature events such as application start, feature use or telemetry state changes.
+
+Telemetry does **not intentionally include**:
+
+- Name, email address or Windows username.
+- Computer name, MAC address, drive/BIOS/GPU serial numbers or a hardware fingerprint.
+- Steam or Epic Online Services account identity.
+- Map coordinates, location history, waypoints or Party codes.
+- Party/Friend messages or shared location content.
+- Screenshots, OCR images or screen captures.
+- Personal file contents or file listings.
+- Bug-report descriptions unless the user separately submits a bug report.
+
+Raw telemetry event rows are automatically removed after **90 days**. Installation summary records that have not contacted the service for **365 days** are removed automatically. Turning telemetry off stops future telemetry submissions.
+
+Supabase hosts the Companion telemetry backend. Standard network infrastructure may process connection information such as an IP address while handling a request, but Evrima Companion does not intentionally place an IP address into its telemetry payload or telemetry tables.
+
+A persistent random installation identifier is used to distinguish one installation from another over time. It is deliberately random and not generated from hardware identifiers.
 
 ## Bug reports
 
 Bug reports are submitted only when the user presses **Submit report**.
 
-The report always contains the information the user types into the form, including the optional tester/display name, category, problem description and reproduction steps.
+The report contains the information the user types into the form, including the optional tester/display name, category, problem description and reproduction steps.
 
-A sanitized diagnostic snapshot is **optional and off by default**. The user can preview the exact snapshot before sending it. If enabled, the snapshot can include:
+Where the reporter offers a sanitized diagnostic snapshot, it is intended to contain only bounded technical information relevant to troubleshooting. Depending on the build and the selected reporting options, this can include:
 
 - Companion and Windows/runtime information;
 - recent application/error state;
@@ -27,11 +64,27 @@ A sanitized diagnostic snapshot is **optional and off by default**. The user can
 
 The sanitizer removes or masks known passwords, tokens, API/service-role style values, publishable client keys, the Windows home path and Windows username before submission. Diagnostics are intentionally bounded in size and do not upload the complete rolling diagnostic archive.
 
-If the diagnostic option is left disabled, the random installation identifier and diagnostic snapshot are not sent with that report.
-
 Bug reports are sent to the project's Supabase backend. Standard network information such as the source IP address may also be processed by Supabase as part of providing the service.
 
 Do not type passwords, account credentials, private access tokens or other secrets into a bug report.
+
+## Bug-report acknowledgements and conversations — v0.9.20.42+
+
+From v0.9.20.42, every successfully submitted report receives an automatic acknowledgement and is attached to a private in-app report thread.
+
+Each report receives a random local reply key. The Companion keeps that key on the originating installation; Supabase stores only its SHA-256 hash with the report. Companion uses the `BUG-XXXXXXXX` report number plus the private local key to prove that the installation owns the thread.
+
+This means that knowing another user's report number alone is not enough to read or post to that report conversation.
+
+A report thread can contain:
+
+- automatic Companion/system acknowledgements;
+- developer replies; and
+- follow-up messages deliberately typed by the tester.
+
+Tester follow-up messages remain attached to the existing report so the user does not need to file another bug report simply to answer a developer question.
+
+Developer replies cannot remotely pull new diagnostics, screenshots, files or other data from the user's PC. If more information is requested, the tester chooses what to type or explicitly send.
 
 ## Party / Friends
 
@@ -43,11 +96,13 @@ Leave the Party/Friend room to stop sending new Party/Friend state.
 
 ### GitHub
 
-Starting with v0.9.20.35, Evrima Companion can check the public GitHub Releases feed and download update files from GitHub. Standard web-request information such as IP address and request metadata is processed by GitHub in the normal course of serving those requests.
+The public GitHub repository provides release/download information and the temporary public bootstrap tester package. Standard web-request information such as IP address and request metadata is processed by GitHub in the normal course of serving those requests.
 
-### Supabase transition source
+### Supabase Stable update channel
 
-During the v0.9.20.35 transition, Supabase remains an update source/fallback so installations that pre-date GitHub update support can receive the bridge release. Supabase continues to be used for Party/Friends and bug reports after update binaries move to GitHub.
+Installed Companion builds use Supabase for the Stable application update channel. Update checks can therefore contact Supabase even when telemetry is disabled; telemetry consent is separate from the updater.
+
+The GitHub bootstrap ZIP does not need to be rebuilt for each normal application update.
 
 ## VulnonaMAP / Vulnona Map Overlay
 
@@ -55,13 +110,15 @@ Map pages/resources are provided by VulnonaMAP and the separately licensed Vulno
 
 Second Screen may proxy the public map resources needed by the phone browser through the user's PC over the local network. This is used so the phone map and Companion state can share the local Second Screen origin.
 
+Prime Tracker can refresh known Gateway zone geometry from VulnonaMAP when available and use a bundled cached fallback if the live refresh cannot be reached.
+
 ## Epic Online Services
 
 The server browser uses public/session-discovery infrastructure associated with The Isle: Evrima to retrieve server information. The Companion does not request or bypass official-server RCON credentials.
 
 ## PresentMon
 
-If the user explicitly installs or updates PresentMon through the Companion, it is downloaded from its official GitHub release source. PresentMon is used only by the currently work-in-progress optimiser feature.
+If the user explicitly installs or updates PresentMon through the Companion, it is downloaded from its official GitHub release source. PresentMon is used only by work-in-progress optimiser/performance features. Local PresentMon performance files are separate from the optional Supabase telemetry described above.
 
 ## What Evrima Companion does not intentionally do
 
@@ -76,16 +133,18 @@ If the user explicitly installs or updates PresentMon through the Companion, it 
 
 GitHub, Supabase, VulnonaMAP, Epic Online Services and other third-party services operate under their own privacy terms. Evrima Companion cannot control the independent logging or retention practices of those services.
 
-## Changes
-
-This notice may be updated as the Companion changes. A release should ship the privacy notice that describes that release's behaviour.
-
 ## Retention and privacy requests
 
-Evrima Companion does not require a Companion account. Party/Friend location updates are intended as live room state rather than a permanent location-history feature. Bug-report records and any diagnostics the user chooses to attach are retained only while they remain useful for investigating defects, validating fixes, preventing duplicate reports, or maintaining necessary release history; they may be deleted or de-identified earlier. A fixed automated retention period is not currently configured.
+Evrima Companion does not require a Companion account. Party/Friend location updates are intended as live room state rather than a permanent location-history feature.
 
-To request access to or deletion of a bug report you submitted, use **Report Bug**, choose **Other**, write `PRIVACY REQUEST` at the start of the description, include the `BUG-XXXXXXXX` reference(s) you want reviewed, and leave diagnostics disabled unless they are genuinely needed for the request. Do not post private information in a public GitHub issue.
+Telemetry retention is described above. Bug-report records, report-thread messages and any diagnostics the user chooses to submit are retained while they remain useful for investigating defects, validating fixes, preventing duplicate reports or maintaining necessary release history; they may be deleted or de-identified earlier.
+
+To request access to or deletion of a bug report you submitted, use **Report Bug**, choose **Other**, write `PRIVACY REQUEST` at the start of the description, and include the relevant `BUG-XXXXXXXX` reference(s). Do not post private information in a public GitHub issue.
 
 Because the Companion normally has no user account and deliberately minimizes identifying information, the project may be unable to identify data as belonging to a particular person unless the requester provides the relevant report reference or other information sufficient to locate it.
 
 External providers such as Supabase and GitHub may process normal service/network logs under their own privacy terms and retention policies, including processing in countries outside the user's own country.
+
+## Changes
+
+This notice may be updated as the Companion changes. A release should ship the privacy notice that describes that release's behaviour.
