@@ -18,7 +18,10 @@ Evrima Companion is an unofficial Windows companion utility for **The Isle: Evri
 
 **Current public GitHub tester/bootstrap: v0.9.20.40.** Installed testers receive normal application updates through the **Supabase Stable** channel, so the large GitHub bootstrap ZIP does not need to be rebuilt for every application update.
 
-**Current development candidate: v0.9.20.42 — not yet published as Stable.** It adds Prime Tracker, opt-in technical telemetry, automatic bug-report acknowledgements and secure two-way bug-report conversations. The public GitHub bootstrap remains v0.9.20.40 until there is a reason to replace the bootstrap kit itself.
+> [!IMPORTANT]
+> **Check for updates immediately after installing.** The GitHub download is the v0.9.20.40 bootstrap and may not be the newest Companion build. After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion. **Current Stable: v0.9.20.42.**
+
+**Current Stable: v0.9.20.42.** It adds Prime Tracker, opt-in technical telemetry, automatic bug-report acknowledgements, secure two-way bug-report conversations and improved required-update handling. The public GitHub bootstrap remains v0.9.20.40 until there is a reason to replace the bootstrap kit itself.
 
 ## Quick feature overview
 
@@ -30,9 +33,9 @@ Evrima Companion is an unofficial Windows companion utility for **The Isle: Evri
 | **Party / Friends** | Share live positions, individual trails, markers and selected Survival Vitals with your group. |
 | **Survival Vitals** | Compact HUD for Health, Growth, Food and Water with automatic active-character detection. |
 | **Second Screen** | Use a phone or tablet as a live Companion map over your local Wi-Fi/LAN. |
-| **Prime Tracker** | **v0.9.20.42 candidate:** automatic Sanctuary/Migration/Patrol visit tracking plus growth-rate/ETA estimates. |
-| **Bug Report Threads** | **v0.9.20.42 candidate:** automatic acknowledgement, developer replies and tester follow-ups attached to one `BUG-XXXXXXXX`. |
-| **Optional Telemetry** | **v0.9.20.42 candidate:** opt-in, inspectable technical compatibility data with no telemetry sent before consent. |
+| **Prime Tracker** | Automatic Sanctuary/Migration/Patrol visit tracking plus growth-rate/ETA estimates. |
+| **Bug Report Threads** | Automatic acknowledgement, developer replies and tester follow-ups attached to one `BUG-XXXXXXXX`. |
+| **Optional Telemetry** | Opt-in, inspectable technical compatibility data with no telemetry sent before consent. |
 | **Languages & Appearance** | Multiple interface languages plus configurable UI accent colour. |
 | **Graphics / Optimiser** | Experimental work remains in development; the WIP tabs are kept disabled/hidden in normal tester use. |
 
@@ -49,6 +52,10 @@ The GitHub tester package is the **initial installation route**. Once Companion 
 3. Extract the entire ZIP to a normal folder.
 4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
 5. Wait while the normal Companion executable is built locally and the install process starts automatically.
+6. **Important:** when Companion opens, go to **Updates → Check for updates** and install the newest Stable version before you start testing or using it.
+
+> [!IMPORTANT]
+> **Do not assume the version in the GitHub ZIP is the newest version.** GitHub provides the bootstrap installer; normal Companion releases are delivered through the built-in Stable updater.
 
 **Python is not required.** The tester package includes its own private build runtime.
 
@@ -111,7 +118,7 @@ Survival Vitals is a separate compact HUD that follows the character you are cur
 - Includes manual **Refresh** and **Close** controls and can be reopened from Companion.
 - Failed/partial character-data reads are retried automatically instead of leaving the HUD permanently stuck.
 
-### Prime Tracker — v0.9.20.42 development candidate
+### Prime Tracker — v0.9.20.42 Stable
 
 Prime Tracker uses the same live Gateway coordinates already used by the map rather than creating a second location system.
 
@@ -133,7 +140,7 @@ Prime rules are game/community data and may change with game patches; the game r
 - Works while the desktop overlay is open or independently of the desktop overlay.
 - Receives your latest map position and displays Party/Friend markers and trails.
 
-### Bug reports, acknowledgements & replies — v0.9.20.42 development candidate
+### Bug reports, acknowledgements & replies — v0.9.20.42 Stable
 
 The built-in bug reporter uses private project reports rather than requiring testers to post diagnostics publicly.
 
@@ -146,7 +153,7 @@ The built-in bug reporter uses private project reports rather than requiring tes
 
 See [SUPPORT.md](SUPPORT.md) for reporting guidance.
 
-### Optional technical telemetry — v0.9.20.42 development candidate
+### Optional technical telemetry — v0.9.20.42 Stable
 
 Telemetry is **off by default** and requires an explicit user choice.
 
