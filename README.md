@@ -60,12 +60,12 @@ See the [public testing changelog](CHANGELOG.md) for version-by-version details.
 
 ## Feature guides
 
-- [Prime Tracker — zones, growth tracking and ETA](PRIME_TRACKER.md)
-- [Survival Vitals — Health, Growth, Food, Water and Prime ETA](SURVIVAL_VITALS.md)
-- [Live Map & Location Tools — Gateway map, Asset Location and waypoints](MAP.md)
-- [Party / Friends — shared locations, trails and vitals](PARTY.md)
-- [Second Screen — phone/tablet map over local Wi-Fi/LAN](SECOND_SCREEN.md)
-- [Frequently Asked Questions](FAQ.md)
+- [Prime Tracker — zones, growth tracking and ETA](docs/PRIME_TRACKER.md)
+- [Survival Vitals — Health, Growth, Food, Water and Prime ETA](docs/SURVIVAL_VITALS.md)
+- [Live Map & Location Tools — Gateway map, Asset Location and waypoints](docs/MAP.md)
+- [Party / Friends — shared locations, trails and vitals](docs/PARTY.md)
+- [Second Screen — phone/tablet map over local Wi-Fi/LAN](docs/SECOND_SCREEN.md)
+- [Frequently Asked Questions](docs/FAQ.md)
 
 ---
 
@@ -244,12 +244,12 @@ Whenever Companion opens normally, use its built-in **Report Bug** page. If Comp
 
 - [Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 - [Public testing changelog](CHANGELOG.md)
-- [Prime Tracker guide](PRIME_TRACKER.md)
-- [Survival Vitals guide](SURVIVAL_VITALS.md)
-- [Live Map & Location guide](MAP.md)
-- [Party / Friends guide](PARTY.md)
-- [Second Screen guide](SECOND_SCREEN.md)
-- [Frequently Asked Questions](FAQ.md)
+- [Prime Tracker guide](docs/PRIME_TRACKER.md)
+- [Survival Vitals guide](docs/SURVIVAL_VITALS.md)
+- [Live Map & Location guide](docs/MAP.md)
+- [Party / Friends guide](docs/PARTY.md)
+- [Second Screen guide](docs/SECOND_SCREEN.md)
+- [Frequently Asked Questions](docs/FAQ.md)
 - [Tester build instructions](TESTER_BUILD.md)
 - [Support](SUPPORT.md)
 - [Privacy](PRIVACY.md)
