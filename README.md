@@ -273,7 +273,7 @@ Whenever Companion opens normally, use its built-in **Report Bug** page. If Comp
 - [Tester build instructions](TESTER_BUILD.md)
 - [Support](SUPPORT.md)
 - [Privacy](PRIVACY.md)
-- [Licence](LICENSE.md)
+- [Licence](LICENSE)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ---
