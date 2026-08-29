@@ -24,6 +24,26 @@ If you are looking for a **The Isle Evrima companion app**, **Evrima map compani
 > [!IMPORTANT]
 > **Current Stable: v0.9.20.47.** The GitHub download is the v0.9.20.40 bootstrap. After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion.
 
+## Screenshots
+
+### In-game overlays
+
+[![Evrima Companion map overlay and Survival Vitals running in The Isle: Evrima](docs/screenshots/evrima-companion-gameplay.png)](docs/screenshots/evrima-companion-gameplay.png)
+
+*Desktop map overlay and Survival Vitals running alongside The Isle: Evrima, including live growth data and Prime ETA.*
+
+### Server browser & dinosaur profile
+
+[![Evrima Companion server browser and dinosaur profile](docs/screenshots/evrima-companion-servers.png)](docs/screenshots/evrima-companion-servers.png)
+
+*Official server browser with live player/ping information and the saved dinosaur profile panel.*
+
+### Map controls
+
+[![Evrima Companion map controls](docs/screenshots/evrima-companion-map.png)](docs/screenshots/evrima-companion-map.png)
+
+*Desktop map controls, manual location tools, overlay size/opacity settings and Survival Vitals controls.*
+
 ## What Evrima Companion does
 
 | Feature | What it does |
@@ -253,7 +273,7 @@ Whenever Companion opens normally, use its built-in **Report Bug** page. If Comp
 - [Tester build instructions](TESTER_BUILD.md)
 - [Support](SUPPORT.md)
 - [Privacy](PRIVACY.md)
-- [Licence](LICENSE)
+- [Licence](LICENSE.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ---
