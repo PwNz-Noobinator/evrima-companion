@@ -2,6 +2,15 @@
 
 This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
 
+## v0.9.20.48 — Stable — 1 September 2026
+
+- Repaired telemetry installation identity so telemetry no longer reuses Party/Friends player identity as the installation identifier.
+- Added a dedicated per-machine random telemetry UUID stored in local application data and kept separate from distributable release files.
+- Added one-time telemetry identity migration support so upgraded installations can move to a new unique ID while retaining the previous ID for continuity/history.
+- Added backend migration records and a `telemetry_identity_migrated` event so duplicated legacy identities can be detected and separated after upgrade.
+- Added release-package safeguards that fail the build if runtime identity/settings state is accidentally included in a distributable package.
+- Added regression coverage for unique fresh-install identities and update-time identity persistence/migration.
+
 ## v0.9.20.47 — Stable — 28 August 2026
 
 - OCR is now **disabled and locked off** in the normal UI/config while the non-OCR live location path is used for current map and Prime functionality.
