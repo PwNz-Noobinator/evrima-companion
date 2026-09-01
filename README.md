@@ -5,7 +5,7 @@
 **Unofficial Windows companion app for The Isle: Evrima — server browser, live map tools, Survival Vitals, Prime Tracker, growth ETA, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.47-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.48-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -22,7 +22,7 @@ If you are looking for a **The Isle Evrima companion app**, **Evrima map compani
 **Current public GitHub tester/bootstrap: v0.9.20.40.** Installed testers receive normal application updates through the **Supabase Stable** channel, so the large GitHub bootstrap ZIP does not need to be rebuilt for every application update.
 
 > [!IMPORTANT]
-> **Current Stable: v0.9.20.47.** The GitHub download is the v0.9.20.40 bootstrap. After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion.
+> **Current Stable: v0.9.20.48.** The GitHub download is the v0.9.20.40 bootstrap. After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion.
 
 ## Screenshots
 
@@ -59,10 +59,13 @@ If you are looking for a **The Isle Evrima companion app**, **Evrima map compani
 | **Optional Telemetry** | Opt-in, inspectable compatibility and content-free feature-use telemetry. |
 | **Languages & Appearance** | Multiple interface languages and configurable UI accent colour. |
 
-### Current Stable highlights — v0.9.20.47
+### Current Stable highlights — v0.9.20.48
 
 Recent Stable releases added and hardened:
 
+- **Telemetry identity repair in v0.9.20.48**: each machine now uses its own dedicated random telemetry installation UUID, separate from Party/Friends identity.
+- Existing telemetry-enabled installations perform a one-time identity migration that preserves the previous random install ID as a continuity link while switching to the corrected per-machine ID.
+- Release packaging now guards against accidentally shipping runtime telemetry identity/settings files.
 - **Prime Tracker** with automatic Sanctuary, Migration, Mass Migration and Patrol-zone visit detection.
 - Prime movement-segment checks with tolerance for circle, polygon and open-path zone geometry.
 - Observed growth-rate estimates with **ETA to 75% first**, then **ETA to 100%** after reaching 75% growth in Survival Vitals/Party displays.
@@ -214,6 +217,8 @@ Telemetry is **off by default** and requires an explicit user choice.
 When enabled, Companion can submit privacy-minimised compatibility information such as Companion version, Windows version/build, CPU/GPU models, installed RAM, display resolution/scaling, language and known game resolution, plus bounded technical events.
 
 Consent is stored independently from ordinary UI settings. A new consent prompt is required only if the telemetry consent-policy version changes.
+
+From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID that is separate from Party/Friends identity. Existing telemetry-enabled installations perform a one-time migration to the corrected identity and can retain the previous random installation ID as a continuity link.
 
 Feature-use events are content-free and do not include map coordinates, Party codes, server names, dinosaur names or user-entered content.
 
