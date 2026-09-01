@@ -2,7 +2,7 @@
 
 Evrima Companion is designed to keep normal game, OCR and map processing local wherever practical. The project does not sell user data.
 
-The public GitHub bootstrap is currently **v0.9.20.40**. Sections below that refer to **v0.9.20.42** describe the current development candidate and apply once that build is published and installed.
+The public GitHub bootstrap is currently **v0.9.20.40**. Installed testers receive newer application versions through the Supabase Stable update channel.
 
 ## Data that normally stays on the user's PC
 
@@ -12,6 +12,7 @@ The public GitHub bootstrap is currently **v0.9.20.40**. Sections below that ref
 - Prime Tracker per-life progress and local growth samples in telemetry-capable builds.
 - Bug-report reply ownership keys. The backend stores only a hash of each reply key.
 - Second Screen pairing information and PC-to-phone map state. Second Screen is served directly across the user's local network and is not routed through a Companion cloud relay.
+- The current random telemetry installation UUID and any one-time previous-installation UUID retained locally for telemetry identity migration.
 
 ## Optional technical telemetry — v0.9.20.42+
 
@@ -31,6 +32,8 @@ When enabled, the technical snapshot can include:
 - Companion language.
 - Short bounded technical/feature events such as application start, feature use or telemetry state changes.
 
+From v0.9.20.48, telemetry installation identity is kept separate from Party/Friends player identity. A dedicated random per-machine telemetry UUID is stored in local application data rather than in the distributable package. On the first v0.9.20.48+ identity migration, Companion can send the previous random installation UUID together with the new random installation UUID so the backend can preserve continuity and detect legacy duplicate identities. This migration link is not derived from hardware and does not add a hardware fingerprint.
+
 Telemetry does **not intentionally include**:
 
 - Name, email address or Windows username.
@@ -46,7 +49,7 @@ Raw telemetry event rows are automatically removed after **90 days**. Installati
 
 Supabase hosts the Companion telemetry backend. Standard network infrastructure may process connection information such as an IP address while handling a request, but Evrima Companion does not intentionally place an IP address into its telemetry payload or telemetry tables.
 
-A persistent random installation identifier is used to distinguish one installation from another over time. It is deliberately random and not generated from hardware identifiers.
+A persistent random installation identifier is used to distinguish one installation from another over time. It is deliberately random and not generated from hardware identifiers. v0.9.20.48 introduced a one-time identity migration so existing installations can move to a corrected per-machine identifier while retaining a previous random identifier only as a continuity link.
 
 ## Bug reports
 
