@@ -15,6 +15,14 @@
 
 ---
 
+> [!CAUTION]
+> ## UPDATE REQUIRED AFTER FIRST LAUNCH
+> The GitHub download is currently the **v0.9.20.40 bootstrap**, while the current Stable version is **v0.9.20.48**.
+>
+> **Please do not test or judge Evrima Companion while still on v0.9.20.40.** That bootstrap is several releases behind and is missing major features, fixes and compatibility improvements.
+>
+> After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version. If you are still on **v0.9.20.40**, you are not running the current Companion.
+
 Evrima Companion is an unofficial Windows utility built specifically for **The Isle: Evrima**. It combines an Evrima server browser, dinosaur profiles, live map-location tools, **Survival Vitals**, **Prime Tracker**, growth ETA estimates, Party/Friends tracking and a phone/tablet **Second Screen** in one application.
 
 If you are looking for a **The Isle Evrima companion app**, **Evrima map companion**, **Evrima growth tracker**, **Prime Tracker**, **Survival Vitals HUD**, **dinosaur growth ETA**, **Party location tracker** or **Second Screen map**, those functions are part of the same Companion rather than separate tools.
@@ -22,7 +30,7 @@ If you are looking for a **The Isle Evrima companion app**, **Evrima map compani
 **Current public GitHub tester/bootstrap: v0.9.20.40.** Installed testers receive normal application updates through the **Supabase Stable** channel, so the large GitHub bootstrap ZIP does not need to be rebuilt for every application update.
 
 > [!IMPORTANT]
-> **Current Stable: v0.9.20.48.** The GitHub download is the v0.9.20.40 bootstrap. After Companion opens for the first time, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion.
+> **Current Stable: v0.9.20.48.** The GitHub download is only the initial v0.9.20.40 bootstrap. **Updating to the newest Stable version is an essential part of installation.**
 
 ## Screenshots
 
@@ -103,10 +111,11 @@ The GitHub tester package is the **initial installation route**. Once Companion 
 3. Extract the entire ZIP to a normal folder.
 4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
 5. Wait while the normal Companion executable is built locally and the install process starts automatically.
-6. When Companion opens, go to **Updates → Check for updates** and install the newest Stable version.
+6. **REQUIRED:** When Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing or using Companion.
+7. Confirm the version shown in Companion is newer than **v0.9.20.40**. The current Stable version is **v0.9.20.48**.
 
-> [!IMPORTANT]
-> **Do not assume the version in the GitHub ZIP is the newest version.** GitHub provides the bootstrap installer; normal Companion releases are delivered through the built-in Stable updater.
+> [!CAUTION]
+> **Do not stop at v0.9.20.40.** It is the GitHub bootstrap, not the current feature set. Staying on it means missing major fixes and newer features including current Prime Tracker, Survival Vitals, map/location, updater and telemetry improvements.
 
 **Python is not required.** The tester package includes its own private build runtime.
 
@@ -245,7 +254,7 @@ You can also change the Companion UI accent colour from Settings.
 - Releases explicitly marked mandatory by the Stable channel use the required-update flow.
 - Emergency rollback handling requires explicit rollback lineage in Stable metadata.
 
-The already-published v0.9.20.40 bootstrap predates some newer update-flow improvements. Once a user reaches a newer Stable client, subsequent updates use the current updater behaviour.
+The already-published v0.9.20.40 bootstrap predates some newer update-flow improvements. **For that reason, v0.9.20.40 users should manually use Updates → Check for updates and accept the newest Stable release.** Once a user reaches a newer Stable client, subsequent updates use the current updater behaviour.
 
 ---
 
