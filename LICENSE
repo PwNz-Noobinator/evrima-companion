@@ -25,7 +25,7 @@ Evrima Companion uses and/or redistributes third-party software under separate l
 
 In particular, where an Evrima Companion build contains Qt/PySide6 under the GNU Lesser General Public License version 3 (LGPLv3), recipients retain all rights required by that licence, including the right to study, replace and modify the LGPL-covered library and to reverse engineer the Combined Work when necessary for debugging modifications to the LGPL-covered library. Any prohibition elsewhere in this licence must be read subject to those LGPL rights.
 
-See THIRD_PARTY_NOTICES.md, QT_LGPL_COMPLIANCE.md and the supplied licences directory.
+See docs/THIRD_PARTY_NOTICES.md, QT_LGPL_COMPLIANCE.md and the supplied licences directory.
 
 7. Ownership
 Evrima Companion is licensed, not sold. All rights in project-owned material that are not expressly granted by this licence are reserved by the copyright holder.
