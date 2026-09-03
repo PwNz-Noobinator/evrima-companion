@@ -16,11 +16,15 @@ The public GitHub bootstrap is currently **v0.9.20.40**. Installed testers recei
 
 ## Optional technical telemetry — v0.9.20.42+
 
-Starting with v0.9.20.42, Evrima Companion can send privacy-minimised technical telemetry to help diagnose compatibility problems, crashes and feature failures across different tester PCs.
+Telemetry is **off by default** and requires an explicit user choice. It can be changed later in **Settings → Privacy & telemetry**.
 
-Telemetry is **off by default** and requires an explicit user choice. The choice can be changed later in **Settings → Privacy & telemetry**.
+### Why telemetry is useful
 
-The Settings page includes **View exactly what is collected**, which shows the current technical snapshot before it is sent.
+If enabled, telemetry helps us see how Evrima Companion is working on different PCs, which features are being used and where technical problems may be happening during public testing. It helps identify compatibility or feature issues that might otherwise go unnoticed and shows where improvements are needed.
+
+It is not intended to track what you do in The Isle. Map coordinates, location history, Party messages, screenshots, Steam/EOS identity and personal files are not intentionally included.
+
+The Settings page includes **View exactly what is collected**, so the current technical snapshot can be inspected before telemetry is enabled.
 
 When enabled, the technical snapshot can include:
 
@@ -73,19 +77,11 @@ Do not type passwords, account credentials, private access tokens or other secre
 
 ## Bug-report acknowledgements and conversations — v0.9.20.42+
 
-From v0.9.20.42, every successfully submitted report receives an automatic acknowledgement and is attached to a private in-app report thread.
+Every successfully submitted report receives an automatic acknowledgement and is attached to a private in-app report thread.
 
-Each report receives a random local reply key. The Companion keeps that key on the originating installation; Supabase stores only its SHA-256 hash with the report. Companion uses the `BUG-XXXXXXXX` report number plus the private local key to prove that the installation owns the thread.
+Each report receives a random local reply key. Companion keeps that key on the originating installation; Supabase stores only its SHA-256 hash with the report. Companion uses the `BUG-XXXXXXXX` report number plus the private local key to prove that the installation owns the thread.
 
-This means that knowing another user's report number alone is not enough to read or post to that report conversation.
-
-A report thread can contain:
-
-- automatic Companion/system acknowledgements;
-- developer replies; and
-- follow-up messages deliberately typed by the tester.
-
-Tester follow-up messages remain attached to the existing report so the user does not need to file another bug report simply to answer a developer question.
+Knowing another user's report number alone is therefore not enough to read or post to that report conversation.
 
 Developer replies cannot remotely pull new diagnostics, screenshots, files or other data from the user's PC. If more information is requested, the tester chooses what to type or explicitly send.
 
@@ -111,9 +107,7 @@ The GitHub bootstrap ZIP does not need to be rebuilt for each normal application
 
 Map pages/resources are provided by VulnonaMAP and the separately licensed Vulnona Map Overlay. The Companion does not claim ownership of those services or components.
 
-Second Screen may proxy the public map resources needed by the phone browser through the user's PC over the local network. This is used so the phone map and Companion state can share the local Second Screen origin.
-
-Prime Tracker can refresh known Gateway zone geometry from VulnonaMAP when available and use a bundled cached fallback if the live refresh cannot be reached.
+Second Screen may proxy the public map resources needed by the phone browser through the user's PC over the local network. Prime Tracker can refresh known Gateway zone geometry from VulnonaMAP when available and use a bundled cached fallback if the live refresh cannot be reached.
 
 ## Epic Online Services
 
@@ -121,7 +115,7 @@ The server browser uses public/session-discovery infrastructure associated with 
 
 ## PresentMon
 
-If the user explicitly installs or updates PresentMon through the Companion, it is downloaded from its official GitHub release source. PresentMon is used only by work-in-progress optimiser/performance features. Local PresentMon performance files are separate from the optional Supabase telemetry described above.
+If the user explicitly installs or updates PresentMon through Companion, it is downloaded from its official GitHub release source. PresentMon is used only by work-in-progress optimiser/performance features. Local PresentMon performance files are separate from the optional Supabase telemetry described above.
 
 ## What Evrima Companion does not intentionally do
 
@@ -140,14 +134,14 @@ GitHub, Supabase, VulnonaMAP, Epic Online Services and other third-party service
 
 Evrima Companion does not require a Companion account. Party/Friend location updates are intended as live room state rather than a permanent location-history feature.
 
-Telemetry retention is described above. Bug-report records, report-thread messages and any diagnostics the user chooses to submit are retained while they remain useful for investigating defects, validating fixes, preventing duplicate reports or maintaining necessary release history; they may be deleted or de-identified earlier.
+Telemetry retention is described above. Bug-report records, report-thread messages and diagnostics the user chooses to submit are retained while useful for investigating defects, validating fixes, preventing duplicate reports or maintaining necessary release history; they may be deleted or de-identified earlier.
 
 To request access to or deletion of a bug report you submitted, use **Report Bug**, choose **Other**, write `PRIVACY REQUEST` at the start of the description, and include the relevant `BUG-XXXXXXXX` reference(s). Do not post private information in a public GitHub issue.
 
-Because the Companion normally has no user account and deliberately minimizes identifying information, the project may be unable to identify data as belonging to a particular person unless the requester provides the relevant report reference or other information sufficient to locate it.
+Because Companion normally has no user account and deliberately minimizes identifying information, the project may be unable to identify data as belonging to a particular person unless the requester provides the relevant report reference or other information sufficient to locate it.
 
 External providers such as Supabase and GitHub may process normal service/network logs under their own privacy terms and retention policies, including processing in countries outside the user's own country.
 
 ## Changes
 
-This notice may be updated as the Companion changes. A release should ship the privacy notice that describes that release's behaviour.
+This notice may be updated as Companion changes. A release should ship the privacy notice that describes that release's behaviour.
