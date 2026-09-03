@@ -1,55 +1,56 @@
-# Evrima Companion v0.9.20.40 — Public Tester
+# Evrima Companion v0.9.20.40 — Public Tester Bootstrap
 
-This is the first wider public tester package for Evrima Companion.
+This package is the temporary public bootstrap for Evrima Companion.
 
-Evrima Companion is still **pre-release software**. This build is being shared to expand testing while the normal digitally signed installer is being prepared.
+> [!IMPORTANT]
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.48**.
 
 ## Install
 
-1. Download **`Evrima-Companion-v0.9.20.40-Public-Tester.zip`** from the Assets section below.
-2. **Before extracting it, right-click the ZIP → Properties. If Windows shows an `Unblock` checkbox, tick it and click Apply.**
-3. Extract the **entire ZIP** to a normal folder.
-4. Double-click **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
-5. Wait while the Companion EXE is built locally on your PC.
-6. The normal Companion install process will start automatically, create the desktop/Start Menu shortcuts and launch Companion.
+1. Download `Evrima-Companion-v0.9.20.40-Public-Tester.zip` from the Assets section.
+2. Before extracting, right-click the ZIP → **Properties**. If Windows shows **Unblock**, tick it and click **Apply**.
+3. Extract the entire ZIP.
+4. Run **`BUILD AND INSTALL EVRIMA COMPANION.cmd`**.
+5. Wait for the local build and installation to finish.
+6. Open **Updates → Check for updates** in Companion and install the newest Stable version.
 
-If you already extracted the ZIP and Windows refuses to run the launcher, check **Properties** on the downloaded ZIP or the blocked launcher for **Unblock**, use it if shown, then extract/run again.
+**Python is not required.** The tester ZIP contains its own private build runtime.
 
-**You do not need Python installed.** The tester ZIP contains its own private build runtime and does not add Python to your Windows PATH.
+## What Companion includes
 
-Once Companion is installed, normal updates are delivered through Companion's **Supabase update channel**. You do not need to rebuild the app for every update.
+Current Stable builds include:
 
-## Main features
+- Official and Unofficial Evrima server browser.
+- Saved dinosaur profiles.
+- Live desktop Gateway map and waypoints.
+- Survival Vitals HUD for Health, Growth, Food and Water.
+- Prime Tracker with zone progress and growth ETA.
+- Party/Friends location and selected vitals sharing.
+- Phone/tablet Second Screen over the local network.
+- Built-in private bug reports and reply threads.
+- Multiple interface languages and appearance settings.
+- Optional privacy-minimised technical telemetry.
 
-- Official and unofficial Evrima server browser with search, region/full/empty filters and favourites.
-- Saved per-server dinosaur profiles.
-- Desktop Vulnona map overlay.
-- Automatic in-game location OCR plus manual-coordinate fallback.
-- Saved waypoints.
-- Party/Friends with live map positions, individual trails and custom markers.
-- **Party Survival Vitals sharing** so group members can see each other's dinosaur, server, Health, Growth, Food and Water.
-- Survival Vitals HUD with automatic active-character detection, Lock/Unlock, resizing, Refresh and Close/reopen controls.
-- Phone/tablet **Second Screen** map with QR-code connection over the local network.
-- Multiple interface languages and UI accent settings.
-- Built-in automatic updates and bug reporting.
-- Graphics/adaptive optimisation tools included as **Work In Progress** testing features.
+OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Windows security notice
+## Optional telemetry
 
-This tester build is currently unsigned. Microsoft Defender SmartScreen may display an unrecognized-app warning and Windows 11 Smart App Control may still block unknown unsigned code.
+Telemetry is off by default. If enabled, it helps us see how Companion works across different PCs, which features are being used and where technical problems may be happening during public testing.
 
-Using Windows' **Unblock** option only removes the downloaded-file mark from the ZIP/file you intentionally downloaded. It does not disable Defender, SmartScreen or Smart App Control.
+It does not intentionally include map coordinates, screenshots, Steam/EOS identity, Party messages or personal files. The current payload can be inspected inside Companion before enabling it.
 
-The local-build tester package is **not guaranteed to bypass Windows security controls**. Do not disable Smart App Control, Microsoft Defender or SmartScreen solely to run Evrima Companion. If Windows blocks it without offering a normal continuation option, please report the exact Windows message.
+## Windows security
+
+The tester build is currently unsigned. SmartScreen or Smart App Control may warn or block it depending on the Windows configuration.
+
+Using Windows **Unblock** does not disable Defender, SmartScreen or Smart App Control. Do not disable Windows security protections solely to run Companion.
 
 ## Reporting bugs
 
-If Companion opens, please use the built-in **Report Bug** page whenever possible. Successful reports return a `BUG-XXXXXXXX` reference.
-
-If the tester build itself fails before Companion can open, see the repository's `SUPPORT.md` instructions.
+If Companion opens, use the built-in **Report Bug** page whenever possible. If the bootstrap fails before Companion can open, see `SUPPORT.md` in the repository.
 
 ## Checksum
 
-A SHA-256 checksum file is included as a separate Release asset for anyone who wants to verify the tester ZIP before use.
+A SHA-256 checksum file is provided as a separate Release asset.
 
 Evrima Companion is an unofficial fan-made utility and is **not affiliated with, sponsored by or endorsed by Afterthought LLC or the developers/publishers of The Isle**.
