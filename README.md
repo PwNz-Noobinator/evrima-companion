@@ -9,7 +9,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
-**[Download](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)** · **[Feature guides](#feature-guides)** · **[Changelog](CHANGELOG.md)** · **[Support](SUPPORT.md)** · **[Privacy](PRIVACY.md)**
+**[Download](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)** · **[Feature guides](#feature-guides)** · **[Changelog](CHANGELOG.md)** · **[Support](docs/SUPPORT.md)** · **[Privacy](PRIVACY.md)**
 
 </div>
 
@@ -103,7 +103,7 @@ The public v0.9.20.40 bootstrap predates newer required-update behaviour, so its
 
 If Companion opens, use the built-in **Report Bug** page whenever possible. It creates a private project report and gives you a `BUG-XXXXXXXX` reference for replies and follow-up.
 
-If the app cannot open or the bootstrap itself fails, see [SUPPORT.md](SUPPORT.md).
+If the app cannot open or the bootstrap itself fails, see [Support](docs/SUPPORT.md).
 
 Feature ideas can be posted through GitHub Discussions. Keep security-sensitive information, private diagnostics, passwords and tokens out of public issues or discussions.
 
@@ -111,16 +111,16 @@ Feature ideas can be posted through GitHub Discussions. Keep security-sensitive 
 
 Current tester builds are not yet signed with the project's future trusted code-signing certificate. SmartScreen or Smart App Control may therefore warn or block the software depending on the Windows configuration.
 
-Using **Unblock** on the downloaded ZIP does not disable Windows security protections. Do not disable Defender, SmartScreen or Smart App Control solely to run Companion. See [TESTER_BUILD.md](TESTER_BUILD.md).
+Using **Unblock** on the downloaded ZIP does not disable Windows security protections. Do not disable Defender, SmartScreen or Smart App Control solely to run Companion. See [Tester build guide](docs/TESTER_BUILD.md).
 
 ## Project information
 
 - [Public testing changelog](CHANGELOG.md)
-- [Tester build guide](TESTER_BUILD.md)
-- [Support](SUPPORT.md)
+- [Tester build guide](docs/TESTER_BUILD.md)
+- [Support](docs/SUPPORT.md)
 - [Privacy](PRIVACY.md)
 - [Security](SECURITY.md)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
+- [Third-party notices](docs/THIRD_PARTY_NOTICES.md)
 - [Licence](LICENSE)
 
 Evrima Companion is proprietary freeware for personal, non-commercial use under the repository [LICENSE](LICENSE). Third-party components retain their own licences and terms.
