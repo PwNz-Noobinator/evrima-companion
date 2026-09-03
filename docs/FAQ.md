@@ -62,13 +62,13 @@ The GitHub v0.9.20.40 package is the temporary bootstrap/build kit. Normal appli
 
 Not yet. The current public testing route is temporary while trusted code signing for the intended normal Windows installer is being prepared. Do not disable Microsoft Defender, SmartScreen or Smart App Control solely to run Companion.
 
-See [TESTER_BUILD.md](../TESTER_BUILD.md) for details.
+See [TESTER_BUILD.md](TESTER_BUILD.md) for details.
 
 ## How do I report a bug?
 
 If Companion opens, use the built-in **Report Bug** page. Successful reports receive a `BUG-XXXXXXXX` reference and support developer replies and tester follow-ups.
 
-If Companion cannot start or the temporary build kit fails before the app opens, see [SUPPORT.md](../SUPPORT.md).
+If Companion cannot start or the temporary build kit fails before the app opens, see [SUPPORT.md](SUPPORT.md).
 
 ## Where can I see recent changes?
 
