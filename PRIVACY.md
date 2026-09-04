@@ -10,9 +10,16 @@ The public GitHub bootstrap is currently **v0.9.20.40**. Installed testers recei
 - Local map/OCR screenshots, crops and rolling diagnostic files.
 - The local game/config files read by supported Companion features.
 - Prime Tracker per-life progress and local growth samples in telemetry-capable builds.
+- From v0.9.20.49 development builds, Dinosaur Life Memory: server/species, accumulated active-play time, last-seen growth/vitals, life history and the last verified live map position used for local **Where was I?** recovery.
 - Bug-report reply ownership keys. The backend stores only a hash of each reply key.
 - Second Screen pairing information and PC-to-phone map state. Second Screen is served directly across the user's local network and is not routed through a Companion cloud relay.
 - The current random telemetry installation UUID and any one-time previous-installation UUID retained locally for telemetry identity migration.
+
+## Local backup/restore — v0.9.20.49+
+
+The optional manual Companion backup contains selected local settings/state such as profiles, waypoints, Prime state, Party settings and Dinosaur Life Memory. It is created only when the user chooses **Export backup** and remains on the user's chosen local path.
+
+The backup deliberately excludes the telemetry installation identity, telemetry consent file, private bug-report reply ownership data and diagnostics/logs. Restoring a backup creates local rollback copies of files that are being replaced.
 
 ## Optional technical telemetry — v0.9.20.42+
 
@@ -140,7 +147,7 @@ To request access to or deletion of a bug report you submitted, use **Report Bug
 
 Because Companion normally has no user account and deliberately minimizes identifying information, the project may be unable to identify data as belonging to a particular person unless the requester provides the relevant report reference or other information sufficient to locate it.
 
-External providers such as Supabase and GitHub may process normal service/network logs under their own privacy terms and retention policies, including processing in countries outside the user's own country.
+External providers such as Supabase and GitHub may process normal service/network logs under their own terms and retention policies, including processing in countries outside the user's own country.
 
 ## Changes
 
