@@ -2,6 +2,21 @@
 
 This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
 
+## v0.9.20.50 — development candidate — 4 September 2026
+
+- Redesigned the main Companion UI to feel less blocky and less like a QA/debug interface.
+- Replaced the old top tab strip with a persistent left-side navigation rail and reworked page structure around clearer sections and more open spacing.
+- Reduced unnecessary boxed/card treatment and changed many secondary actions to lighter controls so pages no longer read as a grid of rectangular panels.
+- Reworked the Map page into clearer behaviour, appearance and position/setup areas.
+- Improved the Servers page and Dinosaur Profile layout so profile fields, notes and actions fit correctly at the default/minimum Companion window size.
+- Fixed default-size clipping caused by the redesigned navigation taking horizontal space away from page content.
+- Reflowed Map waypoint editing so the table can use the full page width and the selected-waypoint editor sits below it instead of forcing horizontal overflow.
+- Reworked custom title-bar controls so the existing stone-bezel minimise/maximise/close artwork remains the only visible control face, with transparent hit targets aligned over it instead of duplicate Qt buttons being drawn on top.
+- Improved title-bar control alignment and click-target consistency.
+- Moved Support and Uninstall out of the main header and into Settings to reduce header clutter.
+- Rewrote a first pass of overly technical, QA-style and engineer-facing wording into clearer player-facing language across the main Companion pages.
+- Carried forward all v0.9.20.49 persistence, Dinosaur Life Memory, crash-safe state and settings-resilience work unchanged.
+
 ## v0.9.20.49 — development candidate — 4 September 2026
 
 - Added persistent **Dinosaur Life Memory** per server so reconnecting or switching servers does not automatically reset a tracked life.
