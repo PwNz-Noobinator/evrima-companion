@@ -30,7 +30,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
-| **Dinosaur Life Memory** | v0.9.20.49 development work tracks a dinosaur life across sessions with playtime, last-known state/location and history. |
+| **Dinosaur Life Memory** | Development builds track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
 | **Party / Friends** | Share live positions, trails, markers and selected Survival Vitals with your group. |
 | **Second Screen** | Put the live Companion map on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
@@ -75,11 +75,13 @@ OCR is currently **disabled and locked off** in Stable because the current live 
 
 See the [changelog](CHANGELOG.md) for version-by-version details.
 
-## Development candidate — v0.9.20.49
+## Development candidate — v0.9.20.50
 
-v0.9.20.49 is the current persistence/data-resilience development candidate. It adds persistent Dinosaur Life Memory, cross-session active playtime, a separate session timer, last-known live position recovery, life history/statistics, crash-safe state, optional AFK-aware timing, optional local backup/restore and broader settings persistence including reopening Survival Vitals when the user left it enabled.
+v0.9.20.50 is the current development candidate. It carries forward the v0.9.20.49 persistence and Dinosaur Life Memory work, then adds a substantial UI/UX redesign focused on making Companion feel less blocky and less like a QA/debug interface.
 
-The public GitHub bootstrap remains v0.9.20.40 and the current Supabase Stable channel remains v0.9.20.48 until v0.9.20.49 is explicitly published there.
+The redesign replaces the old top-heavy tab layout with a left navigation rail, opens up page structure, reduces unnecessary boxed/card treatment, improves spacing and control hierarchy, rewrites technical player-facing copy, corrects the custom title-bar controls so they use the existing stone-bezel artwork cleanly, and fixes default-size clipping in the Server Browser/Dinosaur Profile layout and Map controls.
+
+The public GitHub bootstrap remains v0.9.20.40 and the current Supabase Stable channel remains v0.9.20.48 until v0.9.20.50 is explicitly published there.
 
 ## Optional telemetry
 
