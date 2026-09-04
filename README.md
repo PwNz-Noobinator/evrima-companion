@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.48-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.50-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.48**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.50**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -30,7 +30,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
-| **Dinosaur Life Memory** | Development builds track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
+| **Dinosaur Life Memory** | Track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
 | **Party / Friends** | Share live positions, trails, markers and selected Survival Vitals with your group. |
 | **Second Screen** | Put the live Companion map on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
@@ -67,21 +67,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.48
+## Current Stable — v0.9.20.50
 
-The current Stable line includes Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, Party/Friends improvements, Second Screen, growth ETA, private bug-report conversations and telemetry identity repair.
+v0.9.20.50 is the current Stable release. It carries forward the v0.9.20.49 persistence and Dinosaur Life Memory work, then adds a substantial UI/UX redesign focused on making Companion feel less blocky and less like a QA/debug interface.
+
+The current Stable line includes persistent Dinosaur Life Memory, cross-session active playtime, last-known state/location recovery, life history, crash-safe state, optional AFK-aware timing, optional local backup/restore, improved settings persistence, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, Party/Friends, Second Screen, private bug-report conversations and telemetry identity repair.
+
+The v0.9.20.50 redesign replaces the old top-heavy tab layout with a left navigation rail, opens up page structure, reduces unnecessary boxed/card treatment, improves spacing and control hierarchy, rewrites technical player-facing copy, corrects the custom title-bar controls so they use the existing stone-bezel artwork cleanly, and fixes default-size clipping in the Server Browser/Dinosaur Profile layout and Map controls.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
 See the [changelog](CHANGELOG.md) for version-by-version details.
-
-## Development candidate — v0.9.20.50
-
-v0.9.20.50 is the current development candidate. It carries forward the v0.9.20.49 persistence and Dinosaur Life Memory work, then adds a substantial UI/UX redesign focused on making Companion feel less blocky and less like a QA/debug interface.
-
-The redesign replaces the old top-heavy tab layout with a left navigation rail, opens up page structure, reduces unnecessary boxed/card treatment, improves spacing and control hierarchy, rewrites technical player-facing copy, corrects the custom title-bar controls so they use the existing stone-bezel artwork cleanly, and fixes default-size clipping in the Server Browser/Dinosaur Profile layout and Map controls.
-
-The public GitHub bootstrap remains v0.9.20.40 and the current Supabase Stable channel remains v0.9.20.48 until v0.9.20.50 is explicitly published there.
 
 ## Optional telemetry
 
