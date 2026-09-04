@@ -2,7 +2,7 @@
 
 This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
 
-## v0.9.20.50 — development candidate — 4 September 2026
+## v0.9.20.50 — Stable — 4 September 2026
 
 - Redesigned the main Companion UI to feel less blocky and less like a QA/debug interface.
 - Replaced the old top tab strip with a persistent left-side navigation rail and reworked page structure around clearer sections and more open spacing.
@@ -17,7 +17,7 @@ This changelog tracks user-visible changes made after the public GitHub reposito
 - Rewrote a first pass of overly technical, QA-style and engineer-facing wording into clearer player-facing language across the main Companion pages.
 - Carried forward all v0.9.20.49 persistence, Dinosaur Life Memory, crash-safe state and settings-resilience work unchanged.
 
-## v0.9.20.49 — development candidate — 4 September 2026
+## v0.9.20.49 — Stable — 4 September 2026
 
 - Added persistent **Dinosaur Life Memory** per server so reconnecting or switching servers does not automatically reset a tracked life.
 - Added total active playtime for the current dinosaur across game/Companion sessions plus a separate current-session timer.
