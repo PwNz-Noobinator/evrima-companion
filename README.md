@@ -30,6 +30,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
+| **Dinosaur Life Memory** | v0.9.20.49 development work tracks a dinosaur life across sessions with playtime, last-known state/location and history. |
 | **Party / Friends** | Share live positions, trails, markers and selected Survival Vitals with your group. |
 | **Second Screen** | Put the live Companion map on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
@@ -73,6 +74,12 @@ The current Stable line includes Prime Tracker, Survival Vitals, live non-OCR As
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
 See the [changelog](CHANGELOG.md) for version-by-version details.
+
+## Development candidate — v0.9.20.49
+
+v0.9.20.49 is the current persistence/data-resilience development candidate. It adds persistent Dinosaur Life Memory, cross-session active playtime, a separate session timer, last-known live position recovery, life history/statistics, crash-safe state, optional AFK-aware timing, optional local backup/restore and broader settings persistence including reopening Survival Vitals when the user left it enabled.
+
+The public GitHub bootstrap remains v0.9.20.40 and the current Supabase Stable channel remains v0.9.20.48 until v0.9.20.49 is explicitly published there.
 
 ## Optional telemetry
 
