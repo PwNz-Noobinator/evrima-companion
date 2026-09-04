@@ -2,6 +2,19 @@
 
 This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
 
+## v0.9.20.49 — development candidate — 4 September 2026
+
+- Added persistent **Dinosaur Life Memory** per server so reconnecting or switching servers does not automatically reset a tracked life.
+- Added total active playtime for the current dinosaur across game/Companion sessions plus a separate current-session timer.
+- Added last-seen species, server, growth/vitals and verified live map position persistence for local **Where was I?** recovery.
+- Restored positions from a previous session are kept local and are not broadcast to Party members as though they were fresh live locations.
+- Added strong-evidence new-life detection for species changes and meaningful same-species growth resets, while avoiding false splits on ordinary reconnects.
+- Added a **Dinosaur Life** page with current-life details, archived life history, maximum growth, total tracked time and longest-life statistics.
+- Added crash-safe atomic/periodic life-state persistence and optional AFK-aware playtime using Windows last-input age only; Companion does not record which keys/buttons were pressed.
+- Added optional local Companion backup/restore for settings, profiles, waypoints, Prime state, Party settings and dinosaur-life history. Telemetry identity/consent, private bug-report reply data and diagnostics/logs are deliberately excluded.
+- Audited settings persistence so unknown/newer preference keys are preserved across rewrites and Survival Vitals can reopen automatically if the user left it enabled.
+- Preserved the v0.9.20.48 telemetry identity migration unchanged.
+
 ## v0.9.20.48 — Stable — 1 September 2026
 
 - Repaired telemetry installation identity so telemetry no longer reuses Party/Friends player identity as the installation identifier.
