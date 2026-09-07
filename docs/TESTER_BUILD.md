@@ -3,7 +3,9 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.48**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.50**.
+
+The current development candidate is **v0.9.20.51**. Development candidates are not automatically published through the Stable channel; v0.9.20.50 remains the normal in-app update until a newer candidate is explicitly promoted.
 
 ## What you download
 
@@ -28,6 +30,12 @@ Once Companion is installed successfully, the extracted bootstrap folder can be 
 The large GitHub ZIP is only the temporary initial installation route. Normal Companion updates are delivered through the built-in **Supabase Stable** update channel, so testers do not need to rebuild the application for every update.
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
+
+## Development candidates
+
+A development candidate may be documented in the README or changelog before it becomes Stable. These builds are used for targeted validation and do not replace the normal Stable update merely because they have a higher version number.
+
+v0.9.20.51 currently fixes a main-window state regression found during public testing: after maximising the Companion window, v0.9.20.50 could persist the maximised dimensions as though they were the normal window size. The candidate separates restored and maximised geometry and recovers affected saved state.
 
 ## Optional telemetry during testing
 
