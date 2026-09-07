@@ -6,6 +6,7 @@
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
 [![Stable](https://img.shields.io/badge/Stable-v0.9.20.50-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Development Candidate](https://img.shields.io/badge/Development%20Candidate-v0.9.20.51-blue?style=flat-square)](CHANGELOG.md)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -77,6 +78,12 @@ The v0.9.20.50 redesign replaces the old top-heavy tab layout with a left naviga
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
+## Latest development candidate — v0.9.20.51
+
+v0.9.20.51 is currently being tester-validated and has **not yet replaced v0.9.20.50 on the Stable channel**.
+
+It fixes a window-state regression found during public testing where maximising the main Companion window could leave it stuck at full-screen dimensions, including after a restart. The candidate now keeps the normal/restored geometry separate from the maximised screen geometry, restores the pre-maximise size correctly, and includes recovery for v0.9.20.50 installations that already saved bad maximised dimensions.
+
 See the [changelog](CHANGELOG.md) for version-by-version details.
 
 ## Optional telemetry
@@ -103,6 +110,8 @@ From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID
 Installed Companion builds use the **Supabase Stable** update channel. Update packages are integrity-checked before installation.
 
 The public v0.9.20.40 bootstrap predates newer required-update behaviour, so its first update may appear as a normal update rather than blocking use. **Accept the update to the newest Stable version.** Once on a newer Stable build, the current updater behaviour applies.
+
+Development candidates listed in this repository are not automatically equivalent to Stable. A candidate only becomes the normal in-app update after it is explicitly published to the Stable channel.
 
 ## Reporting problems
 
