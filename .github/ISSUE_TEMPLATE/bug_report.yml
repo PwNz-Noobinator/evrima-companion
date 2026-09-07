@@ -16,8 +16,8 @@ body:
     id: version
     attributes:
       label: Evrima Companion version
-      description: Example: 0.9.20.36
-      placeholder: 0.9.20.36
+      description: Example: 0.9.20.50
+      placeholder: 0.9.20.50
     validations:
       required: true
 
