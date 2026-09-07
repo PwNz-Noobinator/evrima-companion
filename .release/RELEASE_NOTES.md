@@ -3,9 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.50**.
-
-The current development candidate is **v0.9.20.51**. It is being tester-validated and has not yet replaced v0.9.20.50 on the Stable channel.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.51**.
 
 ## Install
 
@@ -34,16 +32,15 @@ Current Stable builds include:
 - Multiple interface languages and appearance settings.
 - Optional privacy-minimised technical telemetry.
 - The v0.9.20.50 left-navigation UI redesign and default-size layout improvements.
+- The v0.9.20.51 main-window maximise/restore persistence fix and automatic recovery for bad v0.9.20.50 saved geometry.
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current development candidate — v0.9.20.51
+## Current Stable — v0.9.20.51
 
 v0.9.20.51 fixes a window-state regression found during public testing. In v0.9.20.50, maximising the main Companion window could cause the maximised screen dimensions to be saved as the normal window size, leaving the app effectively stuck maximised even after a restart.
 
-The candidate now keeps normal/restored geometry separate from maximised geometry, restores the pre-maximise size correctly, and recovers installations that already persisted bad maximised dimensions.
-
-Development candidates do not automatically become Stable. The normal in-app update remains v0.9.20.50 until a newer build is explicitly published to the Stable channel.
+The current Stable build now keeps normal/restored geometry separate from maximised geometry, restores the pre-maximise size correctly, and recovers installations that already persisted bad maximised dimensions.
 
 ## Optional telemetry
 
