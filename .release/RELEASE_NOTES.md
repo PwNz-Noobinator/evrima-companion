@@ -3,7 +3,9 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.48**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.50**.
+
+The current development candidate is **v0.9.20.51**. It is being tester-validated and has not yet replaced v0.9.20.50 on the Stable channel.
 
 ## Install
 
@@ -25,13 +27,23 @@ Current Stable builds include:
 - Live desktop Gateway map and waypoints.
 - Survival Vitals HUD for Health, Growth, Food and Water.
 - Prime Tracker with zone progress and growth ETA.
+- Persistent Dinosaur Life Memory, active playtime, life history and last-known state/location recovery.
 - Party/Friends location and selected vitals sharing.
 - Phone/tablet Second Screen over the local network.
 - Built-in private bug reports and reply threads.
 - Multiple interface languages and appearance settings.
 - Optional privacy-minimised technical telemetry.
+- The v0.9.20.50 left-navigation UI redesign and default-size layout improvements.
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
+
+## Current development candidate — v0.9.20.51
+
+v0.9.20.51 fixes a window-state regression found during public testing. In v0.9.20.50, maximising the main Companion window could cause the maximised screen dimensions to be saved as the normal window size, leaving the app effectively stuck maximised even after a restart.
+
+The candidate now keeps normal/restored geometry separate from maximised geometry, restores the pre-maximise size correctly, and recovers installations that already persisted bad maximised dimensions.
+
+Development candidates do not automatically become Stable. The normal in-app update remains v0.9.20.50 until a newer build is explicitly published to the Stable channel.
 
 ## Optional telemetry
 
@@ -47,7 +59,7 @@ Using Windows **Unblock** does not disable Defender, SmartScreen or Smart App Co
 
 ## Reporting bugs
 
-If Companion opens, use the built-in **Report Bug** page whenever possible. If the bootstrap fails before Companion can open, see `SUPPORT.md` in the repository.
+If Companion opens, use the built-in **Report Bug** page whenever possible. If the bootstrap fails before Companion can open, see `docs/SUPPORT.md` in the repository.
 
 ## Checksum
 
