@@ -2,6 +2,15 @@
 
 This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
 
+## v0.9.20.51 — development candidate — 7 September 2026
+
+- Fixed the main Companion window becoming effectively stuck maximised after using the custom maximise control.
+- The app now keeps normal/restored window geometry separate from the maximised screen geometry, so maximising no longer overwrites the size that should be restored later.
+- Closing and reopening Companion while maximised no longer causes the full-screen dimensions to become the saved normal window size.
+- Added recovery for installations that already saved bad maximised geometry under v0.9.20.50, so affected users are returned to a usable normal window on first launch of v0.9.20.51.
+- Improved the stone-bezel maximise/restore behaviour so Restore returns to the pre-maximise window geometry instead of reusing the maximised dimensions.
+- This build is currently a development candidate and has not yet replaced v0.9.20.50 on the Stable channel.
+
 ## v0.9.20.50 — Stable — 4 September 2026
 
 - Redesigned the main Companion UI to feel less blocky and less like a QA/debug interface.
