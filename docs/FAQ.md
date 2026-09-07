@@ -52,7 +52,13 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.48**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.50**.
+
+## What is v0.9.20.51?
+
+v0.9.20.51 is the current **development candidate**, not the current Stable release. It fixes a regression where maximising the main Companion window could leave the app stuck using full-screen dimensions, including after a restart.
+
+The candidate separates normal/restored window geometry from maximised geometry and includes recovery for installations that already saved bad window dimensions under v0.9.20.50. It will only become the normal in-app update if it is explicitly published to the Stable channel after testing.
 
 ## Why is the GitHub download older than Stable?
 
