@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.51-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.53-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.51**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.53**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -31,8 +31,8 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
 | **Dinosaur Life Memory** | Track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
-| **Party / Friends** | Share live positions, trails, markers and selected Survival Vitals with your group. |
-| **Second Screen** | Put the live Companion map on a phone or tablet over your local Wi-Fi/LAN. |
+| **Party / Friends** | Share live positions, trails, markers, shared pins and selected Survival Vitals with your group. |
+| **Second Screen** | Use Map, Dinosaur and Party views on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
 | **Languages & Appearance** | Multiple interface languages and configurable UI accent colour. |
 
@@ -67,15 +67,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.51
+## Current Stable — v0.9.20.53
 
-v0.9.20.51 is the current Stable release. It carries forward the v0.9.20.50 UI/UX redesign and the v0.9.20.49 persistence and Dinosaur Life Memory work, then fixes a window-state regression found during public testing.
+v0.9.20.53 is the current Stable release and expands **Party/Friends and Second Screen** while adding new privacy controls around telemetry and uninstall feedback.
 
-The current Stable line includes persistent Dinosaur Life Memory, cross-session active playtime, last-known state/location recovery, life history, crash-safe state, optional AFK-aware timing, optional local backup/restore, improved settings persistence, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, Party/Friends, Second Screen, private bug-report conversations and telemetry identity repair.
+Second Screen now has dedicated **Map, Dinosaur and Party** views. Players can see live dinosaur details, Party positions, saved/shared pins and navigation information on a phone or tablet, and can control pins/navigation without tabbing back to the PC.
 
-The v0.9.20.50 redesign replaced the old top-heavy tab layout with a left navigation rail, opened up page structure, reduced unnecessary boxed/card treatment, improved spacing and control hierarchy, rewrote technical player-facing copy, corrected the custom title-bar controls so they use the existing stone-bezel artwork cleanly, and fixed default-size clipping in the Server Browser/Dinosaur Profile layout and Map controls.
+Party/Friends now supports navigation to Party members, optional separation warnings, shared Party pins and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
 
-v0.9.20.51 fixes the main Companion window becoming effectively stuck maximised, including across restarts. Normal/restored geometry is now kept separate from maximised screen geometry, Restore returns to the pre-maximise size, and installations that already saved bad maximised dimensions under v0.9.20.50 are recovered automatically.
+v0.9.20.53 also adds privacy-safe optional error telemetry using coarse feature/error categories only. During uninstall, players can optionally give a reason and, when telemetry exists, choose whether to keep the existing technical usage history or request its deletion. Retained telemetry is marked inactive rather than appearing as a current installation.
+
+The current Stable line also includes persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, Quick Bar, sortable Server Browser columns, Party/Friends and private bug-report conversations.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
@@ -87,7 +89,7 @@ Telemetry is **off by default**.
 
 If you enable it, it helps us see how Evrima Companion is working on different PCs, which features are being used and where problems may be happening during public testing. That makes it easier to find issues that might otherwise go unnoticed and decide what needs attention.
 
-It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. You can use **View exactly what is collected** before enabling it and turn telemetry off at any time.
+It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories. You can use **View exactly what is collected** before enabling telemetry and turn it off at any time.
 
 From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID that is separate from Party/Friends identity. See [PRIVACY.md](PRIVACY.md) for the full technical details and retention periods.
 

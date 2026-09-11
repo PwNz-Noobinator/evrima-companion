@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.51**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.53**.
 
 ## What you download
 
@@ -29,13 +29,15 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, v0.9.20.51, fixes a main-window state regression found during public testing. v0.9.20.50 could save maximised screen dimensions as though they were the normal window size, leaving the app effectively stuck maximised. v0.9.20.51 separates normal/restored geometry from maximised geometry and recovers affected saved state automatically.
+The current Stable release, v0.9.20.53, expands Party/Friends and Second Screen. Second Screen now provides Map, Dinosaur and Party views with live dinosaur information, Party positions, saved/shared pins and navigation controls. Party/Friends also gains Party-member navigation, optional separation warnings, shared pins and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
+
+v0.9.20.53 also adds privacy-safe optional error telemetry using coarse categories only and optional uninstall feedback with a choice to keep or request deletion of existing telemetry history.
 
 ## Optional telemetry during testing
 
 Telemetry is off by default. Enabling it helps show how Companion behaves on different PCs, which features are being used and where technical problems may be happening. This can reveal issues that never become a bug report.
 
-It does not intentionally include map coordinates, screenshots, Steam/EOS identity, Party messages or personal files. Use **View exactly what is collected** in Companion for the current payload and see [PRIVACY.md](../PRIVACY.md) for full details.
+It does not intentionally include map coordinates, screenshots, Steam/EOS identity, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories. Use **View exactly what is collected** in Companion for the current payload and see [PRIVACY.md](../PRIVACY.md) for full details.
 
 ## Windows security
 

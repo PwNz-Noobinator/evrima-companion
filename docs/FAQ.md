@@ -26,11 +26,11 @@ Prime Tracker follows Prime-related progress during the current dinosaur life. I
 
 ## Does Evrima Companion work with friends?
 
-Yes. **Party / Friends** lets players join a Party code and optionally share live map positions, individual trails, markers and selected Survival Vitals data.
+Yes. **Party / Friends** lets players join a Party code and optionally share live map positions, individual trails, markers, shared pins and selected Survival Vitals data. v0.9.20.53 also adds navigation to Party members, optional separation warnings and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
 
 ## Can I use it on my phone or tablet?
 
-The Companion itself runs on Windows, but **Second Screen** lets a phone or tablet display the live Companion map over the same local Wi-Fi/LAN.
+The Companion itself runs on Windows, but **Second Screen** runs in a normal browser over the same local Wi-Fi/LAN. v0.9.20.53 adds dedicated **Map, Dinosaur and Party** views, including live dinosaur information, Party positions, saved/shared pins and navigation controls.
 
 ## Does Evrima Companion need OCR?
 
@@ -40,7 +40,9 @@ No. OCR is currently **disabled and locked off** in Stable. Current map-location
 
 Telemetry is optional and **off by default**. If you enable it, it helps us see how Companion is working on different PCs, which features are being used and where problems may be happening during public testing.
 
-It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. You can use **View exactly what is collected** before enabling it and turn it off again at any time.
+It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories rather than detailed user content.
+
+You can use **View exactly what is collected** before enabling telemetry and turn it off again at any time. When uninstalling, users with existing telemetry can choose whether to keep the technical usage history or request its deletion.
 
 See [PRIVACY.md](../PRIVACY.md) for the full details.
 
@@ -52,13 +54,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.51**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.53**.
 
-## What changed in v0.9.20.51?
+## What changed in v0.9.20.53?
 
-v0.9.20.51 fixes a regression where maximising the main Companion window could leave the app stuck using full-screen dimensions, including after a restart.
+v0.9.20.53 expands Party/Friends and Second Screen.
 
-Normal/restored window geometry is now stored separately from maximised geometry, Restore returns to the pre-maximise window size, and installations that already saved bad dimensions under v0.9.20.50 are recovered automatically.
+Second Screen now has Map, Dinosaur and Party views with live dinosaur information, Party positions, saved/shared pins and navigation controls. Players can navigate to Party members, receive optional separation warnings, share Party pins and preserve Party state across Companion restarts until they deliberately leave or disband.
+
+The release also adds privacy-safe optional error telemetry using coarse categories only, plus optional uninstall feedback. During uninstall, players with existing telemetry can choose whether to keep the technical usage history or request its deletion.
 
 ## Why is the GitHub download older than Stable?
 

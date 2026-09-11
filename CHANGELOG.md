@@ -1,157 +1,152 @@
 # Evrima Companion Public Testing Changelog
 
-This changelog tracks user-visible changes made after the public GitHub repository was created on 24 August 2026. Internal release tooling, QA-only changes and private development workflow details are intentionally omitted.
+This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
+
+## v0.9.20.53 — Stable — 11 September 2026
+
+- Expanded Second Screen into Map, Dinosaur and Party tabs for phone/tablet use over the local network.
+- Second Screen now shows live dinosaur details including species, growth, Prime ETA, session time, total dinosaur-life playtime, server and last-known information.
+- Added phone/tablet controls for navigation and map pins without needing to tab back to the PC.
+- Added navigation to Party members with direction and distance.
+- Added optional Party separation warnings.
+- Added shared Party pins and Party positions to Second Screen.
+- Party state can now persist across Companion restarts until the player deliberately leaves or disbands the Party.
+- Added privacy-safe optional error telemetry using coarse feature/error categories only.
+- Added optional uninstall feedback with a separate uninstall reason record.
+- During uninstall, players with existing telemetry can choose to keep their technical usage history or request its deletion. Retained installations are marked inactive rather than appearing as current users.
+
+## v0.9.20.52 — Stable — 9 September 2026
+
+- Added a central hotkey manager with persistent keybinds and duplicate/conflict warnings.
+- Added a configurable emergency shortcut to hide or restore Companion overlays.
+- Map sidebar, lock state, position and size now persist between sessions.
+- Added configurable breadcrumb trails and last-known location recovery until fresh live coordinates are available.
+- Added persistent personal map pins.
+- Added waypoint navigation with direction and distance to the selected destination.
+- Added automatic last-location markers when a tracked dinosaur life ends.
+- Added an optional draggable Quick Bar for selected live information such as growth, Prime ETA, session time and server.
+- Added sortable Server Browser columns with remembered ascending/descending order while keeping existing search, filters and favourites.
 
 ## v0.9.20.51 — Stable — 7 September 2026
 
-- Fixed the main Companion window becoming effectively stuck maximised after using the custom maximise control.
-- The app now keeps normal/restored window geometry separate from the maximised screen geometry, so maximising no longer overwrites the size that should be restored later.
-- Closing and reopening Companion while maximised no longer causes the full-screen dimensions to become the saved normal window size.
-- Added recovery for installations that already saved bad maximised geometry under v0.9.20.50, so affected users are returned to a usable normal window on first launch of v0.9.20.51.
-- Improved the stone-bezel maximise/restore behaviour so Restore returns to the pre-maximise window geometry instead of reusing the maximised dimensions.
+- Fixed the main Companion window becoming stuck at maximised size after using the custom maximise control.
+- Restore now reliably returns the window to its previous normal size, including after restarting Companion.
+- Added automatic recovery for affected v0.9.20.50 installations that had already saved incorrect window dimensions.
 
 ## v0.9.20.50 — Stable — 4 September 2026
 
-- Redesigned the main Companion UI to feel less blocky and less like a QA/debug interface.
-- Replaced the old top tab strip with a persistent left-side navigation rail and reworked page structure around clearer sections and more open spacing.
-- Reduced unnecessary boxed/card treatment and changed many secondary actions to lighter controls so pages no longer read as a grid of rectangular panels.
-- Reworked the Map page into clearer behaviour, appearance and position/setup areas.
-- Improved the Servers page and Dinosaur Profile layout so profile fields, notes and actions fit correctly at the default/minimum Companion window size.
-- Fixed default-size clipping caused by the redesigned navigation taking horizontal space away from page content.
-- Reflowed Map waypoint editing so the table can use the full page width and the selected-waypoint editor sits below it instead of forcing horizontal overflow.
-- Reworked custom title-bar controls so the existing stone-bezel minimise/maximise/close artwork remains the only visible control face, with transparent hit targets aligned over it instead of duplicate Qt buttons being drawn on top.
-- Improved title-bar control alignment and click-target consistency.
-- Moved Support and Uninstall out of the main header and into Settings to reduce header clutter.
-- Rewrote a first pass of overly technical, QA-style and engineer-facing wording into clearer player-facing language across the main Companion pages.
-- Carried forward all v0.9.20.49 persistence, Dinosaur Life Memory, crash-safe state and settings-resilience work unchanged.
+- Redesigned the main Companion interface around a persistent left-side navigation rail.
+- Reduced visual clutter and unnecessary boxed sections across the app.
+- Improved spacing, headings, controls and page structure for a more consistent layout.
+- Reworked the Map page into clearer behaviour, appearance and position/setup sections.
+- Improved the Servers and Dinosaur Profile layouts so they fit correctly at the default window size.
+- Reworked waypoint editing to use the available space more effectively.
+- Improved the custom title-bar controls and their alignment.
+- Moved Support and Uninstall into Settings.
+- Reworded technical or developer-oriented interface text into clearer player-facing language.
 
 ## v0.9.20.49 — Stable — 4 September 2026
 
-- Added persistent **Dinosaur Life Memory** per server so reconnecting or switching servers does not automatically reset a tracked life.
-- Added total active playtime for the current dinosaur across game/Companion sessions plus a separate current-session timer.
-- Added last-seen species, server, growth/vitals and verified live map position persistence for local **Where was I?** recovery.
-- Restored positions from a previous session are kept local and are not broadcast to Party members as though they were fresh live locations.
-- Added strong-evidence new-life detection for species changes and meaningful same-species growth resets, while avoiding false splits on ordinary reconnects.
-- Added a **Dinosaur Life** page with current-life details, archived life history, maximum growth, total tracked time and longest-life statistics.
-- Added crash-safe atomic/periodic life-state persistence and optional AFK-aware playtime using Windows last-input age only; Companion does not record which keys/buttons were pressed.
-- Added optional local Companion backup/restore for settings, profiles, waypoints, Prime state, Party settings and dinosaur-life history. Telemetry identity/consent, private bug-report reply data and diagnostics/logs are deliberately excluded.
-- Audited settings persistence so unknown/newer preference keys are preserved across rewrites and Survival Vitals can reopen automatically if the user left it enabled.
-- Preserved the v0.9.20.48 telemetry identity migration unchanged.
+- Added persistent **Dinosaur Life Memory** so a tracked dinosaur can continue across Companion and game sessions.
+- Added total active playtime for the current dinosaur plus a separate current-session timer.
+- Added **Where was I?** recovery for the last known species, server, growth, vitals and map position.
+- Added more reliable new-life detection so normal reconnects do not unnecessarily reset a tracked dinosaur.
+- Added a **Dinosaur Life** page with current-life details, archived history and personal statistics.
+- Added crash-safe life tracking and optional AFK-aware playtime.
+- Added optional local backup and restore for Companion settings and player-created data.
+- Improved settings persistence, including automatic reopening of Survival Vitals when previously enabled.
 
 ## v0.9.20.48 — Stable — 1 September 2026
 
-- Repaired telemetry installation identity so telemetry no longer reuses Party/Friends player identity as the installation identifier.
-- Added a dedicated per-machine random telemetry UUID stored in local application data and kept separate from distributable release files.
-- Added one-time telemetry identity migration support so upgraded installations can move to a new unique ID while retaining the previous ID for continuity/history.
-- Added backend migration records and a `telemetry_identity_migrated` event so duplicated legacy identities can be detected and separated after upgrade.
-- Added release-package safeguards that fail the build if runtime identity/settings state is accidentally included in a distributable package.
-- Added regression coverage for unique fresh-install identities and update-time identity persistence/migration.
+- Improved telemetry installation identity so different PCs remain separate and updates retain continuity more reliably.
+- Kept telemetry identity separate from Party/Friends identity.
+- Added safer upgrade handling for existing telemetry installations.
+- Added release-package safeguards to prevent local identity or settings data from being included in public builds.
 
 ## v0.9.20.47 — Stable — 28 August 2026
 
-- OCR is now **disabled and locked off** in the normal UI/config while the non-OCR live location path is used for current map and Prime functionality.
-- Retained OCR recovery improvements internally for later re-enable/testing.
-- Fixed Party connection state so a dropped socket clears the connected state immediately instead of leaving a stale connected indicator.
-- Added **Survival Vitals** diagnostic state to built-in bug reports.
-- Added **Prime Tracker** diagnostic state to built-in bug reports while deliberately excluding map coordinates from Prime diagnostics.
+- Disabled OCR in Stable while the current non-OCR live location system is in use.
+- Fixed Party connection status so disconnected sessions no longer remain incorrectly shown as connected.
+- Expanded built-in bug reports with Survival Vitals and Prime Tracker diagnostic information while excluding map coordinates.
 
 ## v0.9.20.46 — Stable — 28 August 2026
 
-- Improved Prime zone recognition across circle, polygon and open/path-style geometries.
-- Added tolerant edge/crossing checks rather than relying on one narrow Patrol-path corridor model.
-- Area-like unclosed multi-point zones can be treated as filled areas while genuinely thin route-style zones remain corridors.
-- Survival Vitals and Party Prime ETA now show **ETA to 75% growth while below 75%**, then automatically switch to **full-growth ETA** after reaching 75%.
+- Improved Prime zone recognition for different zone shapes and route layouts.
+- Survival Vitals and Party now show ETA to 75% growth while below 75%, then switch automatically to full-growth ETA.
 
 ## v0.9.20.45 — Stable — 28 August 2026
 
-- Wired the verified live Asset Location path directly into Prime Tracker before the normal map/Party/Second Screen fanout.
-- Prime zone crossings no longer depend on the older OCR path.
-- Removed Prime observation from manual map-coordinate navigation so moving the map manually cannot award Prime objectives.
+- Connected Prime Tracker directly to the live non-OCR location system.
+- Manual map-coordinate changes no longer count toward Prime progress.
 
 ## v0.9.20.44 — Stable — 28 August 2026
 
-- Fixed dead/departed dinosaurs retaining stale Growth and Prime ETA in Dinosaur Profiles.
-- Inactive TempData records are no longer treated as the active character.
-- Prime active-life state is cleared when Survival Vitals has lifecycle evidence that the character has left/died.
-- Stale map movement is no longer credited to an inactive Prime run.
-- Persisted Prime run history is retained for normal reconnect/restart continuity.
+- Fixed stale Growth and Prime ETA values remaining on Dinosaur Profiles after a dinosaur had died or left.
+- Improved active-dinosaur detection so old character data is not mistaken for the current dinosaur.
+- Prime progress now handles dinosaur-life changes more reliably while preserving valid progress across ordinary reconnects and restarts.
 
 ## v0.9.20.43 — Stable — 28 August 2026
 
-- The desktop map can remain open after The Isle exits.
-- Added optional Prime full-growth ETA to Survival Vitals, Party data and Dinosaur Profiles.
-- Added startup notifications for normal Stable updates with a **Not now** path for non-forced updates.
-- Telemetry consent now persists independently from ordinary UI settings; normal updates do not reprompt unless the consent-policy version changes.
-- Added privacy-minimised content-free feature-use telemetry for map, automatic location, Party, Survival Vitals and Second Screen use.
-- Resolved/closed built-in bug-report threads are now read-only in both the UI and backend.
-- Hardened emergency rollback handling so rollback requires explicit release lineage rather than treating an arbitrary newer candidate as a rollback target.
+- The desktop map can remain open after The Isle closes.
+- Added optional full-growth Prime ETA to Survival Vitals, Party and Dinosaur Profiles.
+- Added startup notifications for available Stable updates, including a **Not now** option for non-required updates.
+- Improved telemetry consent persistence so normal updates do not repeatedly ask for permission.
+- Added optional privacy-minimised feature-use telemetry for major Companion features.
+- Resolved or closed built-in bug reports are now read-only.
+- Improved emergency rollback handling for safer update recovery.
 
-## v0.9.20.42 — development candidate — 27 August 2026
+## v0.9.20.42 — Development Candidate — 27 August 2026
 
-This development candidate introduced the core work that was subsequently published and refined in the v0.9.20.43+ Stable series.
+This development candidate introduced the main systems later published and refined in the v0.9.20.43+ Stable releases.
 
 - Added **Prime Tracker** for the current dinosaur life.
-- Automatically tracks unique Sanctuary, Migration, Mass Migration and Patrol Zone visits from the same live coordinates already used by the map.
-- Added movement-segment crossing detection so a zone crossed between two location samples can still be counted.
-- Added persistent per-life Prime progress, manual non-detectable conditions and a manual **Reset current Prime run** fallback.
-- Added observed growth-rate measurement with ETA estimates to 75% and 100% growth.
-- Added brief click-through Prime progress notifications.
-- Added live VulnonaMAP Prime-zone refresh with a bundled Gateway fallback.
-- Added explicit **opt-in technical telemetry**, disabled by default.
-- Added a first-run telemetry disclosure, Settings control and **View exactly what is collected** payload viewer.
-- Added **My reports & replies** with secure per-report local reply keys.
-- New bug reports receive an automatic acknowledgement and can carry developer/tester replies in the same thread.
-- Added required-update presentation for future releases marked mandatory by the Stable channel.
+- Added automatic tracking for Sanctuary, Migration, Mass Migration and Patrol Zone visits using live map coordinates.
+- Added persistent Prime progress and growth-rate-based ETA estimates.
+- Added brief Prime progress notifications.
+- Added live Prime-zone data refresh with a bundled Gateway fallback.
+- Added optional technical telemetry, disabled by default, with a clear consent screen and payload viewer.
+- Added **My reports & replies** for private in-app bug-report conversations.
+- Added support for future required updates when a release is marked mandatory.
 
 ## v0.9.20.40 — 25 August 2026
 
-- Added a persistent Survival Vitals **Lock / Unlock** control matching the overlay interaction model.
-- Locked vitals are fixed in place and mouse click-through; unlocked vitals are interactive and draggable, including while Evrima is running.
-- Survival Vitals remembers lock state, position, width and height between sessions.
+- Added persistent **Lock / Unlock** controls to Survival Vitals.
+- Survival Vitals now remembers its position, size and lock state between sessions.
 - Added user resizing while unlocked.
-- Added **Refresh** and **Close** controls, with reopen support from Companion controls.
-- Fixed a TempData race where one partial/failed read could make vitals stop updating; failed reads now retry automatically.
-- Manual Refresh forces a safe re-read of the active/pending TempData record.
+- Added **Refresh** and **Close** controls with reopen support from Companion.
+- Improved Survival Vitals reliability when game data is temporarily unavailable.
 
 ## v0.9.20.39 — 25 August 2026
 
-- Redesigned Survival Vitals as a compact frameless HUD with clearer Health, Growth, Food and Water indicators.
-- Added click-through behaviour while locked/in-game and movement when interactive.
-- Automatic OCR calculated capture coordinates from the actual Evrima game-client resolution at this stage of development.
-- Improved cleanup of native capture resources and temporary OCR images.
-- Reduced duplicate background polling by centralising game-process state and using TempData change events for profile refreshes.
-- Survival Vitals updates existing cards in place instead of recreating the entire HUD every second.
-- Added low-frequency Companion resource diagnostics for investigating game/performance/VRAM-related reports.
-- Improved overlay relaunch/session diagnostics and cleanup.
+- Redesigned Survival Vitals as a compact HUD with clearer Health, Growth, Food and Water information.
+- Added click-through behaviour while locked and dragging while unlocked.
+- Improved automatic game-resolution handling for the location system used at the time.
+- Reduced unnecessary background work and improved live HUD updating.
+- Improved overlay session cleanup and diagnostics.
 
 ## v0.9.20.38 — 25 August 2026
 
 - Added **Survival Vitals**.
-- Added automatic TempData-based Health, Growth, Food and Water monitoring without requiring Tab/Status Report OCR.
+- Added automatic Health, Growth, Food and Water monitoring from Evrima's local character data.
 - Added a compact standalone vitals window.
-- Added automatic active character/server detection from TempData activity.
-- Added solo use with optional Party/Friends sharing support.
-- Corrected the Dinosaur Profile health field after probe verification.
-
-## v0.9.20.37 — 25 August 2026
-
-- Restored the Eevee29 Runner easter egg after it was accidentally disabled by the Kassia easter egg.
-- Eevee29 and Kassia use independent counters/timers so both work separately.
+- Added automatic active dinosaur/server detection.
+- Added solo use with optional Party/Friends vitals sharing.
+- Corrected the Dinosaur Profile health value.
 
 ## v0.9.20.36 — 24 August 2026
 
-- The desktop map can be closed without closing Evrima Companion.
-- After a deliberate map close, automatic same-session relaunch is suppressed until the user explicitly reopens it or The Isle restarts.
+- The desktop map can now be closed without closing Evrima Companion.
+- After closing the map manually, Companion no longer immediately reopens it during the same game session.
 
 ## v0.9.20.35 — 24 August 2026
 
-- Added dual-source update discovery across Supabase and GitHub Releases, choosing the newest valid version.
-- Added SHA-256 and byte-size verification for GitHub-compatible update downloads.
-- Expanded public freeware licensing, privacy, Credits and third-party documentation.
-- Removed the old global Rex/Stego progress animation while retaining numeric update-download progress.
+- Improved update discovery across the available Companion update sources.
+- Added integrity checks for supported update downloads.
+- Expanded licence, privacy, Credits and third-party documentation.
+- Simplified the update download progress display.
 
-## Current distribution note
+## Current distribution
 
-GitHub provides the initial **v0.9.20.40 public tester/bootstrap** package. Once Companion is installed, routine tester updates continue through the Supabase Stable release channel. A new large GitHub tester ZIP is not required for each normal application update unless the bootstrap kit itself changes.
+GitHub currently provides the initial **v0.9.20.40 public tester/bootstrap** package. Once Companion is installed, normal Stable updates are delivered through the built-in update system.
 
-The long-term distribution target remains a normal prebuilt installer signed with a trusted code-signing certificate.
+The long-term distribution target remains a normal prebuilt Windows installer signed with a trusted code-signing certificate.
