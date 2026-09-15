@@ -24,6 +24,15 @@ Evrima Companion may install, launch, configure and close this separate helper f
 
 Evrima Companion uses live VulnonaMAP website/resources for supported map features. The Companion does not bundle or claim ownership of VulnonaMAP basemap imagery. Second Screen can temporarily proxy required public map resources through the user's PC over the user's LAN so the phone browser and Companion state can share one local origin.
 
+## Evrima Quick Guide
+
+- Project/site: Evrima Quick Guide
+- Website: https://www.evrimaquickguide.com/
+
+From v0.9.20.54, Evrima Companion's Dinosaur Guide uses Evrima Quick Guide as a community reference source for playable dinosaur information such as diet, growth and species details. Companion includes an offline reference snapshot and can refresh/cache reference data from the public website.
+
+Evrima Companion does not claim ownership of Evrima Quick Guide content, branding or website resources. Reference information may change as The Isle changes, and the source website remains independently operated.
+
 ## Qt / PySide6 / Shiboken6
 
 - Project: Qt for Python / PySide6
@@ -121,6 +130,6 @@ The public-release preparation process fails if required licence documents, runt
 
 ## Trademarks and third-party names
 
-The Isle, VulnonaMAP, Vulnona Map Overlay, Qt, Python, GitHub, Supabase, Epic Online Services, PresentMon and other third-party names remain the property of their respective owners. Inclusion in this notice does not imply sponsorship or endorsement.
+The Isle, VulnonaMAP, Vulnona Map Overlay, Evrima Quick Guide, Qt, Python, GitHub, Supabase, Epic Online Services, PresentMon and other third-party names remain the property of their respective owners. Inclusion in this notice does not imply sponsorship or endorsement.
 
 Evrima Companion is an unofficial fan-made utility and is not affiliated with, sponsored by, or endorsed by Afterthought LLC or the developers/publishers of The Isle.
