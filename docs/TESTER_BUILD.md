@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.53**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.54**.
 
 ## What you download
 
@@ -29,15 +29,15 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, v0.9.20.53, expands Party/Friends and Second Screen. Second Screen now provides Map, Dinosaur and Party views with live dinosaur information, Party positions, saved/shared pins and navigation controls. Party/Friends also gains Party-member navigation, optional separation warnings, shared pins and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
+The current Stable release, v0.9.20.54, adds a Dinosaur Guide with quick-reference diet, growth and species information for the current playable roster. It includes an offline reference snapshot, reference-data refresh/caching and automatic following of the dinosaur Companion currently detects.
 
-v0.9.20.53 also adds privacy-safe optional error telemetry using coarse categories only and optional uninstall feedback with a choice to keep or request deletion of existing telemetry history.
+v0.9.20.54 also adds optional Growth/Prime milestone notifications and configurable low Food/Water notifications, with these alerts disabled by default. Optional error telemetry has also been refined so expected background Party reconnect/network outcomes are not reported as application errors.
 
 ## Optional telemetry during testing
 
 Telemetry is off by default. Enabling it helps show how Companion behaves on different PCs, which features are being used and where technical problems may be happening. This can reveal issues that never become a bug report.
 
-It does not intentionally include map coordinates, screenshots, Steam/EOS identity, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories. Use **View exactly what is collected** in Companion for the current payload and see [PRIVACY.md](../PRIVACY.md) for full details.
+It does not intentionally include map coordinates, screenshots, Steam/EOS identity, Party messages or personal files. Optional error telemetry is limited to coarse feature/error categories, and v0.9.20.54 avoids treating expected background Party reconnect/network outcomes as application errors. Use **View exactly what is collected** in Companion for the current payload and see [PRIVACY.md](../PRIVACY.md) for full details.
 
 ## Windows security
 
