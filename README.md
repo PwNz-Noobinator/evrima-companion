@@ -2,10 +2,10 @@
 
 # Evrima Companion
 
-**A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Party/Friends and Second Screen.**
+**A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.53-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.54-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.53**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.54**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -27,6 +27,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 |---|---|
 | **Server Browser** | Browse Official and Unofficial Evrima servers with search, filters, favourites, ping and player counts. |
 | **Dinosaur Profiles** | Keep per-server dinosaur details, growth, location, mutations, notes and Prime ETA when available. |
+| **Dinosaur Guide** | Browse quick-reference diet, growth and species information for current playables, with an offline cache and current-dinosaur following. |
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
@@ -67,17 +68,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.53
+## Current Stable — v0.9.20.54
 
-v0.9.20.53 is the current Stable release and expands **Party/Friends and Second Screen** while adding new privacy controls around telemetry and uninstall feedback.
+v0.9.20.54 adds a new **Dinosaur Guide** and improves the quality of optional reliability telemetry.
 
-Second Screen now has dedicated **Map, Dinosaur and Party** views. Players can see live dinosaur details, Party positions, saved/shared pins and navigation information on a phone or tablet, and can control pins/navigation without tabbing back to the PC.
+The Dinosaur Guide provides quick-reference information for the current playable roster, including diet, growth information and useful species details. It includes a bundled offline reference snapshot, can refresh its cached reference data, and can automatically follow the dinosaur Companion currently detects.
 
-Party/Friends now supports navigation to Party members, optional separation warnings, shared Party pins and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
+Optional gameplay notifications can alert players to Growth/Prime milestones and configurable low Food/Water states. These alerts are opt-in and disabled by default.
 
-v0.9.20.53 also adds privacy-safe optional error telemetry using coarse feature/error categories only. During uninstall, players can optionally give a reason and, when telemetry exists, choose whether to keep the existing technical usage history or request its deletion. Retained telemetry is marked inactive rather than appearing as a current installation.
+v0.9.20.54 also improves optional error telemetry so normal background Party reconnect/network outcomes are not treated as actionable application errors.
 
-The current Stable line also includes persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, Quick Bar, sortable Server Browser columns, Party/Friends and private bug-report conversations.
+The current Stable line also includes persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, Quick Bar, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
@@ -89,7 +90,7 @@ Telemetry is **off by default**.
 
 If you enable it, it helps us see how Evrima Companion is working on different PCs, which features are being used and where problems may be happening during public testing. That makes it easier to find issues that might otherwise go unnoticed and decide what needs attention.
 
-It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories. You can use **View exactly what is collected** before enabling telemetry and turn it off at any time.
+It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. Optional error telemetry is limited to coarse feature/error categories, and v0.9.20.54 avoids treating expected background Party reconnect/network outcomes as application errors. You can use **View exactly what is collected** before enabling telemetry and turn it off at any time.
 
 From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID that is separate from Party/Friends identity. See [PRIVACY.md](PRIVACY.md) for the full technical details and retention periods.
 
