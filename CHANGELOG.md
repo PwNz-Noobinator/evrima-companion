@@ -2,6 +2,15 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.54 — Stable — 15 September 2026
+
+- Added a **Dinosaur Guide** with quick-reference information for the current playable roster, including diet, growth information and useful species details.
+- Added a bundled offline reference snapshot so the Dinosaur Guide remains useful without a live refresh.
+- Added reference-data refresh/caching and automatic following of the dinosaur Companion currently detects.
+- Added optional Growth/Prime milestone notifications.
+- Added optional configurable low Food/Water notifications.
+- Improved optional error telemetry so expected background Party reconnect/network outcomes are not reported as application errors.
+
 ## v0.9.20.53 — Stable — 11 September 2026
 
 - Expanded Second Screen into Map, Dinosaur and Party tabs for phone/tablet use over the local network.
