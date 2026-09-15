@@ -4,7 +4,7 @@
 
 ## What is Evrima Companion?
 
-**Evrima Companion** is an unofficial Windows companion app for **The Isle: Evrima**. It combines a server browser, live map tools, Survival Vitals, Prime Tracker, growth ETA estimates, Party/Friends tracking, dinosaur profiles and a phone/tablet Second Screen.
+**Evrima Companion** is an unofficial Windows companion app for **The Isle: Evrima**. It combines a server browser, live map tools, Survival Vitals, Prime Tracker, growth ETA estimates, a Dinosaur Guide, Party/Friends tracking, dinosaur profiles and a phone/tablet Second Screen.
 
 It is a fan-made project and is not affiliated with, sponsored by or endorsed by Afterthought LLC or the developers/publishers of The Isle.
 
@@ -20,17 +20,21 @@ Yes. Companion integrates a desktop Vulnona map overlay and can feed it the curr
 
 Yes. **Survival Vitals** can read the active dinosaur's Growth, Health, Food and Water from Evrima's local character data when available. **Prime Tracker** observes growth changes over time and can estimate growth ETA.
 
+## What is the Dinosaur Guide?
+
+The **Dinosaur Guide** provides quick-reference information for the current playable roster, including diet, growth information and useful species details. It includes an offline reference snapshot, can refresh cached reference information, and can automatically follow the dinosaur Companion currently detects.
+
 ## What is Prime Tracker?
 
 Prime Tracker follows Prime-related progress during the current dinosaur life. It can automatically detect visits to known **Sanctuary, Migration, Mass Migration and Patrol Zone** locations using the same live coordinates as the map.
 
 ## Does Evrima Companion work with friends?
 
-Yes. **Party / Friends** lets players join a Party code and optionally share live map positions, individual trails, markers, shared pins and selected Survival Vitals data. v0.9.20.53 also adds navigation to Party members, optional separation warnings and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
+Yes. **Party / Friends** lets players join a Party code and optionally share live map positions, individual trails, markers, shared pins and selected Survival Vitals data. It also supports navigation to Party members, optional separation warnings and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
 
 ## Can I use it on my phone or tablet?
 
-The Companion itself runs on Windows, but **Second Screen** runs in a normal browser over the same local Wi-Fi/LAN. v0.9.20.53 adds dedicated **Map, Dinosaur and Party** views, including live dinosaur information, Party positions, saved/shared pins and navigation controls.
+The Companion itself runs on Windows, but **Second Screen** runs in a normal browser over the same local Wi-Fi/LAN. It provides dedicated **Map, Dinosaur and Party** views, including live dinosaur information, Party positions, saved/shared pins and navigation controls.
 
 ## Does Evrima Companion need OCR?
 
@@ -40,7 +44,7 @@ No. OCR is currently **disabled and locked off** in Stable. Current map-location
 
 Telemetry is optional and **off by default**. If you enable it, it helps us see how Companion is working on different PCs, which features are being used and where problems may be happening during public testing.
 
-It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. v0.9.20.53 also limits optional error telemetry to coarse feature/error categories rather than detailed user content.
+It does **not** intentionally collect your map location, screenshots, Steam/EOS account, Party messages or personal files. Optional error telemetry uses coarse feature/error categories rather than detailed user content, and v0.9.20.54 avoids treating expected background Party reconnect/network outcomes as application errors.
 
 You can use **View exactly what is collected** before enabling telemetry and turn it off again at any time. When uninstalling, users with existing telemetry can choose whether to keep the technical usage history or request its deletion.
 
@@ -54,15 +58,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.53**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.54**.
 
-## What changed in v0.9.20.53?
+## What changed in v0.9.20.54?
 
-v0.9.20.53 expands Party/Friends and Second Screen.
+v0.9.20.54 adds the **Dinosaur Guide** with quick-reference diet, growth and species information for the current playable roster. It includes an offline snapshot, reference-data refresh/caching and automatic current-dinosaur following.
 
-Second Screen now has Map, Dinosaur and Party views with live dinosaur information, Party positions, saved/shared pins and navigation controls. Players can navigate to Party members, receive optional separation warnings, share Party pins and preserve Party state across Companion restarts until they deliberately leave or disband.
+The release also adds optional Growth/Prime milestone notifications and configurable low Food/Water notifications. These alerts are disabled by default.
 
-The release also adds privacy-safe optional error telemetry using coarse categories only, plus optional uninstall feedback. During uninstall, players with existing telemetry can choose whether to keep the technical usage history or request its deletion.
+Optional error telemetry was also refined so expected background Party reconnect/network outcomes are not reported as application errors.
 
 ## Why is the GitHub download older than Stable?
 
