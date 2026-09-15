@@ -11,6 +11,7 @@ The public GitHub bootstrap is currently **v0.9.20.40**. Installed testers recei
 - The local game/config files read by supported Companion features.
 - Prime Tracker per-life progress and local growth samples in telemetry-capable builds.
 - From v0.9.20.49 development builds, Dinosaur Life Memory: server/species, accumulated active-play time, last-seen growth/vitals, life history and the last verified live map position used for local **Where was I?** recovery.
+- Dinosaur Guide cached reference data, including its bundled/offline reference snapshot and refreshed cache.
 - Bug-report reply ownership keys. The backend stores only a hash of each reply key.
 - Second Screen pairing information and PC-to-phone map state. Second Screen is served directly across the user's local network and is not routed through a Companion cloud relay.
 - The current random telemetry installation UUID and any one-time previous-installation UUID retained locally for telemetry identity migration.
@@ -20,6 +21,14 @@ The public GitHub bootstrap is currently **v0.9.20.40**. Installed testers recei
 The optional manual Companion backup contains selected local settings/state such as profiles, waypoints, Prime state, Party settings and Dinosaur Life Memory. It is created only when the user chooses **Export backup** and remains on the user's chosen local path.
 
 The backup deliberately excludes the telemetry installation identity, telemetry consent file, private bug-report reply ownership data and diagnostics/logs. Restoring a backup creates local rollback copies of files that are being replaced.
+
+## Dinosaur Guide reference data — v0.9.20.54+
+
+The Dinosaur Guide includes bundled offline reference data and can refresh its cached community reference information from **Evrima Quick Guide** (`evrimaquickguide.com`).
+
+A refresh contacts that external website in the normal way, so its hosting/network providers may process ordinary request information such as an IP address and request metadata. Companion does not intentionally send the user's map coordinates, Party content, Steam/EOS identity, personal files or telemetry installation identifier as part of the Dinosaur Guide reference request.
+
+The refreshed reference data is cached locally so the guide can continue working when the source is unavailable.
 
 ## Optional technical telemetry — v0.9.20.42+
 
@@ -42,6 +51,7 @@ When enabled, the technical snapshot can include:
 - Display resolution, DPI/scaling information and, when already known to Companion, The Isle game resolution.
 - Companion language.
 - Short bounded technical/feature events such as application start, feature use or telemetry state changes.
+- Privacy-safe error events limited to a coarse Companion feature/component and non-sensitive error category. Expected normal background outcomes such as an unavailable remembered Party room or ordinary reconnect/network failure are not intended to be treated as application errors from v0.9.20.54 onward.
 
 From v0.9.20.48, telemetry installation identity is kept separate from Party/Friends player identity. A dedicated random per-machine telemetry UUID is stored in local application data rather than in the distributable package. On the first v0.9.20.48+ identity migration, Companion can send the previous random installation UUID together with the new random installation UUID so the backend can preserve continuity and detect legacy duplicate identities. This migration link is not derived from hardware and does not add a hardware fingerprint.
 
@@ -135,7 +145,7 @@ If the user explicitly installs or updates PresentMon through Companion, it is d
 
 ## Third-party privacy terms
 
-GitHub, Supabase, VulnonaMAP, Epic Online Services and other third-party services operate under their own privacy terms. Evrima Companion cannot control the independent logging or retention practices of those services.
+GitHub, Supabase, VulnonaMAP, Evrima Quick Guide, Epic Online Services and other third-party services operate under their own privacy terms. Evrima Companion cannot control the independent logging or retention practices of those services.
 
 ## Retention and privacy requests
 
