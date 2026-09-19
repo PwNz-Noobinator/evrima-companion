@@ -58,15 +58,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.55**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.56**.
 
-## What changed in v0.9.20.55?
+## What changed in v0.9.20.56?
 
-v0.9.20.55 expands the **Quick Bar** so it can show live Health, Food and Water alongside its existing selectable information.
+v0.9.20.56 fixes breadcrumb trails so normal coordinate updates continue adding to the current dinosaur life's trail instead of clearing it.
 
-It also fixes the map sidebar visibility option so hiding the sidebar does not close or strand the map.
+Party/Friends maps now keep a visible current-position marker for each member while preserving the shared trail behind it.
 
-Map breadcrumb/trail history now resets when Companion confirms a dinosaur life ended because of death/respawn or a dinosaur change, preventing a new life from continuing the previous dinosaur's trail.
+When a Party member dies/respawns or changes dinosaur, their trail reset is now shared with the rest of the Party so the previous life's path is cleared for everyone.
 
 ## Why is the GitHub download older than Stable?
 
