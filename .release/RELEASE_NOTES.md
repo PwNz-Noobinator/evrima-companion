@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.55**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.56**.
 
 ## Install
 
@@ -38,13 +38,13 @@ Current Stable builds include:
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.55
+## Current Stable — v0.9.20.56
 
-v0.9.20.55 expands the **Quick Bar** so it can show live **Health, Food and Water** alongside its existing selectable information.
+v0.9.20.56 fixes breadcrumb trails so ordinary coordinate updates continue building the current dinosaur life's trail.
 
-The map sidebar visibility option now hides only the sidebar and no longer causes the map itself to close or become unable to reopen.
+Party/Friends maps now keep a clear current-position marker for each member while retaining the shared trail.
 
-Map breadcrumb/trail history now resets when Companion confirms a dinosaur life has ended because of death/respawn or a dinosaur change, so a new life starts with a clean trail.
+When Companion confirms a Party member has died/respawned or changed dinosaur, that member's old trail reset is now shared with the rest of the Party so the new life starts cleanly on every connected map.
 
 ## Optional telemetry
 
