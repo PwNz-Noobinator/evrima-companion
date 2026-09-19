@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.54-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.55-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.54**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.55**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -30,6 +30,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Dinosaur Guide** | Browse quick-reference diet, growth and species information for current playables, with an offline cache and current-dinosaur following. |
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
+| **Quick Bar** | Draggable compact bar for selected live Health, Food, Water, Growth, Prime ETA, session time and server information. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
 | **Dinosaur Life Memory** | Track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
 | **Party / Friends** | Share live positions, trails, markers, shared pins and selected Survival Vitals with your group. |
@@ -68,17 +69,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.54
+## Current Stable — v0.9.20.55
 
-v0.9.20.54 adds a new **Dinosaur Guide** and improves the quality of optional reliability telemetry.
+v0.9.20.55 improves the **Quick Bar** and map behaviour during normal solo play.
 
-The Dinosaur Guide provides quick-reference information for the current playable roster, including diet, growth information and useful species details. It includes a bundled offline reference snapshot, can refresh its cached reference data, and can automatically follow the dinosaur Companion currently detects.
+The Quick Bar can now show live **Health, Food and Water** alongside its existing selectable information, making it possible to keep the compact bar visible without needing the full Survival Vitals window open.
 
-Optional gameplay notifications can alert players to Growth/Prime milestones and configurable low Food/Water states. These alerts are opt-in and disabled by default.
+The map sidebar visibility setting now hides only the sidebar and no longer causes the map itself to close or become unable to reopen.
 
-v0.9.20.54 also improves optional error telemetry so normal background Party reconnect/network outcomes are not treated as actionable application errors.
+Map breadcrumb/trail history now resets when Companion confirms a dinosaur life has ended because of death/respawn or a dinosaur change, so a new life does not continue drawing the previous dinosaur's trail.
 
-The current Stable line also includes persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, Quick Bar, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
+The current Stable line also includes Dinosaur Guide, persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
