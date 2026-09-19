@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.54**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.55**.
 
 ## Install
 
@@ -32,19 +32,19 @@ Current Stable builds include:
 - Built-in private bug reports and reply threads.
 - Multiple interface languages and appearance settings.
 - Optional privacy-minimised technical telemetry.
-- Persistent map/navigation tools, Companion hotkeys, Quick Bar and sortable Server Browser columns.
+- Persistent map/navigation tools, Companion hotkeys, Quick Bar with selectable Health/Food/Water and other live information, and sortable Server Browser columns.
 - Optional Growth/Prime milestone and low Food/Water notifications.
 - Optional uninstall feedback and telemetry-retention/deletion choice during uninstall.
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.54
+## Current Stable — v0.9.20.55
 
-v0.9.20.54 adds the **Dinosaur Guide** with quick-reference information for the current playable roster, including diet, growth information and useful species details. It includes a bundled offline reference snapshot, reference-data refresh/caching and automatic following of the dinosaur Companion currently detects.
+v0.9.20.55 expands the **Quick Bar** so it can show live **Health, Food and Water** alongside its existing selectable information.
 
-The release also adds optional Growth/Prime milestone notifications and configurable low Food/Water notifications. These alerts are disabled by default.
+The map sidebar visibility option now hides only the sidebar and no longer causes the map itself to close or become unable to reopen.
 
-Optional error telemetry was also refined so expected background Party reconnect/network outcomes are not reported as application errors.
+Map breadcrumb/trail history now resets when Companion confirms a dinosaur life has ended because of death/respawn or a dinosaur change, so a new life starts with a clean trail.
 
 ## Optional telemetry
 
