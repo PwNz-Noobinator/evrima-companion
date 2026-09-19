@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.55**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.56**.
 
 ## What you download
 
@@ -29,9 +29,9 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, v0.9.20.55, expands the Quick Bar so it can show live Health, Food and Water alongside its existing selectable information.
+The current Stable release, v0.9.20.56, fixes breadcrumb trails so ordinary coordinate updates keep extending the same-life trail.
 
-v0.9.20.55 also fixes the map sidebar visibility option so hiding the sidebar does not close or strand the map, and resets map breadcrumb/trail history when Companion confirms a dinosaur life ended because of death/respawn or a dinosaur change.
+v0.9.20.56 also keeps Party/Friends current-position markers visible while retaining shared trails, and propagates trail resets to connected Party members after a confirmed death/respawn or dinosaur change.
 
 ## Optional telemetry during testing
 
