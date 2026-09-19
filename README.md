@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.55-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.56-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.55**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.56**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -69,17 +69,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.55
+## Current Stable — v0.9.20.56
 
-v0.9.20.55 improves the **Quick Bar** and map behaviour during normal solo play.
+v0.9.20.56 fixes breadcrumb and Party/Friends map behaviour.
 
-The Quick Bar can now show live **Health, Food and Water** alongside its existing selectable information, making it possible to keep the compact bar visible without needing the full Survival Vitals window open.
+Breadcrumb trails now continue accumulating normally throughout the same dinosaur life instead of clearing during ordinary coordinate updates.
 
-The map sidebar visibility setting now hides only the sidebar and no longer causes the map itself to close or become unable to reopen.
+Party/Friends maps now keep a clear current-position marker for each member while retaining that member's shared trail.
 
-Map breadcrumb/trail history now resets when Companion confirms a dinosaur life has ended because of death/respawn or a dinosaur change, so a new life does not continue drawing the previous dinosaur's trail.
+When Companion confirms a Party member has died/respawned or changed dinosaur, that member's old trail reset is now shared with the rest of the Party so every connected map starts the new life cleanly.
 
-The current Stable line also includes Dinosaur Guide, persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
+The current Stable line also includes Dinosaur Guide, persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, Quick Bar Health/Food/Water, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
