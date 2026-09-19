@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.54**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.55**.
 
 ## What you download
 
@@ -29,9 +29,9 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, v0.9.20.54, adds a Dinosaur Guide with quick-reference diet, growth and species information for the current playable roster. It includes an offline reference snapshot, reference-data refresh/caching and automatic following of the dinosaur Companion currently detects.
+The current Stable release, v0.9.20.55, expands the Quick Bar so it can show live Health, Food and Water alongside its existing selectable information.
 
-v0.9.20.54 also adds optional Growth/Prime milestone notifications and configurable low Food/Water notifications, with these alerts disabled by default. Optional error telemetry has also been refined so expected background Party reconnect/network outcomes are not reported as application errors.
+v0.9.20.55 also fixes the map sidebar visibility option so hiding the sidebar does not close or strand the map, and resets map breadcrumb/trail history when Companion confirms a dinosaur life ended because of death/respawn or a dinosaur change.
 
 ## Optional telemetry during testing
 
