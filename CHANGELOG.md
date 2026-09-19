@@ -2,6 +2,12 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.55 — Stable — 19 September 2026
+
+- Quick Bar can now show live **Health, Food and Water** alongside its existing selectable information.
+- Fixed the map sidebar visibility option so hiding the sidebar no longer closes or strands the map.
+- Map breadcrumb/trail history now resets when a dinosaur life ends because of death/respawn or a dinosaur change.
+
 ## v0.9.20.54 — Stable — 15 September 2026
 
 - Added a **Dinosaur Guide** with quick-reference information for the current playable roster, including diet, growth information and useful species details.
