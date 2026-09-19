@@ -2,6 +2,12 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.56 — Stable — 19 September 2026
+
+- Fixed breadcrumb trails clearing during ordinary coordinate updates within the same dinosaur life.
+- Fixed Party/Friends maps so each member's current-position marker remains visible while their shared trail is retained.
+- Party trail resets now propagate to connected Party members when a player dies/respawns or changes dinosaur.
+
 ## v0.9.20.55 — Stable — 19 September 2026
 
 - Quick Bar can now show live **Health, Food and Water** alongside its existing selectable information.
