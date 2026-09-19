@@ -58,15 +58,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.54**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.55**.
 
-## What changed in v0.9.20.54?
+## What changed in v0.9.20.55?
 
-v0.9.20.54 adds the **Dinosaur Guide** with quick-reference diet, growth and species information for the current playable roster. It includes an offline snapshot, reference-data refresh/caching and automatic current-dinosaur following.
+v0.9.20.55 expands the **Quick Bar** so it can show live Health, Food and Water alongside its existing selectable information.
 
-The release also adds optional Growth/Prime milestone notifications and configurable low Food/Water notifications. These alerts are disabled by default.
+It also fixes the map sidebar visibility option so hiding the sidebar does not close or strand the map.
 
-Optional error telemetry was also refined so expected background Party reconnect/network outcomes are not reported as application errors.
+Map breadcrumb/trail history now resets when Companion confirms a dinosaur life ended because of death/respawn or a dinosaur change, preventing a new life from continuing the previous dinosaur's trail.
 
 ## Why is the GitHub download older than Stable?
 
