@@ -2,6 +2,13 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.57 — Stable — 24 September 2026
+
+- Added compatibility with the current **Horde Testing** branch while retaining normal Stable-branch support.
+- Updated current-dinosaur and local character-data detection for Horde Testing so dependent Companion features work correctly.
+- Added **Oviraptor** support to playable-dinosaur detection and reference data.
+- Updated Horde Testing server-name recognition.
+
 ## v0.9.20.56 — Stable — 19 September 2026
 
 - Fixed breadcrumb trails clearing during ordinary coordinate updates within the same dinosaur life.
