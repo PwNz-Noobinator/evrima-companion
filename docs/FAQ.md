@@ -58,15 +58,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.56**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.57**.
 
-## What changed in v0.9.20.56?
+## What changed in v0.9.20.57?
 
-v0.9.20.56 fixes breadcrumb trails so normal coordinate updates continue adding to the current dinosaur life's trail instead of clearing it.
+v0.9.20.57 adds compatibility with the current **Horde Testing** branch while keeping support for normal Evrima Stable.
 
-Party/Friends maps now keep a visible current-position marker for each member while preserving the shared trail behind it.
+Current-dinosaur detection and local character-data handling have been updated so features such as Survival Vitals, Quick Bar, Dinosaur Life Memory and current-dinosaur following continue to work on Horde Testing.
 
-When a Party member dies/respawns or changes dinosaur, their trail reset is now shared with the rest of the Party so the previous life's path is cleared for everyone.
+**Oviraptor** is now recognised by Companion, and Horde Testing server-name detection has also been updated.
 
 ## Why is the GitHub download older than Stable?
 
