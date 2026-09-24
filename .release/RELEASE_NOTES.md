@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.56**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.57**.
 
 ## Install
 
@@ -38,13 +38,13 @@ Current Stable builds include:
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.56
+## Current Stable — v0.9.20.57
 
-v0.9.20.56 fixes breadcrumb trails so ordinary coordinate updates continue building the current dinosaur life's trail.
+v0.9.20.57 adds compatibility with the current **Horde Testing** branch while retaining normal Stable-branch support.
 
-Party/Friends maps now keep a clear current-position marker for each member while retaining the shared trail.
+Current-dinosaur detection and local character-data handling have been updated so dependent Companion features continue to work correctly on Horde Testing.
 
-When Companion confirms a Party member has died/respawned or changed dinosaur, that member's old trail reset is now shared with the rest of the Party so the new life starts cleanly on every connected map.
+**Oviraptor** is now recognised as a playable dinosaur, and Horde Testing server-name recognition has been updated.
 
 ## Optional telemetry
 
