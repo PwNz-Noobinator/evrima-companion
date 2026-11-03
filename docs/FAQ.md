@@ -20,6 +20,12 @@ Yes. Companion integrates a desktop Vulnona map overlay and can feed it the curr
 
 Yes. **Survival Vitals** can read the active dinosaur's Growth, Health, Food and Water from Evrima's local character data when available. **Prime Tracker** observes growth changes over time and can estimate growth ETA.
 
+## Why do Survival Vitals or the Quick Bar sometimes update late?
+
+Companion reads dinosaur information from The Isle's local character data. The game does not always write fresh values immediately, so Health, Growth, Food, Water and related information can sometimes update with a noticeable delay.
+
+Companion can only refresh those values after The Isle has written newer data; the delay is therefore not always something Companion can remove.
+
 ## What is the Dinosaur Guide?
 
 The **Dinosaur Guide** provides quick-reference information for the current playable roster, including diet, growth information and useful species details. It includes an offline reference snapshot, can refresh cached reference information, and can automatically follow the dinosaur Companion currently detects.
