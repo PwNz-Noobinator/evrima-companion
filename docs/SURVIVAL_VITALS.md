@@ -16,6 +16,9 @@ The HUD can display:
 
 Companion automatically follows the character currently being played when Evrima updates its local character data.
 
+> [!NOTE]
+> **Updates are not always instantaneous.** Survival Vitals and Quick Bar values depend on when The Isle writes fresh local character data. If the game has not written a newer value yet, Companion may continue showing the previous one for a while even though the in-game value has already changed.
+
 ## Growth ETA behaviour
 
 When Prime Tracker is enabled and enough growth samples exist:
