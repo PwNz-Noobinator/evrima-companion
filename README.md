@@ -38,6 +38,9 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
 | **Languages & Appearance** | Multiple interface languages and configurable UI accent colour. |
 
+> [!NOTE]
+> **Some dinosaur information may update with a noticeable delay.** Features such as Survival Vitals and the Quick Bar depend on when The Isle writes fresh local character data, so Health, Growth, Food, Water and related values may not change instantly in Companion.
+
 ## Screenshots
 
 ### In-game overlays
