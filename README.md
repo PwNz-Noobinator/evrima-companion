@@ -44,7 +44,7 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 ## Screenshots
 
 ### In-game overlays
-[![Evrima Companion map overlay and Survival Vitals](docs/screenshots/evrima-companion-gameplay.png)](docs/screenshots/evrima-companion-gameplay.png)
+[![Evrima Companion map overlay and Survival Vitals](docs/screenshots/evrima-companion-in-game-overlay.png)](docs/screenshots/evrima-companion-in-game-overlay.png)
 
 ### Server browser & dinosaur profile
 [![Evrima Companion server browser and dinosaur profile](docs/screenshots/evrima-companion-servers.png)](docs/screenshots/evrima-companion-servers.png)
