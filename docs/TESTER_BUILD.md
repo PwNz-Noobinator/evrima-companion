@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.57**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.58**.
 
 ## What you download
 
@@ -29,9 +29,9 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, v0.9.20.57, adds compatibility with the current Horde Testing branch while retaining normal Stable-branch support.
+The current Stable release, **v0.9.20.58**, adds optional Companion accounts, online Friends, privacy controls, beta applications and a top-centred click-through Quick Bar.
 
-v0.9.20.57 updates current-dinosaur and local character-data detection for Horde Testing, adds Oviraptor support, and recognises Horde Testing server naming so dependent Companion features continue to work correctly.
+The Horde Testing compatibility and Oviraptor support introduced in v0.9.20.57 remain included.
 
 ## Optional telemetry during testing
 
