@@ -2,6 +2,28 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.58 — 19 November 2026
+
+- Added a new **Companion Account System**, allowing players to register with a username and password without needing an email address.
+- Added unique four-digit username identifiers, persistent sign-in, account management and display-name changes.
+- Added secure account recovery using four randomly generated recovery words.
+- Added an optional first-launch account setup window with **Create Account**, **Sign In** and **Skip for now** options.
+- Added a new **Friends System** with player search, friend requests, friend lists and the ability to remove or block other players.
+- Added optional online presence sharing, allowing friends to see when you're online.
+- Added **Invisible Mode** and individual privacy controls for sharing your current server and dinosaur.
+- Added an in-app **Beta Programme**, allowing players to apply for beta access and submit feedback once approved.
+- Added the ability to report inappropriate usernames directly through Companion.
+- Added private privacy enquiries, allowing players to contact the developer and receive replies within the app.
+- Added the ability to associate eligible previous bug reports and telemetry records with a Companion account.
+- Added account deletion, local technical information viewing and JSON export options.
+- Improved the **Quick Bar** so it automatically positions itself at the top centre of the primary display.
+- Improved Quick Bar click-through behaviour so mouse input passes through to the game without the HUD taking focus.
+- Improved compatibility with **Alt+Tab** when switching between Evrima and other applications.
+- Improved account registration and recovery with a minimum password requirement of six characters.
+- Fixed an issue where older saved settings could prevent the account creation window from appearing.
+- Improved account session restoration and settings persistence between Companion restarts and updates.
+- Existing Companion features and settings remain available, and creating an account does not change optional telemetry preferences.
+
 ## v0.9.20.57 — Stable — 24 September 2026
 
 - Added compatibility with the current **Horde Testing** branch while retaining normal Stable-branch support.
