@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.57-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.58-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.57**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.58**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -30,10 +30,12 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Dinosaur Guide** | Browse quick-reference diet, growth and species information for current playables, with an offline cache and current-dinosaur following. |
 | **Live Map** | Desktop Gateway map with automatic live location, manual coordinates, waypoints, sizing and opacity controls. |
 | **Survival Vitals** | Compact Health, Growth, Food and Water HUD that follows the active dinosaur. |
-| **Quick Bar** | Draggable compact bar for selected live Health, Food, Water, Growth, Prime ETA, session time and server information. |
+| **Quick Bar** | Top-centred, click-through HUD for selected Health, Food, Water, Growth, Prime ETA, session time and server information. |
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
 | **Dinosaur Life Memory** | Track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
-| **Party / Friends** | Share live positions, trails, markers, shared pins and selected Survival Vitals with your group. |
+| **Party** | Share live positions, trails, markers, shared pins and selected Survival Vitals with your group. |
+| **Companion Accounts & Friends** | Optional username-based accounts, recovery words, friend requests, blocks, online presence and private sharing controls. |
+| **Community Features** | Beta programme applications, username reports and private privacy enquiries. |
 | **Second Screen** | Use Map, Dinosaur and Party views on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
 | **Languages & Appearance** | Multiple interface languages and configurable UI accent colour. |
@@ -72,17 +74,19 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.57
+## Current Stable — v0.9.20.58
 
-v0.9.20.57 adds compatibility with the current **Horde Testing** branch while retaining support for the normal Evrima Stable branch.
+**v0.9.20.58 is available now through Companion's built-in Stable update channel.**
 
-Current-dinosaur detection and the local character-data parser have been updated for Horde Testing changes, restoring dependent features such as Survival Vitals, Quick Bar, Dinosaur Life Memory and current-dinosaur following.
+This release introduces optional **Companion Accounts** with email-free registration, persistent sign-in, display-name changes and recovery words. A first-launch setup window lets players register, sign in or skip account creation.
 
-**Oviraptor** is now recognised as a playable dinosaur and is included in Companion's dinosaur reference data.
+The new **online Friends system** supports player search, friend requests, blocking, optional online presence and per-field privacy controls for sharing a server or dinosaur. Invisible Mode is available, and sharing is disabled by default.
 
-Horde Testing server-name detection has also been updated so supported branch servers are classified correctly.
+Players can also apply for the **Beta Programme**, report inappropriate usernames and submit private privacy enquiries through Companion.
 
-The current Stable line also includes Dinosaur Guide, persistent Dinosaur Life Memory, Prime Tracker, Survival Vitals, Quick Bar Health/Food/Water, live non-OCR Asset Location tracking, map/navigation tools, the central hotkey manager, sortable Server Browser columns, Party/Friends, Second Screen and private bug-report conversations.
+The **Quick Bar** now stays centred at the top of the primary display and allows mouse clicks to pass through to the game, with improved behaviour when switching applications using Alt+Tab.
+
+The Horde Testing compatibility and Oviraptor support introduced in v0.9.20.57 remain included, alongside existing map, Party, Second Screen, Dinosaur Life Memory, Dinosaur Guide and other features.
 
 OCR is currently **disabled and locked off** in Stable because the current live location and Prime paths no longer depend on it.
 
