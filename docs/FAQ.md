@@ -38,6 +38,20 @@ Prime Tracker follows Prime-related progress during the current dinosaur life. I
 
 Yes. **Party / Friends** lets players join a Party code and optionally share live map positions, individual trails, markers, shared pins and selected Survival Vitals data. It also supports navigation to Party members, optional separation warnings and persistent Party state across Companion restarts until the player deliberately leaves or disbands.
 
+## Do I need a Companion account?
+
+No. From v0.9.20.58, creating an account is optional. You can register with a username and password without providing a personal email address. The first-launch prompt also offers **Skip for now**.
+
+## How do the new online Friends features work?
+
+Use **Account & Friends** to find players by their full Companion username, send or accept friend requests, remove friends and block players. Friends can see your online status, server or dinosaur only when you choose to share that information. **Invisible Mode** is available, and all sharing is off by default.
+
+The new Friends system is separate from the existing Party code feature, which continues to offer optional shared map positions, trails and vitals.
+
+## What if I forget my Companion account password?
+
+Account recovery uses the four recovery words shown when you create your account. Store them somewhere safe; do not share them with other players.
+
 ## Can I use it on my phone or tablet?
 
 The Companion itself runs on Windows, but **Second Screen** runs in a normal browser over the same local Wi-Fi/LAN. It provides dedicated **Map, Dinosaur and Party** views, including live dinosaur information, Party positions, saved/shared pins and navigation controls.
@@ -64,15 +78,13 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.57**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.58**.
 
-## What changed in v0.9.20.57?
+## What changed in v0.9.20.58?
 
-v0.9.20.57 adds compatibility with the current **Horde Testing** branch while keeping support for normal Evrima Stable.
+v0.9.20.58 adds optional Companion accounts, an online friends system, privacy-controlled presence sharing, beta applications, username reports and private privacy enquiries. The Quick Bar now sits at the top centre of the primary display and passes mouse clicks through to the game.
 
-Current-dinosaur detection and local character-data handling have been updated so features such as Survival Vitals, Quick Bar, Dinosaur Life Memory and current-dinosaur following continue to work on Horde Testing.
-
-**Oviraptor** is now recognised by Companion, and Horde Testing server-name detection has also been updated.
+The Horde Testing and Oviraptor support added in v0.9.20.57 remains available.
 
 ## Why is the GitHub download older than Stable?
 
