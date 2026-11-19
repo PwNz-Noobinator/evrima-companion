@@ -108,6 +108,20 @@ Supabase is also used for the optional Party/Friend realtime feature. While conn
 
 Leave the Party/Friend room to stop sending new Party/Friend state.
 
+## Companion Social accounts and Friends — v0.9.20.58
+
+Companion accounts are **optional**. Registration uses a display name and password, with a unique four-digit username tag; no personal email address is required. Supabase Auth uses an internally generated non-deliverable email alias for authentication. Passwords are handled by Supabase Auth, rather than stored in local Companion settings. A saved refresh session is encrypted locally using Windows DPAPI.
+
+When you register, Supabase stores your account ID, display name and tag, name-change history, social preferences and account creation time. Account recovery uses four randomly generated recovery words shown to you at registration. The words are not retained in plaintext on the server: a salted verifier is stored, and recovery attempts are rate-limited.
+
+The service stores friend requests, friendships, blocks and sharing permissions. Accepted friends may see online presence, current server or current dinosaur **only if you explicitly enable sharing**. Invisible Mode hides that information. The account-based Friends feature does not share map coordinates or private diagnostic data; the older optional Party feature operates separately.
+
+Accounts can also be used to submit username reports, beta programme applications and feedback, and private privacy enquiries. The information you choose to submit is associated with your account so that the developer can reply or moderate. Existing bug reports and opted-in telemetry may be linked only through the respective ownership-verification process; creating an account does **not** enable telemetry or change your consent.
+
+Deleting an account removes its profile, friendships and directly dependent social records. Independently submitted bug reports and opted-in diagnostic telemetry are not automatically erased when an account is deleted; they remain subject to their own retention and deletion procedures. Privacy enquiries can be submitted through the Companion.
+
+Supabase and its network infrastructure may process standard request information, including IP addresses, for service security and abuse prevention. Companion does not intentionally store raw IP addresses in social profile records or sell user data.
+
 ## Updates
 
 ### GitHub
@@ -149,13 +163,13 @@ GitHub, Supabase, VulnonaMAP, Evrima Quick Guide, Epic Online Services and other
 
 ## Retention and privacy requests
 
-Evrima Companion does not require a Companion account. Party/Friend location updates are intended as live room state rather than a permanent location-history feature.
+Evrima Companion accounts are optional. Party location updates are intended as live room state rather than a permanent location-history feature.
 
 Telemetry retention is described above. Bug-report records, report-thread messages and diagnostics the user chooses to submit are retained while useful for investigating defects, validating fixes, preventing duplicate reports or maintaining necessary release history; they may be deleted or de-identified earlier.
 
 To request access to or deletion of a bug report you submitted, use **Report Bug**, choose **Other**, write `PRIVACY REQUEST` at the start of the description, and include the relevant `BUG-XXXXXXXX` reference(s). Do not post private information in a public GitHub issue.
 
-Because Companion normally has no user account and deliberately minimizes identifying information, the project may be unable to identify data as belonging to a particular person unless the requester provides the relevant report reference or other information sufficient to locate it.
+For legacy bug reports and optional telemetry records that have not been linked to a Companion account, the project may be unable to establish ownership unless the requester supplies the relevant report reference or other verification information.
 
 External providers such as Supabase and GitHub may process normal service/network logs under their own terms and retention policies, including processing in countries outside the user's own country.
 
