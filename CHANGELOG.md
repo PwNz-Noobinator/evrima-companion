@@ -2,7 +2,7 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
-## v0.9.20.58 — Released — 19 November 2026
+## v0.9.20.58 — Stable — 19 November 2026
 
 - Added a new **Companion Account System**, allowing players to register with a username and password without needing an email address.
 - Added unique four-digit username identifiers, persistent sign-in, account management and display-name changes.
