@@ -4,6 +4,14 @@
 
 Party / Friends lets Evrima Companion users share selected live gameplay information with a group while playing **The Isle: Evrima**.
 
+## Companion Accounts & Friends (v0.9.20.58)
+
+Companion now also has a separate, optional **Account & Friends** feature. Players can register without a personal email address, find each other by their full Companion usernames, exchange friend requests and block or remove contacts.
+
+Accepted friends can see online status, current server and current dinosaur **only when the player enables those sharing options**. Invisible Mode hides presence information. Sharing is disabled by default.
+
+The account-based Friends system does **not** share map coordinates or private diagnostic information. For shared map positions, trails, pins and selected vitals, continue using the optional **Party** feature described below.
+
 ## Party codes
 
 A player can create a Party code and give it to friends, or join somebody else's Party code from Companion.
