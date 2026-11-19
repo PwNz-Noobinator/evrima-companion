@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.57**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.58**.
 
 ## Install
 
@@ -27,24 +27,33 @@ Current Stable builds include:
 - Survival Vitals HUD for Health, Growth, Food and Water.
 - Prime Tracker with zone progress and growth ETA.
 - Persistent Dinosaur Life Memory, active playtime, life history and last-known state/location recovery.
-- Party/Friends location, selected vitals and shared-pin support.
+- Party location, selected vitals and shared-pin support.
+- Optional Companion accounts with persistent sign-in, recovery words and account management.
+- Online Friends with friend requests, blocking, online presence, Invisible Mode and privacy-controlled server/dinosaur sharing.
+- Beta programme applications, username reporting and private privacy enquiries.
 - Phone/tablet Second Screen with Map, Dinosaur and Party views over the local network.
 - Built-in private bug reports and reply threads.
 - Multiple interface languages and appearance settings.
 - Optional privacy-minimised technical telemetry.
-- Persistent map/navigation tools, Companion hotkeys, Quick Bar with selectable Health/Food/Water and other live information, and sortable Server Browser columns.
+- Persistent map/navigation tools, Companion hotkeys, a top-centred click-through Quick Bar with selectable Health/Food/Water and other live information, and sortable Server Browser columns.
 - Optional Growth/Prime milestone and low Food/Water notifications.
 - Optional uninstall feedback and telemetry-retention/deletion choice during uninstall.
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.57
+## Current Stable — v0.9.20.58
 
-v0.9.20.57 adds compatibility with the current **Horde Testing** branch while retaining normal Stable-branch support.
+**v0.9.20.58 is available now through Companion's built-in Stable update channel.**
 
-Current-dinosaur detection and local character-data handling have been updated so dependent Companion features continue to work correctly on Horde Testing.
+This release introduces optional **Companion Accounts** with email-free registration, persistent sign-in, display-name changes and recovery words. A first-launch setup window lets players register, sign in or skip account creation.
 
-**Oviraptor** is now recognised as a playable dinosaur, and Horde Testing server-name recognition has been updated.
+The new **online Friends system** supports player search, friend requests, blocking, optional online presence and per-field privacy controls for sharing a server or dinosaur. Invisible Mode is available, and sharing is disabled by default.
+
+Players can also apply for the **Beta Programme**, report inappropriate usernames and submit private privacy enquiries through Companion.
+
+The **Quick Bar** now stays centred at the top of the primary display and allows mouse clicks to pass through to the game, with improved behaviour when switching applications using Alt+Tab.
+
+The Horde Testing compatibility and Oviraptor support introduced in v0.9.20.57 remain included, alongside existing map, Party, Second Screen, Dinosaur Life Memory, Dinosaur Guide and other features.
 
 ## Optional telemetry
 
