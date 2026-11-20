@@ -4,6 +4,8 @@
 
 Survival Vitals is Evrima Companion's compact HUD for **The Isle: Evrima**. It follows the active dinosaur from Evrima's local character data and can display core survival information without requiring OCR.
 
+In v0.9.20.59 and later, find its controls under **Map & overlays → HUD & vitals**. Quick Bar options are located in the same tab.
+
 ## What Survival Vitals shows
 
 The HUD can display:
