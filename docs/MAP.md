@@ -4,6 +4,8 @@
 
 Evrima Companion includes desktop map and live-location tools for **The Isle: Evrima**, built around the Vulnona Gateway map.
 
+From v0.9.20.59, open **Map & overlays** from the sidebar. Its **Map controls**, **HUD & vitals**, **Party & phone**, and **Waypoints** tabs keep map configuration, overlay settings, sharing and saved destinations in separate sections.
+
 ## Live map location
 
 Companion can take the player's live Asset Location and hand it directly to the map without relying on OCR. The same verified location path is also used by Prime Tracker so map movement and Prime-zone detection stay in sync.
