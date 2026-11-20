@@ -4,6 +4,8 @@
 
 Prime Tracker is Evrima Companion's growth and objective tracker for **The Isle: Evrima**. It uses the same live Gateway location path used by Companion's map tools to follow Prime-related zone visits for the dinosaur life you are currently playing.
 
+In v0.9.20.59 and later, expand **Dinosaur** in the Companion sidebar and select **Prime Tracker**. Its progress, growth estimates, condition table and manual-condition options are presented in a clearer layout.
+
 ## What Prime Tracker tracks
 
 Prime Tracker can automatically record visits to known:
