@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.58**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.59**.
 
 ## Install
 
@@ -19,6 +19,8 @@ This package is the temporary public bootstrap for Evrima Companion.
 ## What Companion includes
 
 Current Stable builds include:
+
+- Redesigned interface with expandable sidebar menus, focused Map and Settings tabs, and clearer layouts inside each page.
 
 - Official and Unofficial Evrima server browser.
 - Saved dinosaur profiles.
@@ -41,19 +43,17 @@ Current Stable builds include:
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.58
+## Current Stable — v0.9.20.59
 
-**v0.9.20.58 is available now through Companion's built-in Stable update channel.**
+**v0.9.20.59 is available now through Companion's built-in Stable update channel.**
 
-This release introduces optional **Companion Accounts** with email-free registration, persistent sign-in, display-name changes and recovery words. A first-launch setup window lets players register, sign in or skip account creation.
+This update redesigns the Companion's navigation and the **contents of its pages** while keeping the existing Isle-inspired visual theme. The sidebar now groups related features under **Dinosaur**, **Social**, and **Settings & help**, with direct access to **Servers**, **Map & overlays**, and **Updates**.
 
-The new **online Friends system** supports player search, friend requests, blocking, optional online presence and per-field privacy controls for sharing a server or dinosaur. Invisible Mode is available, and sharing is disabled by default.
+**Map & overlays** now has dedicated **Map controls**, **HUD & vitals**, **Party & phone**, and **Waypoints** tabs. **Settings** is divided into **General**, **Hotkeys**, **Dinosaur**, **Maintenance**, and **Telemetry & privacy**.
 
-Players can also apply for the **Beta Programme**, report inappropriate usernames and submit private privacy enquiries through Companion.
+Server browsing, dinosaur information, Prime tracking, waypoint controls, account features and bug reporting have been reorganised with clearer headings, spacing and information layouts. Existing Companion features, accounts, saved settings and telemetry choices remain available.
 
-The **Quick Bar** now stays centred at the top of the primary display and allows mouse clicks to pass through to the game, with improved behaviour when switching applications using Alt+Tab.
-
-The Horde Testing compatibility and Oviraptor support introduced in v0.9.20.57 remain included, alongside existing map, Party, Second Screen, Dinosaur Life Memory, Dinosaur Guide and other features.
+The optional **Companion Accounts and Friends** features introduced in v0.9.20.58 remain included, as do the Horde Testing and Oviraptor improvements from v0.9.20.57.
 
 ## Optional telemetry
 
