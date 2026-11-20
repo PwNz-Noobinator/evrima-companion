@@ -4,6 +4,8 @@
 
 Second Screen lets Evrima Companion display a live **The Isle: Evrima** map on a phone or tablet connected to the same local network as the PC running Companion.
 
+In v0.9.20.59 and later, find Second Screen controls under **Map & overlays → Party & phone**.
+
 ## How it works
 
 Companion runs the Second Screen service locally on the PC. The phone or tablet connects over the user's Wi-Fi/LAN using the connection details shown by Companion.
