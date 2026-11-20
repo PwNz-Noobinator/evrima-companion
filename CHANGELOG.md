@@ -2,6 +2,23 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.59 — Stable — 20 November 2026
+
+- Redesigned the Companion's interface layout to make its growing set of features easier to navigate while retaining the existing Isle-inspired theme.
+- Reorganised the sidebar into expandable **Dinosaur**, **Social**, and **Settings & help** menus, while keeping **Servers**, **Map & overlays**, and **Updates** easy to reach.
+- Split **Map & overlays** into **Map controls**, **HUD & vitals**, **Party & phone**, and **Waypoints** tabs.
+- Split **Settings** into **General**, **Hotkeys**, **Dinosaur**, **Maintenance**, and **Telemetry & privacy** tabs.
+- Reworked the contents of existing pages with clearer headings, improved spacing, more consistent alignment and less unnecessary boxed text.
+- Improved the **Server Browser** with better-organised filters and a clearer separation between current dinosaur vitals and saved profile details.
+- Improved the **Dinosaur Guide** with better-organised species facts, diet information and characteristics.
+- Improved **Dinosaur Life Memory** with clearer life details, growth information, playtime and history.
+- Improved **Prime Tracker** with a more readable progress overview, growth estimates, condition information and manual-condition layout.
+- Reorganised **Quick Bar** and **Survival Vitals** options so related controls are easier to find and use.
+- Improved **Waypoint** management with clearer navigation, sharing, save and delete actions.
+- Improved the presentation of **Party**, **Second Screen**, **Companion Accounts & Friends**, and privacy options.
+- Refined **Settings**, **Updates**, and **Bug Reports** with more consistent controls, tables and information layouts.
+- Preserved existing Companion features, saved settings, account options and optional telemetry preferences.
+
 ## v0.9.20.58 — Stable — 19 November 2026
 
 - Added a new **Companion Account System**, allowing players to register with a username and password without needing an email address.
