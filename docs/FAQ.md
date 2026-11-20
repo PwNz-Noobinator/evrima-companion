@@ -78,7 +78,15 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.58**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.59**.
+
+## What changed in v0.9.20.59?
+
+v0.9.20.59 redesigns the Companion's layout. **Servers**, **Map & overlays**, and **Updates** remain easy to reach, while the sidebar now groups other features into expandable **Dinosaur**, **Social**, and **Settings & help** menus.
+
+Inside **Map & overlays**, the controls are separated into **Map controls**, **HUD & vitals**, **Party & phone**, and **Waypoints** tabs. **Settings** has its own General, Hotkeys, Dinosaur, Maintenance, and Telemetry & privacy tabs. Dinosaur Guide, Dinosaur Life, Prime Tracker, server profiles, account features and bug reports also have cleaner layouts.
+
+The redesign keeps the existing visual theme and Companion functionality. Existing settings and optional telemetry choices are preserved.
 
 ## What changed in v0.9.20.58?
 
