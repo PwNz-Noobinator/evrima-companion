@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.58**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.59**.
 
 ## What you download
 
@@ -29,7 +29,9 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, **v0.9.20.58**, adds optional Companion accounts, online Friends, privacy controls, beta applications and a top-centred click-through Quick Bar.
+The current Stable release, **v0.9.20.59**, redesigns the sidebar, Map and Settings menus, and the contents of existing feature pages. It improves the layout of the Server Browser, Dinosaur Guide, Dinosaur Life, Prime Tracker, waypoint management, account features and bug reporting without removing existing functionality.
+
+The optional Companion accounts, online Friends, privacy controls, beta applications and top-centred click-through Quick Bar introduced in v0.9.20.58 remain available.
 
 The Horde Testing compatibility and Oviraptor support introduced in v0.9.20.57 remain included.
 
