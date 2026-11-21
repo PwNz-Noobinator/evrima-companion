@@ -35,9 +35,13 @@ Companion targets the current supported Gateway map branch and checks the map ru
 
 OCR remains implemented as a development fallback, but it is currently **disabled and locked off** in Stable. Companion's working live location path no longer depends on OCR, so map location updates and Prime tracking can function without it.
 
-## Party markers
+## Party and Friends markers
 
-When Party/Friends is in use, the map can show group members' shared positions, individual trails and marker choices. Users can disable their own location sharing.
+With a manually joined Party, the map can show group members' shared positions, individual trails and marker choices.
+
+From v0.9.20.60, accepted **account Friends** on the same server can also appear automatically. Both friends must enable **server sharing** and **live map-position sharing**, and neither can be Invisible, before markers are shown. These options are in **Account & Friends** and are **off by default**. Only recent verified live positions are eligible, not manual or old locations.
+
+Automatic account Friends grouping is separate from Party-code membership.
 
 ## Second Screen
 
