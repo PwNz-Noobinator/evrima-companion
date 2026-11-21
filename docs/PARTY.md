@@ -10,7 +10,13 @@ Companion now also has a separate, optional **Account & Friends** feature. Playe
 
 Accepted friends can see online status, current server and current dinosaur **only when the player enables those sharing options**. Invisible Mode hides presence information. Sharing is disabled by default.
 
-The account-based Friends system does **not** share map coordinates or private diagnostic information. For shared map positions, trails, pins and selected vitals, continue using the optional **Party** feature described below.
+### Automatic same-server Friends — v0.9.20.60
+
+When both accepted friends are playing on the **same server** and are sharing their server, Companion automatically groups them under **Map & overlays → Party & phone**. There is no Party code to enter for this account-based grouping.
+
+Live map markers are a separate, optional feature. Under **Account & Friends**, both players must enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**, and neither player may be Invisible. Sharing is **off by default**. Companion sends only recent verified live-game coordinates, not saved, manually entered or outdated locations. Shared friend markers can be shown on the desktop map and the local-network Second Screen.
+
+The account-based Friends system does **not** share technical diagnostics and does not automatically turn on Party-code sharing. The manual **Party** system below remains available for trails, shared pins and selected vitals.
 
 ## Party codes
 
