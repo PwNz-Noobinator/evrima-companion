@@ -17,8 +17,8 @@ A QR code is provided so the local page can be opened without manually typing th
 Second Screen can receive:
 
 - the player's latest map position
-- Party/Friends markers
-- Party movement trails
+- Party markers and Party movement trails
+- Optional same-server Friends map markers in v0.9.20.60, only with mutual server and live-location sharing enabled
 - map state from Companion
 
 The phone is acting as an additional Companion display rather than exposing the map publicly on the internet.
