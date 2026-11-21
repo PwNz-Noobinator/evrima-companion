@@ -2,6 +2,20 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.60 — Stable — 21 November 2026
+
+- Fixed Companion notification boxes not resizing correctly when messages contain more text.
+- Fixed a notification timing issue that could cause a newer message to disappear prematurely.
+- Fixed missing **friend online** alerts when an accepted friend comes online and has opted to show their presence.
+- Updated the **Friends** list to check for incoming friend requests automatically, without having to press **Refresh**.
+- Added notifications for incoming friend requests discovered while Companion is running.
+- Friends and friend-request information now refresh automatically approximately every **15 seconds** while signed in.
+- Added automatic **same-server friend grouping**: accepted friends on the same game server appear under **Map & overlays → Party & phone** without requiring a manual Party code.
+- Added optional friend-position markers on the desktop and Second Screen maps, with **explicit, mutual consent**. Both friends must enable server and location sharing, and neither can be in Invisible Mode.
+- Location sharing remains **off by default**. Only recent, verified live-game positions are eligible; manually entered, historical or stale coordinates are not shared through the account Friends system.
+- Retained the existing manual Party-code system independently of automatic same-server Friends grouping.
+- Existing account settings, Companion features and optional technical telemetry preferences remain available.
+
 ## v0.9.20.59 — Stable — 20 November 2026
 
 - Redesigned the Companion's interface layout to make its growing set of features easier to navigate while retaining the existing Isle-inspired theme.
