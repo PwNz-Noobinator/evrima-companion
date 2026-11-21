@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.59**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.60**.
 
 ## Install
 
@@ -43,17 +43,15 @@ Current Stable builds include:
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.59
+## Current Stable — v0.9.20.60
 
-**v0.9.20.59 is available now through Companion's built-in Stable update channel.**
+**v0.9.20.60 is available through Companion's built-in Stable update channel.**
 
-This update redesigns the Companion's navigation and the **contents of its pages** while keeping the existing Isle-inspired visual theme. The sidebar now groups related features under **Dinosaur**, **Social**, and **Settings & help**, with direct access to **Servers**, **Map & overlays**, and **Updates**.
+This update fixes several problems with **notifications and Friends**. Notifications now adjust to longer messages, and an older notification timer no longer cuts short a newer message. Accepted friends can trigger an online alert when they have enabled online visibility, while incoming friend requests appear automatically without a manual refresh. Signed-in Companion clients check their Friends information roughly every **15 seconds**.
 
-**Map & overlays** now has dedicated **Map controls**, **HUD & vitals**, **Party & phone**, and **Waypoints** tabs. **Settings** is divided into **General**, **Hotkeys**, **Dinosaur**, **Maintenance**, and **Telemetry & privacy**.
+**Friends on the same server** are now grouped automatically under **Map & overlays → Party & phone**, without requiring a Party code. Friends' map positions can also appear on the desktop map or Second Screen, but **both people must explicitly enable server and live location sharing**, and neither may use Invisible Mode. Location sharing is **off by default**; only recent, verified live-game positions are eligible. The existing manual Party system remains available.
 
-Server browsing, dinosaur information, Prime tracking, waypoint controls, account features and bug reporting have been reorganised with clearer headings, spacing and information layouts. Existing Companion features, accounts, saved settings and telemetry choices remain available.
-
-The optional **Companion Accounts and Friends** features introduced in v0.9.20.58 remain included, as do the Horde Testing and Oviraptor improvements from v0.9.20.57.
+v0.9.20.59's interface redesign and previous Companion functionality remain included.
 
 ## Optional telemetry
 
