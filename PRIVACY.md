@@ -114,7 +114,15 @@ Companion accounts are **optional**. Registration uses a display name and passwo
 
 When you register, Supabase stores your account ID, display name and tag, name-change history, social preferences and account creation time. Account recovery uses four randomly generated recovery words shown to you at registration. The words are not retained in plaintext on the server: a salted verifier is stored, and recovery attempts are rate-limited.
 
-The service stores friend requests, friendships, blocks and sharing permissions. Accepted friends may see online presence, current server or current dinosaur **only if you explicitly enable sharing**. Invisible Mode hides that information. The account-based Friends feature does not share map coordinates or private diagnostic data; the older optional Party feature operates separately.
+The service stores friend requests, friendships, blocks and sharing permissions. Accepted friends may see online presence, current server or current dinosaur **only if you explicitly enable sharing**. Invisible Mode hides that information.
+
+### Optional live map sharing with accepted Friends — v0.9.20.60
+
+Account-based Friends can be grouped automatically when playing on the same server, provided both have enabled server sharing. To share **live map coordinates**, both accepted friends must **separately opt in** to sharing their current server and live map position, and neither may be Invisible. Location sharing remains **off by default** and is not enabled by becoming friends.
+
+If enabled, the Companion Social service can receive and temporarily retain the latest verified live-game coordinates, map identifier and update timestamp alongside the user's current server/presence data. Those coordinates are supplied only to accepted, unblocked friends who are on the same server, with **mutual consent** and sufficiently recent location data. The Companion does not intentionally send saved, manually entered or stale coordinates through this feature. Visibility stops when the sharing preference is disabled, the user becomes Invisible, or the live presence/location expires.
+
+The account-based Friends feature does not share private diagnostic data or make the user part of a Party-code room. The older optional Party feature operates separately.
 
 Accounts can also be used to submit username reports, beta programme applications and feedback, and private privacy enquiries. The information you choose to submit is associated with your account so that the developer can reply or moderate. Existing bug reports and opted-in telemetry may be linked only through the respective ownership-verification process; creating an account does **not** enable telemetry or change your consent.
 
