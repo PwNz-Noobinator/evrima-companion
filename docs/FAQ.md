@@ -78,7 +78,19 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.59**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.60**.
+
+## What changed in v0.9.20.60?
+
+v0.9.20.60 improves notifications and the Friends system. Notification boxes expand to fit their text; friend online notifications now appear for accepted friends who share online presence; and incoming friend requests update without needing to press **Refresh**. Signed-in Companion checks Friends status approximately every 15 seconds.
+
+Accepted friends playing on the same server are grouped automatically under **Map & overlays → Party & phone**. This does not require a Party code. To see each other's live map markers, **both players must enable server sharing and live map-position sharing** in Account & Friends, and neither may be Invisible. Map sharing is **off by default**, and only recent, verified live-game coordinates are eligible. The existing manual Party system remains separate.
+
+## How do I enable automatic friend map markers?
+
+Sign in to Companion, open **Account & Friends**, and enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**. Each friend must enable the same options and turn off Invisible Mode. You must both be playing on the same server. The shared marker appears on the desktop and Second Screen map when a fresh, verified location is available.
+
+Being friends or sharing online status alone does **not** enable map-position sharing.
 
 ## What changed in v0.9.20.59?
 
