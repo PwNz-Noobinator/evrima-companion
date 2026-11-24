@@ -140,6 +140,8 @@ The public GitHub repository provides release/download information and the tempo
 
 Installed Companion builds use Supabase for the Stable application update channel. Update checks can therefore contact Supabase even when telemetry is disabled; telemetry consent is separate from the updater.
 
+From v0.9.20.61, signed-in Companion clients can also contact the private update service to check whether their account is eligible for an update. Once enabled, this service uses the existing authenticated account session to check Beta eligibility and returns temporary download links for authorised releases. The update check is separate from optional telemetry; it does not require telemetry consent.
+
 The GitHub bootstrap ZIP does not need to be rebuilt for each normal application update.
 
 ## VulnonaMAP / Vulnona Map Overlay
