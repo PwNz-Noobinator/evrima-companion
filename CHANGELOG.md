@@ -2,13 +2,33 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.64 — Stable — 24 November 2026
+
+- Split account management and Friends into dedicated pages.
+- Added automatic account, friend-request and Beta status synchronisation with background refresh fallback.
+- Allow sign-in and recovery using a unique display name; shared names require the full username and four-digit tag.
+- Improved password recovery with single-use, six-character developer-issued codes, 30-minute expiry, persistent reset notices and new recovery words after successful recovery.
+- Added private account-data export downloads under **Privacy & Data**, available for 30 days.
+- Improved bug-report reply checks and support for developer announcements.
+- Improved same-species respawn detection and dinosaur-life, breadcrumb and Prime-run resets.
+- Improved discovery of updated Vulnona Gateway map data and warnings about outdated Prime zone geometry.
+- Retained v0.9.20.63 stability fixes.
+- Windows executable properties now show the actual Companion version.
+
+**Known limitation:** Migration, mass migration and patrol zone tracking may be inaccurate until updated Vulnona map data is available for the current game version.
+
+## v0.9.20.63 — Stable — 24 November 2026
+
+- Improved background account and update processing, worker cleanup and shutdown handling to address unexpected application crashes.
+- Added local crash diagnostics.
+
 ## v0.9.20.61 — Stable — 24 November 2026
 
 - Added client-side support for account-targeted Beta update discovery and integrity-checked downloads.
 - Added automatic background checks for eligible private update offers, without requiring an app restart or manual refresh.
 - Added a **(Beta)** version label for installations received through the Beta channel; Stable builds retain the existing version display.
 - Retained the existing Stable update process and shared Friends, Party and map-sharing functionality.
-- Beta distribution requires activation of the private update service before offers can be delivered.
+- At the time of this release, Beta distribution required the matching service activation.
 
 ## v0.9.20.60 — Stable — 21 November 2026
 
