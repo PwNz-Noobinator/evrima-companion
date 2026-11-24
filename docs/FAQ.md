@@ -32,7 +32,7 @@ The **Dinosaur Guide** provides quick-reference information for the current play
 
 ## What is Prime Tracker?
 
-Prime Tracker follows Prime-related progress during the current dinosaur life. It can automatically detect visits to known **Sanctuary, Migration, Mass Migration and Patrol Zone** locations using the same live coordinates as the map.
+Prime Tracker follows Prime-related progress during the current dinosaur life. It can automatically detect visits to known **Sanctuary, Migration, Mass Migration and Patrol Zone** locations using the same live coordinates as the map. Migration, mass migration and patrol tracking may be inaccurate until matching Vulnona map data is available for the latest game update.
 
 ## Does Evrima Companion work with friends?
 
@@ -44,13 +44,17 @@ No. From v0.9.20.58, creating an account is optional. You can register with a us
 
 ## How do the new online Friends features work?
 
-Use **Account & Friends** to find players by their full Companion username, send or accept friend requests, remove friends and block players. Friends can see your online status, server or dinosaur only when you choose to share that information. **Invisible Mode** is available, and all sharing is off by default.
+Use **Friends** to find players by their full Companion username, send or accept friend requests, remove friends and block players. Friends can see your online status, server or dinosaur only when you choose to share that information. **Invisible Mode** is available, and all sharing is off by default.
 
 The new Friends system is separate from the existing Party code feature, which continues to offer optional shared map positions, trails and vitals.
 
 ## What if I forget my Companion account password?
 
-Account recovery uses the four recovery words shown when you create your account. Store them somewhere safe; do not share them with other players.
+Open **Account → Recover account** and use the four recovery words shown when you created your account. A unique username is sufficient; if your name is shared, enter the full username with its four-digit tag. If developer-assisted recovery is needed, contact the developer privately. An issued six-character code is single-use and expires after 30 minutes. Save the new recovery words after a successful recovery. Never share passwords or recovery words.
+
+## How do I request my account data?
+
+Sign in and open **Privacy & Data** to submit a data access enquiry. Once the developer has prepared an export, use **Download account data** in the same account within 30 days. Additional records or redactions may require manual review.
 
 ## Can I use it on my phone or tablet?
 
@@ -78,23 +82,39 @@ No. The temporary public tester/bootstrap package contains its own private build
 
 Use the official [GitHub Releases](https://github.com/PwNz-Noobinator/evrima-companion/releases) page. The current public GitHub package is the **v0.9.20.40 bootstrap**.
 
-After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.61**.
+After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.64**.
 
-## What changed in v0.9.20.61?
+## What changed in v0.9.20.64?
 
-v0.9.20.61 adds the client-side infrastructure for account-targeted Beta updates. Once the private update service is enabled, approved testers will be able to receive eligible update offers through Companion without restarting or manually refreshing. Installed Beta builds display **(Beta)** beside their version; regular Stable builds retain the existing version label. Stable and Beta users continue to use the same Friends, Party and map-sharing systems.
+**v0.9.20.64 is available through Companion's built-in Stable update channel.**
 
-The private update service still requires activation before Beta distribution becomes available. Until then, continue using Stable normally.
+This release brings together the compatibility improvements and stability fixes from the recent development builds.
+
+- Separate **Account** and **Friends** pages, with automatic account, friend-request and Beta status updates.
+- Sign in and recover using your username alone when it is unique. If several accounts share a name, use the full username including its four-digit tag.
+- Improved account recovery, including developer-issued single-use recovery codes valid for 30 minutes, persistent reset notices and replacement recovery words after a successful reset.
+- Request and download account data privately through **Privacy & Data**.
+- Improved background processing, shutdown stability, bug-report reply checks and dinosaur-life tracking.
+- Updated Prime Tracker map-version discovery and warnings when older zone data is used.
+- Correct version information in Windows executable properties.
+
+**Prime Tracker notice:** Migration, mass migration and patrol tracking may be inaccurate following the latest Evrima update until matching Vulnona map data is available. Live location tracking, Survival Vitals and growth estimates remain available, subject to the existing local-data limitations.
+
+Approved Beta testers can receive eligible account-targeted update offers. Stable and Beta installations continue to use the same Friends, Party and map-sharing features.
+
+## What changed in v0.9.20.63?
+
+Background account and update checks, worker cleanup and shutdown handling were improved to address unexpected crashes.
 
 ## What changed in v0.9.20.60?
 
 v0.9.20.60 improves notifications and the Friends system. Notification boxes expand to fit their text; friend online notifications now appear for accepted friends who share online presence; and incoming friend requests update without needing to press **Refresh**. Signed-in Companion checks Friends status approximately every 15 seconds.
 
-Accepted friends playing on the same server are grouped automatically under **Map & overlays → Party & phone**. This does not require a Party code. To see each other's live map markers, **both players must enable server sharing and live map-position sharing** in Account & Friends, and neither may be Invisible. Map sharing is **off by default**, and only recent, verified live-game coordinates are eligible. The existing manual Party system remains separate.
+Accepted friends playing on the same server are grouped automatically under **Map & overlays → Party & phone**. This does not require a Party code. To see each other's live map markers, **both players must enable server sharing and live map-position sharing** in Friends, and neither may be Invisible. Map sharing is **off by default**, and only recent, verified live-game coordinates are eligible. The existing manual Party system remains separate.
 
 ## How do I enable automatic friend map markers?
 
-Sign in to Companion, open **Account & Friends**, and enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**. Each friend must enable the same options and turn off Invisible Mode. You must both be playing on the same server. The shared marker appears on the desktop and Second Screen map when a fresh, verified location is available.
+Sign in to Companion, open **Friends**, and enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**. Each friend must enable the same options and turn off Invisible Mode. You must both be playing on the same server. The shared marker appears on the desktop and Second Screen map when a fresh, verified location is available.
 
 Being friends or sharing online status alone does **not** enable map-position sharing.
 
