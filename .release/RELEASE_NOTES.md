@@ -3,7 +3,7 @@
 This package is the temporary public bootstrap for Evrima Companion.
 
 > [!IMPORTANT]
-> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.61**.
+> **v0.9.20.40 is not the current Stable Companion.** After the first launch, go to **Updates → Check for updates** and install the newest Stable version before testing. Current Stable: **v0.9.20.64**.
 
 ## Install
 
@@ -43,15 +43,29 @@ Current Stable builds include:
 
 OCR is currently disabled in Stable because current map/location and Prime functionality uses the working non-OCR live location path.
 
-## Current Stable — v0.9.20.61
+## Current Stable — v0.9.20.64
 
-**v0.9.20.61 is available through Companion's built-in Stable update channel.**
+**v0.9.20.64 is available through Companion's built-in Stable update channel.**
 
-v0.9.20.61 adds the client-side infrastructure for account-targeted Beta updates. Once the private update service is enabled, approved testers will be able to receive eligible update offers through Companion without restarting or manually refreshing. Installed Beta builds display **(Beta)** beside their version; regular Stable builds retain the existing version label. Stable and Beta users continue to use the same Friends, Party and map-sharing systems.
+This release brings together the compatibility improvements and stability fixes from the recent development builds.
 
-The private update service still requires activation before Beta distribution becomes available. Until then, continue using Stable normally.
+- Separate **Account** and **Friends** pages, with automatic account, friend-request and Beta status updates.
+- Sign in and recover using your username alone when it is unique. If several accounts share a name, use the full username including its four-digit tag.
+- Improved account recovery, including developer-issued single-use recovery codes valid for 30 minutes, persistent reset notices and replacement recovery words after a successful reset.
+- Request and download account data privately through **Privacy & Data**.
+- Improved background processing, shutdown stability, bug-report reply checks and dinosaur-life tracking.
+- Updated Prime Tracker map-version discovery and warnings when older zone data is used.
+- Correct version information in Windows executable properties.
 
-### Previous release — v0.9.20.60
+**Prime Tracker notice:** Migration, mass migration and patrol tracking may be inaccurate following the latest Evrima update until matching Vulnona map data is available. Live location tracking, Survival Vitals and growth estimates remain available, subject to the existing local-data limitations.
+
+Approved Beta testers can receive eligible account-targeted update offers. Stable and Beta installations continue to use the same Friends, Party and map-sharing features.
+
+### Previous release — v0.9.20.63
+
+Improved background account and update checks, worker cleanup and application shutdown to address unexpected crashes. Added local crash diagnostics to assist troubleshooting.
+
+### Earlier release — v0.9.20.60
 
 v0.9.20.60 fixed several problems with **notifications and Friends**. Notifications now adjust to longer messages, and an older notification timer no longer cuts short a newer message. Accepted friends can trigger an online alert when they have enabled online visibility, while incoming friend requests appear automatically without a manual refresh. Signed-in Companion clients check their Friends information roughly every **15 seconds**.
 
