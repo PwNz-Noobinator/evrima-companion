@@ -6,15 +6,15 @@ Party / Friends lets Evrima Companion users share selected live gameplay informa
 
 ## Companion Accounts & Friends (v0.9.20.58)
 
-Companion now also has a separate, optional **Account & Friends** feature. Players can register without a personal email address, find each other by their full Companion usernames, exchange friend requests and block or remove contacts.
+Companion now also has separate, optional **Account** and **Friends** pages under Social. Players can register without a personal email address, find each other by their full Companion usernames, exchange friend requests and block or remove contacts.
 
-Accepted friends can see online status, current server and current dinosaur **only when the player enables those sharing options**. Invisible Mode hides presence information. Sharing is disabled by default.
+Accepted friends can see online status, current server and current dinosaur **only when the player enables those sharing options**. Invisible Mode hides presence information. Sharing is disabled by default. From v0.9.20.64, friend-request and account changes refresh automatically while signed in, with background checks as a fallback.
 
 ### Automatic same-server Friends — v0.9.20.60
 
 When both accepted friends are playing on the **same server** and are sharing their server, Companion automatically groups them under **Map & overlays → Party & phone**. There is no Party code to enter for this account-based grouping.
 
-Live map markers are a separate, optional feature. Under **Account & Friends**, both players must enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**, and neither player may be Invisible. Sharing is **off by default**. Companion sends only recent verified live-game coordinates, not saved, manually entered or outdated locations. Shared friend markers can be shown on the desktop map and the local-network Second Screen.
+Live map markers are a separate, optional feature. Under **Friends**, both players must enable **Share current server with accepted friends** and **Share live map position with accepted friends on my server**, and neither player may be Invisible. Sharing is **off by default**. Companion sends only recent verified live-game coordinates, not saved, manually entered or outdated locations. Shared friend markers can be shown on the desktop map and the local-network Second Screen.
 
 The account-based Friends system does **not** share technical diagnostics and does not automatically turn on Party-code sharing. The manual **Party** system below remains available for trails, shared pins and selected vitals.
 
