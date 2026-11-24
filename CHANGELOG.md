@@ -2,6 +2,14 @@
 
 This changelog covers player-visible changes made during public testing. Internal development, QA and release-tooling changes are omitted unless they directly affect users.
 
+## v0.9.20.61 — Stable — 24 November 2026
+
+- Added client-side support for account-targeted Beta update discovery and integrity-checked downloads.
+- Added automatic background checks for eligible private update offers, without requiring an app restart or manual refresh.
+- Added a **(Beta)** version label for installations received through the Beta channel; Stable builds retain the existing version display.
+- Retained the existing Stable update process and shared Friends, Party and map-sharing functionality.
+- Beta distribution requires activation of the private update service before offers can be delivered.
+
 ## v0.9.20.60 — Stable — 21 November 2026
 
 - Fixed Companion notification boxes not resizing correctly when messages contain more text.
