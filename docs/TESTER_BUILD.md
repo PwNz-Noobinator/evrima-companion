@@ -3,7 +3,7 @@
 Evrima Companion is currently using a temporary public-testing installation method while the normal digitally signed Windows installer is being prepared.
 
 > [!IMPORTANT]
-> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.61**.
+> The GitHub package is the **v0.9.20.40 bootstrap**. After the first launch, use **Updates → Check for updates** and install the newest Stable version before testing. The current Stable version is **v0.9.20.64**.
 
 ## What you download
 
@@ -29,9 +29,11 @@ The large GitHub ZIP is only the temporary initial installation route. Normal Co
 
 The v0.9.20.40 bootstrap predates newer required-update behaviour. Its first update may therefore appear as a normal update rather than blocking use. **Accept the update to the newest Stable release.**
 
-The current Stable release, **v0.9.20.61**, prepares optional account-targeted Beta updates. The private update service still requires activation before Beta distribution becomes available. Until then, continue using Stable normally.
+The current Stable release, **v0.9.20.64**, combines recent compatibility and stability improvements, separate Account and Friends pages, automatic account updates, improved recovery and private account-data downloads. Approved Beta testers can receive eligible account-targeted updates.
 
-The previous release, **v0.9.20.60**, improves notification sizing and timing, restores friend-online alerts for visible friends, automatically refreshes incoming friend requests, and groups accepted friends on the same server. Live friend map positions are available only when both players explicitly opt in to server and location sharing; location sharing remains off by default.
+The v0.9.20.63 stability fixes are included.
+
+The earlier release, **v0.9.20.60**, improves notification sizing and timing, restores friend-online alerts for visible friends, automatically refreshes incoming friend requests, and groups accepted friends on the same server. Live friend map positions are available only when both players explicitly opt in to server and location sharing; location sharing remains off by default.
 
 The interface redesign introduced in v0.9.20.59 remains included, with the reorganised sidebar, Map and Settings tabs, and updated contents of existing feature pages.
 
