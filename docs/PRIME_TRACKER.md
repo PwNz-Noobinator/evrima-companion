@@ -17,7 +17,11 @@ Prime Tracker can automatically record visits to known:
 
 The tracker checks movement between consecutive location samples rather than looking only at a single point. This helps detect a zone that was crossed between two readings.
 
-Zone geometry is refreshed from VulnonaMAP when available, with a bundled Gateway snapshot used as a fallback. Detection supports circles, closed polygons and open/path-style shapes with tolerance around their boundaries.
+Zone geometry is refreshed from VulnonaMAP when available, with a bundled Gateway snapshot used as a fallback. From v0.9.20.64, Companion discovers the provider's advertised Gateway map version and warns when older geometry is used.
+
+> [!IMPORTANT]
+> Migration, mass migration and patrol tracking may be inaccurate after the latest Evrima update until matching Vulnona map data is available. Live location and growth estimates do not depend on those zone boundaries.
+ Detection supports circles, closed polygons and open/path-style shapes with tolerance around their boundaries.
 
 ## Growth ETA
 
