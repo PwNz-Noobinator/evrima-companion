@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.60-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.61-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.60**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.61**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -78,11 +78,17 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.60
+## Current Stable — v0.9.20.61
 
-**v0.9.20.60 is available through Companion's built-in Stable update channel.**
+**v0.9.20.61 is available through Companion's built-in Stable update channel.**
 
-This update fixes several problems with **notifications and Friends**. Notifications now adjust to longer messages, and an older notification timer no longer cuts short a newer message. Accepted friends can trigger an online alert when they have enabled online visibility, while incoming friend requests appear automatically without a manual refresh. Signed-in Companion clients check their Friends information roughly every **15 seconds**.
+v0.9.20.61 adds the client-side infrastructure for account-targeted Beta updates. Once the private update service is enabled, approved testers will be able to receive eligible update offers through Companion without restarting or manually refreshing. Installed Beta builds display **(Beta)** beside their version; regular Stable builds retain the existing version label. Stable and Beta users continue to use the same Friends, Party and map-sharing systems.
+
+The private update service still requires activation before Beta distribution becomes available. Until then, continue using Stable normally.
+
+### Previous release — v0.9.20.60
+
+v0.9.20.60 fixed several problems with **notifications and Friends**. Notifications now adjust to longer messages, and an older notification timer no longer cuts short a newer message. Accepted friends can trigger an online alert when they have enabled online visibility, while incoming friend requests appear automatically without a manual refresh. Signed-in Companion clients check their Friends information roughly every **15 seconds**.
 
 **Friends on the same server** are now grouped automatically under **Map & overlays → Party & phone**, without requiring a Party code. Friends' map positions can also appear on the desktop map or Second Screen, but **both people must explicitly enable server and live location sharing**, and neither may use Invisible Mode. Location sharing is **off by default**; only recent, verified live-game positions are eligible. The existing manual Party system remains available.
 
@@ -113,7 +119,7 @@ From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID
 
 ## Updates
 
-Installed Companion builds use the **Supabase Stable** update channel. Update packages are integrity-checked before installation.
+Installed Companion builds use the **Supabase Stable** update channel. Update packages are integrity-checked before installation. v0.9.20.61 prepares support for optional account-targeted Beta updates; regular users remain on Stable.
 
 The public v0.9.20.40 bootstrap predates newer required-update behaviour, so its first update may appear as a normal update rather than blocking use. **Accept the update to the newest Stable version.** Once on a newer Stable build, the current updater behaviour applies.
 
