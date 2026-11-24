@@ -5,7 +5,7 @@
 **A Windows companion app for The Isle: Evrima — live map tools, server browser, Survival Vitals, Prime Tracker, Dinosaur Guide, Party/Friends and Second Screen.**
 
 [![Public Tester](https://img.shields.io/badge/Public%20Tester-v0.9.20.40-orange?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion/releases/tag/v0.9.20.40)
-[![Stable](https://img.shields.io/badge/Stable-v0.9.20.61-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
+[![Stable](https://img.shields.io/badge/Stable-v0.9.20.64-brightgreen?style=flat-square)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square&logo=windows)](https://github.com/PwNz-Noobinator/evrima-companion)
 [![Downloads](https://img.shields.io/github/downloads/PwNz-Noobinator/evrima-companion/total?style=flat-square&label=release%20downloads)](https://github.com/PwNz-Noobinator/evrima-companion/releases)
 
@@ -15,7 +15,7 @@
 
 > [!CAUTION]
 > ### Update after your first launch
-> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.61**.
+> The GitHub download is the **v0.9.20.40 bootstrap**. The current Stable version is **v0.9.20.64**.
 >
 > After Companion opens, go to **Updates → Check for updates** and install the newest Stable version before testing. Do not evaluate or report current Companion behaviour while still on v0.9.20.40.
 
@@ -35,8 +35,8 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 | **Prime Tracker** | Track Sanctuary, Migration, Mass Migration and Patrol visits and estimate growth ETA. |
 | **Dinosaur Life Memory** | Track a dinosaur life across sessions with active playtime, last-known state/location, crash-safe recovery and history. |
 | **Party** | Share live positions, trails, markers, shared pins and selected Survival Vitals with your group. |
-| **Companion Accounts & Friends** | Optional username-based accounts, recovery words, friend requests and presence alerts, automatic same-server Friends grouping, and privacy-controlled live map markers. |
-| **Community Features** | Beta programme applications, username reports and private privacy enquiries. |
+| **Companion Accounts & Friends** | Separate Account and Friends pages, optional username-based accounts, account recovery, automatic friend updates, same-server grouping and privacy-controlled live map markers. |
+| **Community Features** | Beta programme applications, username reports, private privacy enquiries and downloadable account-data exports. |
 | **Second Screen** | Use Map, Dinosaur and Party views on a phone or tablet over your local Wi-Fi/LAN. |
 | **Bug Reports** | Private in-app reports with acknowledgements, developer replies and tester follow-ups. |
 | **Languages & Appearance** | Multiple interface languages and configurable UI accent colour. |
@@ -78,15 +78,29 @@ Evrima Companion brings the tools you are likely to want while playing **The Isl
 - The Isle: Evrima for game-linked features
 - A local network connection for Second Screen
 
-## Current Stable — v0.9.20.61
+## Current Stable — v0.9.20.64
 
-**v0.9.20.61 is available through Companion's built-in Stable update channel.**
+**v0.9.20.64 is available through Companion's built-in Stable update channel.**
 
-v0.9.20.61 adds the client-side infrastructure for account-targeted Beta updates. Once the private update service is enabled, approved testers will be able to receive eligible update offers through Companion without restarting or manually refreshing. Installed Beta builds display **(Beta)** beside their version; regular Stable builds retain the existing version label. Stable and Beta users continue to use the same Friends, Party and map-sharing systems.
+This release brings together the compatibility improvements and stability fixes from the recent development builds.
 
-The private update service still requires activation before Beta distribution becomes available. Until then, continue using Stable normally.
+- Separate **Account** and **Friends** pages, with automatic account, friend-request and Beta status updates.
+- Sign in and recover using your username alone when it is unique. If several accounts share a name, use the full username including its four-digit tag.
+- Improved account recovery, including developer-issued single-use recovery codes valid for 30 minutes, persistent reset notices and replacement recovery words after a successful reset.
+- Request and download account data privately through **Privacy & Data**.
+- Improved background processing, shutdown stability, bug-report reply checks and dinosaur-life tracking.
+- Updated Prime Tracker map-version discovery and warnings when older zone data is used.
+- Correct version information in Windows executable properties.
 
-### Previous release — v0.9.20.60
+**Prime Tracker notice:** Migration, mass migration and patrol tracking may be inaccurate following the latest Evrima update until matching Vulnona map data is available. Live location tracking, Survival Vitals and growth estimates remain available, subject to the existing local-data limitations.
+
+Approved Beta testers can receive eligible account-targeted update offers. Stable and Beta installations continue to use the same Friends, Party and map-sharing features.
+
+### Previous release — v0.9.20.63
+
+Improved background account and update checks, worker cleanup and application shutdown to address unexpected crashes. Added local crash diagnostics to assist troubleshooting.
+
+### Earlier release — v0.9.20.60
 
 v0.9.20.60 fixed several problems with **notifications and Friends**. Notifications now adjust to longer messages, and an older notification timer no longer cuts short a newer message. Accepted friends can trigger an online alert when they have enabled online visibility, while incoming friend requests appear automatically without a manual refresh. Signed-in Companion clients check their Friends information roughly every **15 seconds**.
 
@@ -119,7 +133,7 @@ From v0.9.20.48, telemetry uses a dedicated random per-machine installation UUID
 
 ## Updates
 
-Installed Companion builds use the **Supabase Stable** update channel. Update packages are integrity-checked before installation. v0.9.20.61 prepares support for optional account-targeted Beta updates; regular users remain on Stable.
+Installed Companion builds use the **Supabase Stable** update channel. Update packages are integrity-checked before installation. Approved Beta testers can receive eligible account-targeted updates; regular users remain on Stable.
 
 The public v0.9.20.40 bootstrap predates newer required-update behaviour, so its first update may appear as a normal update rather than blocking use. **Accept the update to the newest Stable version.** Once on a newer Stable build, the current updater behaviour applies.
 
