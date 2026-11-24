@@ -130,6 +130,14 @@ Deleting an account removes its profile, friendships and directly dependent soci
 
 Supabase and its network infrastructure may process standard request information, including IP addresses, for service security and abuse prevention. Companion does not intentionally store raw IP addresses in social profile records or sell user data.
 
+## Account recovery and data access — v0.9.20.64
+
+A unique display name can be used to sign in or recover an account; shared names require the full username including its four-digit tag. After identity verification, the developer may issue a six-character, single-use recovery code valid for 30 minutes. The service stores a keyed verifier, expiry and recovery state rather than the plaintext code. The old password and sessions are invalidated. Successful recovery produces new recovery words. Cancelling an issued code does not restore the old password.
+
+A limited-purpose signed reset-notice receipt can be retained alongside the encrypted local session for up to 90 days, refreshed on successful authentication. It indicates whether account recovery is required after session revocation; it cannot authenticate or retrieve account records.
+
+Signed-in users can submit a data access enquiry through **Privacy & Data**. A developer-prepared private JSON snapshot is associated with the requesting account and enquiry. Use **Download account data** within 30 days. Expired snapshots are removed by a daily cleanup job. Automated exports exclude credentials, recovery secrets, session tokens, internal moderation notes, raw diagnostic payloads and potentially shared or pre-link telemetry. Additional data and redactions may require manual review. Downloaded copies remain on your device until you remove them.
+
 ## Updates
 
 ### GitHub
@@ -140,7 +148,7 @@ The public GitHub repository provides release/download information and the tempo
 
 Installed Companion builds use Supabase for the Stable application update channel. Update checks can therefore contact Supabase even when telemetry is disabled; telemetry consent is separate from the updater.
 
-From v0.9.20.61, signed-in Companion clients can also contact the private update service to check whether their account is eligible for an update. Once enabled, this service uses the existing authenticated account session to check Beta eligibility and returns temporary download links for authorised releases. The update check is separate from optional telemetry; it does not require telemetry consent.
+From v0.9.20.61, signed-in Companion clients can also contact the private update service to check whether their account is eligible for an update. This service uses the existing authenticated account session to check Beta eligibility and returns temporary download links for authorised releases. The update check is separate from optional telemetry; it does not require telemetry consent.
 
 The GitHub bootstrap ZIP does not need to be rebuilt for each normal application update.
 
